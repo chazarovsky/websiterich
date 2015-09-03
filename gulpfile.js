@@ -4,7 +4,7 @@ var builtdir = process.env.RICHIT_WEB_DIR || 'dest';
 
 gulp.task('clean', function(){
     return gulp.src(builtdir, {read: false})
-        .pipe($.clean());
+        .pipe($.clean({force:true}));
 });
 
 gulp.task('upload', function(){
