@@ -1,0 +1,23 @@
+{
+  "name": "hood-web",
+  "version": "0.1.0",
+  "description": "Web version of the Hood App",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richitmx/Hood.Web.git"
+  },
+  "author": "richitmx",
+  "bugs": {
+    "url": "https://github.com/richitmx/Hood.Web/issues"
+  },
+  "homepage": "https://github.com/richitmx/Hood.Web#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-load-plugins": "^0.10.0"
+  }
+}
