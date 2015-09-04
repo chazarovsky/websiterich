@@ -1,10 +1,10 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')(); // all plugins stored in '$' var
+var del = require('del');
 var builtdir = process.env.RICHIT_WEB_DIR || 'dest';
 
 gulp.task('clean', function(){
-    return gulp.src(builtdir, {read: false})
-        .pipe($.clean({force:true}));
+    return del(builtdir, {force: true});
 });
 
 gulp.task('upload', function(){

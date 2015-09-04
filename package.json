@@ -17,7 +17,9 @@
   "homepage": "https://github.com/richitmx/Hood.Web#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-clean": "^0.3.1",
     "gulp-load-plugins": "^0.10.0"
+  },
+  "dependencies": {
+    "del": "^2.0.1"
   }
 }
