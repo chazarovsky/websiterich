@@ -211,6 +211,7 @@
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">                            
                             <?php
+                                echo "php works!!!"
                                 include '/php/wordpress-feed.php';
                             ?>
                         </div>                        
