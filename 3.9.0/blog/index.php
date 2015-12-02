@@ -13,8 +13,8 @@
 
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,27 +23,27 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="/vendor/bootstrap/bootstrap.css">
-		<link rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.css">
-		<link rel="stylesheet" href="/vendor/owlcarousel/owl.carousel.min.css" media="screen">
-		<link rel="stylesheet" href="/vendor/owlcarousel/owl.theme.default.min.css" media="screen">
-		<link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.css" media="screen">
+		<link rel="stylesheet" href="../vendor/bootstrap/bootstrap.css">
+		<link rel="stylesheet" href="../vendor/fontawesome/css/font-awesome.css">
+		<link rel="stylesheet" href="../vendor/owlcarousel/owl.carousel.min.css" media="screen">
+		<link rel="stylesheet" href="../vendor/owlcarousel/owl.theme.default.min.css" media="screen">
+		<link rel="stylesheet" href="../vendor/magnific-popup/magnific-popup.css" media="screen">
 
 		<!-- Theme CSS -->
-		<link rel="stylesheet" href="/css/theme.css">
-		<link rel="stylesheet" href="/css/theme-elements.css">
-		<link rel="stylesheet" href="/css/theme-blog.css">
-		<link rel="stylesheet" href="/css/theme-shop.css">
-		<link rel="stylesheet" href="/css/theme-animate.css">
+		<link rel="stylesheet" href="../css/theme.css">
+		<link rel="stylesheet" href="../css/theme-elements.css">
+		<link rel="stylesheet" href="../css/theme-blog.css">
+		<link rel="stylesheet" href="../css/theme-shop.css">
+		<link rel="stylesheet" href="../css/theme-animate.css">
 
 		<!-- Skin CSS -->
-		<link rel="stylesheet" href="/css/skins/default.css">
+		<link rel="stylesheet" href="../css/skins/default.css">
 
 		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="/css/custom.css">
+		<link rel="stylesheet" href="../css/custom.css">
 
 		<!-- Head Libs -->
-		<script src="/vendor/modernizr/modernizr.js"></script>
+		<script src="../vendor/modernizr/modernizr.js"></script>
 
 		<!--[if IE]>
 			<link rel="stylesheet" href="css/ie.css">
@@ -61,8 +61,8 @@
 			<header id="header">
 				<div class="container">
 					<div class="logo">
-						<a href="/index.html">
-							<img alt="Porto" width="222" height="108" data-sticky-width="164" data-sticky-height="80" src="/img/logo.png">
+						<a href="../index.html">
+							<img alt="Porto" width="222" height="108" data-sticky-width="164" data-sticky-height="80" src="../img/logo.png">
 						</a>
 					</div>
 					<!--div class="search">
@@ -79,7 +79,7 @@
 						<ul class="nav nav-pills nav-top">
 
 							<li>
-								<a href="/contacto/index.html"><i class="fa fa-angle-right"></i>Contacto</a>
+								<a href="../contacto/index.html"><i class="fa fa-angle-right"></i>Contacto</a>
 							</li>
 							<li class="phone">
 								<span><i class="fa fa-phone"></i>01 (55) 6718-1818</span>
@@ -100,19 +100,19 @@
 						<nav class="nav-main mega-menu">
 							<ul class="nav nav-pills nav-main" id="mainMenu">
 								<li class="dropdown">
-									<a href="/index.html">
+									<a href="../index.html">
 										Home
 									</a>
 
 								</li>
 								<li class="dropdown">
-									<a class="dropdown-toggle" href="index.html">
+									<a class="dropdown-toggle" href="../nosotros/index.html">
 										Nosotros
 									</a>
 
 									<ul class="dropdown-menu">
 										<li class="dropdown-submenu">
-											<a href="equipo/index.html">Equipo</a>
+											<a href="../nosotros/equipo/index.html">Equipo</a>
 
 
 
@@ -121,25 +121,25 @@
 									</ul>
 								</li>
 								<li class="dropdown">
-									<a class="dropdown-toggle" href="/servicios/index.html">
+									<a class="dropdown-toggle" href="../servicios/index.html">
 										Servicios
 									</a>
 
 									<ul class="dropdown-menu">
 										<li class="dropdown-submenu">
-											<a href="/servicios/data-science/index.html">Data Science</a>
+											<a href="../servicios/data-science/index.html">Data Science</a>
 
 										</li>
 										<li class="dropdown-submenu">
-											<a href="/servicios/data-governance/index.html">Data Governance</a>
+											<a href="../servicios/data-governance/index.html">Data Governance</a>
 
 										</li>
 										<li class="dropdown-submenu">
-											<a href="/servicios/information-lifecycle-management/index.html">Information Lifecycle Management</a>
+											<a href="../servicios/information-lifecycle-management/index.html">Information Lifecycle Management</a>
 
 										</li>
 										<li class="dropdown-submenu">
-											<a href="/servicios/certificaciones/index.html">Certificaciones</a>
+											<a href="../servicios/certificaciones/index.html">Certificaciones</a>
 
 										</li>
 
@@ -148,7 +148,7 @@
 									</ul>
 								</li>
 									<li class="dropdown">
-									<a class="dropdown-toggle" href="/desarrollo/index.html">
+									<a class="dropdown-toggle" href="../desarrollo/index.html">
 										Desarrollo
 									</a>
 
@@ -211,7 +211,7 @@
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">                            
                             <?php
-                                phpinfo(8);
+                                include '/php/wordpress-feed.php';
                             ?>
                         </div>                        
                     </div>                    
@@ -272,31 +272,31 @@
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 		<![endif]-->
 		<!--[if gte IE 9]><!-->
-		<script src="/vendor/jquery/jquery.js"></script>
+		<script src="../vendor/jquery/jquery.js"></script>
 		<!--<![endif]-->
-		<script src="/vendor/jquery.appear/jquery.appear.js"></script>
-		<script src="/vendor/jquery.easing/jquery.easing.js"></script>
-		<script src="/vendor/jquery-cookie/jquery-cookie.js"></script>
-		<script src="/master/style-switcher/style.switcher.js"></script>
-		<script src="/vendor/bootstrap/bootstrap.js"></script>
-		<script src="/vendor/common/common.js"></script>
-		<script src="/vendor/jquery.stellar/jquery.stellar.js"></script>
-		<script src="/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js"></script>
-		<script src="/vendor/jquery.gmap/jquery.gmap.js"></script>
-		<script src="/vendor/isotope/jquery.isotope.js"></script>
-		<script src="/vendor/owlcarousel/owl.carousel.js"></script>
-		<script src="/vendor/jflickrfeed/jflickrfeed.js"></script>
-		<script src="/vendor/magnific-popup/jquery.magnific-popup.js"></script>
-		<script src="/vendor/vide/vide.js"></script>
+		<script src="../vendor/jquery.appear/jquery.appear.js"></script>
+		<script src="../vendor/jquery.easing/jquery.easing.js"></script>
+		<script src="../vendor/jquery-cookie/jquery-cookie.js"></script>
+		<script src="../master/style-switcher/style.switcher.js"></script>
+		<script src="../vendor/bootstrap/bootstrap.js"></script>
+		<script src="../vendor/common/common.js"></script>
+		<script src="../vendor/jquery.stellar/jquery.stellar.js"></script>
+		<script src="../vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js"></script>
+		<script src="../vendor/jquery.gmap/jquery.gmap.js"></script>
+		<script src="../vendor/isotope/jquery.isotope.js"></script>
+		<script src="../vendor/owlcarousel/owl.carousel.js"></script>
+		<script src="../vendor/jflickrfeed/jflickrfeed.js"></script>
+		<script src="../vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		<script src="../vendor/vide/vide.js"></script>
 
 		<!-- Theme Base, Components and Settings -->
-		<script src="/js/theme.js"></script>
+		<script src="../js/theme.js"></script>
 
 		<!-- Theme Custom -->
-		<script src="/js/custom.js"></script>
+		<script src="../js/custom.js"></script>
 
 		<!-- Theme Initialization Files -->
-		<script src="/js/theme.init.js"></script>
+		<script src="../js/theme.init.js"></script>
 
 		<script type="text/javascript">
 
