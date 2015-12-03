@@ -154,7 +154,7 @@
 
 									<ul class="dropdown-menu">
 										<li class="dropdown-submenu">
-											<a href="/desarrollo/omni/hood.html">Omni</a>
+											<a href="/desarrollo/omni/index.html">Omni</a>
 
 										</li>
 										<li class="dropdown-submenu">
