@@ -6,7 +6,7 @@ function test_input($data) {
     $data = htmlspecialchars($data);
     return $data; }
 
-$contactEmail2 = 'agonzalez@richit.com.mx';
+$contactEmail2 = 'vmaceda@richit.com.mx';
 
 $name = $email =  $comment = $subject = $formError = "";
 

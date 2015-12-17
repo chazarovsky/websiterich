@@ -448,20 +448,8 @@
 			<footer class="short" id="footer">
 				<div class="container">
 					<div class="row">
-
-						<div class="col-md-8">
-
-
-
-
-							<h4 class="heading-primary">Latest Tweets</h4>
-							<div id="tweet" class="twitter" data-plugin-tweets data-plugin-options='{"username": "oklerthemes", "count": 2}'>
-								<a class="twitter-timeline" href="https://twitter.com/omni_df" data-widget-id="628679231828942848" height="250px">Tweets por el @omni_df.</a>
-									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-							</div>
-						</div>
-
-						<div class="col-md-3">
+                        
+						<div class="col-md-3  col-lg-3  col-sm-3 ">
 							<h5 class="mb-sm">Contactanos</h5>
 							<!-- <span class="phone">01 (55) 6718-1818</span> -->
 
@@ -481,6 +469,53 @@
 								</ul>
 							</div>
 						</div>
+                        
+                        
+						<div class="col-md-6 col-md-3-offset-3 col-lg-6 col-lg-offset-3 col-sm-6 col-sm-offset-3">
+							<!-- <h4 class="heading-primary">Latest Tweets</h4> -->
+							<div class="alert alert-success hidden" id="contactSuccess">
+								<strong>Gracias!</strong> Tu mensaje ha sido enviado.
+							</div>
+
+							<div class="alert alert-danger hidden" id="contactError">
+								<strong>Error!</strong> Ocurrió un error al enviar tu mensaje.
+							</div>
+
+							<h2 class="mb-sm mt-sm"><strong>Envíanos</strong> un mensaje</h2>
+							<form id="contactForm" action="/php/contact-form.php" method="POST">
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-6">
+											<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" placeholder="*Name"  required>
+										</div>
+										<div class="col-md-6">
+											<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Introduzca una dirección de correo válida" maxlength="100" class="form-control" name="email" id="email" placeholder="*Email" required>
+			</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<input type="text" value="" data-msg-required="Introduzca un asunto." maxlength="100" class="form-control" name="subject" id="subject"  placeholder="Asunto" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<textarea maxlength="5000" data-msg-required="Escriba su mensaje." rows="5" class="form-control" name="message" id="message" placeholder="*Mensaje" required></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<input type="submit" value="Enviar" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Cargando...">
+									</div>
+								</div>
+							</form>
+                            
+						</div>
+
 					</div>
 				</div>
 			<div class="footer-copyright">
