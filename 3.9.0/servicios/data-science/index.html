@@ -77,13 +77,13 @@
 					</div-->
 					<nav class="nav-top">
 						<ul class="nav nav-pills nav-top">
-
-							<li>
-								<a href="/contacto/index.html"><i class="fa fa-angle-right"></i>Contacto</a>
+                            <li>
+								<a href="#"><i class="fa fa-angle-right"></i>Español</a>
 							</li>
+                            <!--
 							<li class="phone">
-								<span><i class="fa fa-phone"></i>01 (55) 6718-1818</span>
-							</li>
+								<span><i class="fa"></i>Inglés</span>
+							</li> -->							
 						</ul>
 					</nav>
 					<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
@@ -262,24 +262,23 @@
 			<footer class="short" id="footer">
 				<div class="container">
 					<div class="row">
-
-						<div class="col-md-8">
-
-
-							<h4 class="heading-primary">Latest Tweets</h4>
-							<div id="tweet" class="twitter" data-plugin-tweets data-plugin-options='{"username": "oklerthemes", "count": 2}'>
-								<a class="twitter-timeline" href="https://twitter.com/omni_df" data-widget-id="628679231828942848" height="250px">Tweets por el @omni_df.</a>
-									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-							</div>
-						</div>
-
-						<div class="col-md-3">
-							<h5 class="mb-sm">Contact Us</h5>
-							<span class="phone">01 (55) 6718-1818</span>
+                            
+						<div class="col-md-6  col-lg-6  col-sm-6">
+                            <h4 class="mb-sm mt-sm"><strong>Trabaja</strong> con nosotros</h4>
+                            <a href="contacto/careers/index.html">Más información</a>
+                            
+                            <br />
+                            <br />
+							<!-- <h5 class="mb-sm">Contactanos</h5> -->
+                            <h4 class="mb-sm mt-sm"><strong>Contáctanos</strong></h4>
+							<!-- <span class="phone">01 (55) 6718-1818</span> -->
 
 
 							<ul class="list list-icons mt-xl">
-								<li><i class="fa fa-map-marker"></i>Cerro San Francisco 357, Col. Campestre Churubusco, Del. Coyoacán, México D.F.</li>
+								<!-- <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    Cerro San Francisco 357, Col. Campestre Churubusco, Del. Coyoacán, México D.F.
+                                </li>  -->
 								<li><i class="fa fa-envelope"></i> <strong>E-mail:</strong> <a href="mailto:mail@example.com">contacto@richit.com.mx</a></li>
 							</ul>
 							<div class="social-icons mt-xl">
@@ -289,6 +288,52 @@
 									<li class="linkedin"><a href="https://www.linkedin.com/company/rich-it-solution-sa-de-cv" target="_blank" data-placement="bottom" data-tooltip title="Linkedin">Linkedin</a></li>
 								</ul>
 							</div>
+						</div>
+                        
+                        
+						<div class="col-md-6 col-lg-6 col-sm-6">
+							<!-- <h4 class="heading-primary">Latest Tweets</h4> -->
+							<div class="alert alert-success hidden" id="contactSuccess">
+								<strong>Gracias!</strong> Tu mensaje ha sido enviado.
+							</div>
+
+							<div class="alert alert-danger hidden" id="contactError">
+								<strong>Error!</strong> Ocurrió un error al enviar tu mensaje.
+							</div>
+
+							<h4 class="mb-sm mt-sm"><strong>Envíanos</strong> un mensaje</h4>
+							<form id="contactForm" action="/php/contact-form.php" method="POST">
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-6">
+											<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" placeholder="*Nombre"  required>
+										</div>
+										<div class="col-md-6">
+											<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Introduzca una dirección de correo válida" maxlength="100" class="form-control" name="email" id="email" placeholder="*Email" required>
+			</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<input type="text" value="" data-msg-required="Introduzca un asunto." maxlength="100" class="form-control" name="subject" id="subject"  placeholder="Asunto" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<textarea maxlength="5000" data-msg-required="Escriba su mensaje." rows="5" class="form-control" name="message" id="message" placeholder="*Mensaje" required></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 text-center">
+										<input type="submit" value="Enviar" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Cargando...">
+									</div>
+								</div>
+							</form>
+                            
 						</div>
 					</div>
 				</div>
@@ -301,7 +346,7 @@
 								</a>
 							</div>
 							<div class="col-md-11">
-								<p>© Copyright 2015. Todos los Derechos Reservados. Rich IT Solution S.A. de C.V.</p>
+								<p>© Copyright 2015. Todos los Derechos Reservados. Rich IT</p>
 							</div>
 						</div>
 					</div>
