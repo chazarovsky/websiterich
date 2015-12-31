@@ -120,6 +120,9 @@
                                         <li class="dropdown-submenu">
 											<a href="../nosotros/desarrollo/index.html">Desarrollo</a>
 										</li>
+                                        <li class="dropdown-submenu">
+                                            <a href="../nosotros/careers/index.html">Careers</a>
+                                        </li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -140,15 +143,6 @@
 											<a href="../servicios/managed-services/index.html">Managed Services</a>
 
 										</li>
-									</ul>
-								</li>
-								<li class="dropdown">
-									<a class="dropdown-toggle" href="/contacto/index.html">
-										Contacto
-									</a>
-									<ul class="dropdown-menu">
-										<li><a href="/contacto/careers/index.html">Careers</a></li>
-
 									</ul>
 								</li>
 								<li class="dropdown active">
@@ -255,7 +249,7 @@
                             
 						<div class="col-md-6  col-lg-6  col-sm-6">
                             <h4 class="mb-sm mt-sm"><strong>Trabaja</strong> con nosotros</h4>
-                            <a href="contacto/careers/index.html">Más información</a>
+                            <a href="../nosotros/careers/index.html">Más información</a>
                             
                             <br />
                             <br />
