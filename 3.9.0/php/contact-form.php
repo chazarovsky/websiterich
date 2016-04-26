@@ -1,4 +1,5 @@
 <?php
+include_once('send_forms.php');
 
 function test_input($data) {
     $data = trim($data);
@@ -6,9 +7,9 @@ function test_input($data) {
     $data = htmlspecialchars($data);
     return $data; }
 
-$contactEmail2 = 'vmaceda@richit.com.mx';
+$contactEmail = 'vmaceda@richit.com.mx';
 
-$name = $email =  $comment = $subject = $formError = "";
+$name = $userEmail =  $comment = $subject = $formError = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["name"])) {
@@ -23,8 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["email"])) {
         $formError = "Tu Email es necesario";
     } else {
-        $email = test_input($_POST["email"]);
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $userEmail = test_input($_POST["email"]);
+        if (!filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
             $formError = "Email invalido";
         }
     }
@@ -32,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["subject"])) {
         $subject = "Contact Richit";
     } else {
-        $comment = test_input($_POST["subject"]);
+        $subject = $_POST["subject"];
     }
 
     if (empty($_POST["message"])) {
@@ -45,10 +46,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $dataResponse = array('type' => 'error', 'text' => $formError);
         echo json_encode($dataResponse);
     } else {
-        $contactMessage = "Nombre: " . $name
-                        . "\nEmail: " . $email
-                        . "\nMensaje: " . $comment;
-        mail($contactEmail, $subject, $contactMessage);
+        $contactMessage = "<br><span style='color: #777777; font-weight: bold;'>Nombre:</span> " . $name
+                        . "<br><span style='color: #777777; font-weight: bold;'>Mensaje:</span><br> " . $comment;
+        $file = '';
+        send_form($userEmail, $name, $subject, $contactMessage, $file);
+
         $dataResponse = array('response' => 'success', 'text' => 'Gracias :)');
         echo json_encode($dataResponse);
     }
