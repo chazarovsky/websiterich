@@ -482,7 +482,7 @@
 							</div>
 
 							<h4 class="mb-sm mt-sm"><strong>Envíanos</strong> un mensaje</h4>
-							<form id="contactForm" action="/php/contact-form.php" method="POST">
+							<form id="contactForm" name="contactForm" action="/php/contact-form.php" method="POST">
 								<div class="row">
 									<div class="form-group">
 										<div class="col-md-6">
@@ -509,7 +509,7 @@
 								</div>
 								<div class="row">
 									<div style="margin-bottom:0px;" class="col-md-12 text-center">
-										<input type="submit" value="Enviar" class="btn btn-primary btn-lg" data-loading-text="Cargando...">
+										<input type="submit" name="submitButton" value="Enviar" class="btn btn-primary btn-lg" data-loading-text="Cargando...">
 									</div>
 								</div>
 							</form>
@@ -569,6 +569,8 @@
 
 		<!-- Theme Custom -->
 		<script src="js/custom.js"></script>
+		<!--<script src="js/views/view.contact.js"></script>-->
+		<script src="js/validate-forms.js"></script>
 
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>

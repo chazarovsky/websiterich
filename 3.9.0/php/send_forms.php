@@ -8,7 +8,7 @@ function send_form($userEmail, $userName, $subject, $body, $file){
     //indico a la clase que use SMTP
     $mail->IsSMTP();
     //permite modo debug para ver mensajes de las cosas que van ocurriendo
-    $mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 0;
     //Debo de hacer autenticación SMTP
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = "ssl";
@@ -31,10 +31,11 @@ function send_form($userEmail, $userName, $subject, $body, $file){
     $mail->AddAddress($address, "Contacto Rich IT ");
     $mail->CharSet = 'UTF-8';
     if(!$mail->Send()) {
-        echo "Error al enviar: " . $mail->ErrorInfo;
+        $dataResponse = array('type' => 'error', 'text' => $formError);
+        echo json_encode($dataResponse);
     } else {
-        echo "success";
-        echo "Mensaje enviado!";
+        $dataResponse = array('response' => 'success', 'text' => 'Gracias :)');
+        echo json_encode($dataResponse);
     }
 }
 

@@ -51,8 +51,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $file = '';
         send_form($userEmail, $name, $subject, $contactMessage, $file);
 
-        $dataResponse = array('response' => 'success', 'text' => 'Gracias :)');
-        echo json_encode($dataResponse);
+        /*$dataResponse = array('response' => 'success', 'text' => 'Gracias :)');
+        echo json_encode($dataResponse);*/
     }
 }
 
