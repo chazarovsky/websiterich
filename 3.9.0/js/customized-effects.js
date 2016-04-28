@@ -20,7 +20,7 @@ $('.wrapper-hover-effect').hover(
 
 $('.goToContact').click(function() {
     $('html,body').animate({
-        scrollTop: $("#footer").offset().top
+        scrollTop: $("footer").offset().top
     }, 1500);
 }); 
 
