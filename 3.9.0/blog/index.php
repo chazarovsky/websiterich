@@ -103,13 +103,7 @@
 									<a href="../index.html">
 										Home
 									</a>
-
 								</li>
-								<li class="dropdown goToContact">
-                                    <a href="#">
-                                        Contáctanos
-                                    </a>
-                                </li>
 								<li class="dropdown">
 									<a class="dropdown-toggle" href="../nosotros/index.html">
 										Nosotros
@@ -154,11 +148,12 @@
 									<a href="/blog/index.php">
 										Blog
 									</a>
-
 								</li>
-
-
-
+								<li class="dropdown goToContact">
+                  <a href="#">
+                    Contáctanos
+                  </a>
+                </li>
 							</ul>
 						</nav>
 					</div>
@@ -187,7 +182,7 @@
 
 				<div class="container">
                     <div class="row">
-                        <div class="col-md-10 col-md-offset-1">                            
+                        <div class="col-md-10 col-md-offset-1">
                             <?php
                                 setlocale(LC_TIME,"es_MX.UTF-8");
                                 $doc = new DOMDocument();
@@ -232,7 +227,7 @@
                                     $pattern = '/<img(.*?)(src=(")(.*?).(bmp|gif|jpeg|jpg|png)(.*?)("))(.*?)>/i';
                                     if(preg_match_all($pattern, $text, $matches_out)){
                                         return $matches_out[0][0];
-                                    }                                   
+                                    }
                                     return 0;
                                 }
 
@@ -244,18 +239,18 @@
                                     return 0;
                                 }
                             ?>
-                        </div>                        
-                    </div>                    
+                        </div>
+                    </div>
                 </div>
 
 			<footer class="short" id="footer">
 				<div class="container">
 					<div class="row">
-                            
+
 						<div class="col-md-6  col-lg-6  col-sm-6">
                             <h4 class="mb-sm mt-sm"><strong>Trabaja</strong> con nosotros</h4>
                             <a href="../nosotros/careers/index.html">Más información</a>
-                            
+
                             <br />
                             <br />
 							<!-- <h5 class="mb-sm">Contactanos</h5> -->
@@ -278,8 +273,8 @@
 								</ul>
 							</div>
 						</div>
-                        
-                        
+
+
 						<div style="margin-bottom:0px;" class="col-md-6 col-lg-6 col-sm-6">
 							<!-- <h4 class="heading-primary">Latest Tweets</h4> -->
 							<div class="alert alert-success hidden" id="contactSuccess">
@@ -322,7 +317,7 @@
 									</div>
 								</div>
 							</form>
-                            
+
 						</div>
 					</div>
 				</div>
@@ -335,7 +330,7 @@
 								</a>
 							</div>
 							<div class="col-md-11">
-								<p>© Copyright 2015. Todos los Derechos Reservados. Rich IT. </p>
+								<p>© Copyright 2016. Todos los Derechos Reservados. Rich IT. </p>
 							</div>
 						</div>
 					</div>
@@ -373,7 +368,7 @@
 
 		<!-- Theme Initialization Files -->
 		<script src="../js/theme.init.js"></script>
-		
+
 		<!--  Own Libs -->
         <script src="../js/customized-effects.js"></script>
 
