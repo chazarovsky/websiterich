@@ -1,8 +1,10 @@
+
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Glegoo);
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 h1,
 h2,
@@ -36,16 +38,16 @@ a:hover {
   margin-bottom: 35px;
 }
 .section-heading p {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 300;
-  color: #727272;
+  color: #2a2d33;
   line-height: 20px;
 }
 .title {
   font-size: 30px;
   line-height: 1.1;
   font-weight: 300;
-  color: #333;
+  color: #2a2d33;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -56,7 +58,13 @@ a:hover {
   text-transform: uppercase;
 }
 .subtitle-des {
-  color: #727272;
+  color: #2a2d33;
+  font-size: 18px;
+  margin-bottom: 35px;
+  font-weight: 300;
+}
+.subtitle-cert {
+  color: #2a2d33;
   font-size: 14px;
   margin-bottom: 35px;
   font-weight: 300;
@@ -144,8 +152,8 @@ a:hover {
   background: url('../images/slider.jpg') no-repeat 50%;
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 210px;
-  padding-bottom: 120px;
+  padding-top: 280px;
+  padding-bottom: 100px;
   color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   position: relative;
@@ -213,7 +221,7 @@ a:hover {
   color: #fff;
 }
 #call-to-action .block p {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
   margin-top: 20px;
@@ -245,7 +253,7 @@ a:hover {
   text-transform: uppercase;
 }
 #about .block p {
-  color: #727272;
+  color: #2a2d33;
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 35px;
@@ -364,7 +372,7 @@ figure .buttons {
 figure figcaption {
   padding: 20px 25px;
   margin-top: 0;
-  color: #666;
+  color: #444;
 }
 figure figcaption h4 {
   margin: 0;
@@ -397,8 +405,8 @@ figure figcaption p {
 }
 #feature p {
   line-height: 25px;
-  font-size: 14px;
-  color: #777777;
+  font-size: 15px;
+  color: #2a2d33;
 }
 #feature .icon {
   text-decoration: none;
@@ -585,7 +593,7 @@ ul.social-icons li {
   margin-top: 0;
 }
 #product-showcase-banner .block p {
-  color: #666;
+  color: #2a2d33;
   line-height: 25px;
 }
 #product-showcase-banner .block .buttons {
@@ -666,7 +674,7 @@ ul.social-icons li {
   color: #5c5c5c;
 }
 #product-description .block .content p {
-  color: #787f8c;
+  color: #2a2d33;
   line-height: 25px;
 }
 #related-items {
@@ -738,8 +746,8 @@ ul.social-icons li {
 }
 .service-page .service-parts .block p {
   padding: 0 8px;
-  font-size: 14px;
-  color: #777;
+  font-size: 17px;
+  color: #2a2d33;
   line-height: 1.7;
 }
 .works.service-page figure .buttons {
@@ -829,7 +837,7 @@ ul.social-icons li {
   margin-top: 0;
 }
 .company-description .block p {
-  color: #727272;
+  color: #2a2d33;
 }
 #team {
   margin: 50px 0;
@@ -855,7 +863,7 @@ ul.social-icons li {
   font-size: 20px;
 }
 .team-member p {
-  font-size: 14px;
+  font-size: 15px;
 }
 .team-member .social-icons a {
   background: #02bdd5;
@@ -960,8 +968,8 @@ article {
   border: 3px solid #fff;
 }
 .sidebar .author .author-bio p {
-  font-size: 14px;
-  color: #888;
+  font-size: 15px;
+  color: #2a2d33;
 }
 .sidebar .categories ul li {
   border-bottom: 1px solid #f0f0f0;
