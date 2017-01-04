@@ -3,3 +3,27 @@
     color:aliceblue;
     padding: 100px;
 }
+.page-header1 {
+  background: #11433b;
+}
+.page-header2 {
+  background: #3d0f1b;
+}
+.page-header3 {
+  background: #2c0f3d;
+}
+.page-header4 {
+  background: #0f1548;
+}
+.page-header5 {
+  background: #50517a;
+}
+.page-header6 {
+  background: #658466;
+}
+.page-header7 {
+  background: #656565;
+}
+.page-header8 {
+  background: #000000;
+}
