@@ -1,7 +1,26 @@
 #value-proposition1 {
-    background-image: url(../images/slider.jpg);
+    background-image: url(../images/header/item-1.jpg);
     color:aliceblue;
     padding: 100px;
+    background-size: cover;
+}
+#value-proposition2 {
+    background-image: url(../images/header/item-2.jpg);
+    color:aliceblue;
+    padding: 100px;
+    background-size: cover;
+}
+#value-proposition3 {
+    background-image: url(../images/header/item-3.jpg);
+    color:aliceblue;
+    padding: 100px;
+    background-size: cover;
+}
+#value-proposition4 {
+    background-image: url(../images/header/item-4.jpg);
+    color:aliceblue;
+    padding: 100px;
+    background-size: cover;
 }
 .page-header1 {
   background: #11433b;
