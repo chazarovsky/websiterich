@@ -380,6 +380,7 @@ figure figcaption {
 }
 figure figcaption h4 {
   margin: 0;
+  text-transform: uppercase;
 }
 figure figcaption h4 a {
   color: #02bdd5;

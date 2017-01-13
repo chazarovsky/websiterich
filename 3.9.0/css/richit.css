@@ -64,7 +64,7 @@
 }
 #service
 {
-    background: gray;
+    background: #051019;
 }
 ul.service-list li i
 {
@@ -96,4 +96,13 @@ ul.service-list li i
     font-size: 12px;
     padding: 15px;
     line-height: 15px;
+}
+.module-title{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+#stack{
+    background: #f3f3f3;
+    padding: 50px;
+    text-align: center;
 }
