@@ -305,6 +305,10 @@ a:hover {
   font-size: 30px;
   color: #fff;
 }
+.works .block .img-overly .overly p {
+  font-size: 25px;
+  color: #fff;
+}
 figure {
   background: #fff;
   margin-bottom: 45px;
