@@ -106,3 +106,14 @@ ul.service-list li i
     padding: 50px;
     text-align: center;
 }
+.panel{
+    border: 0px;
+}
+.panel-body .nav li{
+    width: 25%;
+    text-align: center;
+    font-family: 'Roboto Condensed';
+}
+.panel-body .nav li a{
+    color: #3d0f1b;
+}
