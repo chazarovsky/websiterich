@@ -263,7 +263,7 @@ a:hover {
 }
 .works {
   padding: 80px 0;
-  background: #FCFCFC;
+  background: #FDFDFD;
 }
 .works .block {
   position: relative;
@@ -303,6 +303,10 @@ a:hover {
 }
 .works .block .img-overly .overly a i {
   font-size: 30px;
+  color: #fff;
+}
+.works .block .img-overly .overly p {
+  font-size: 25px;
   color: #fff;
 }
 figure {
@@ -376,6 +380,7 @@ figure figcaption {
 }
 figure figcaption h4 {
   margin: 0;
+  text-transform: uppercase;
 }
 figure figcaption h4 a {
   color: #02bdd5;
