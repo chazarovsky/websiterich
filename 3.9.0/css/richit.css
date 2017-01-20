@@ -87,3 +87,26 @@ ul.service-list li i
 .panel-body .nav li a{
     color: #02bdd5;
 }
+.profit-boost ul li a img  {
+     max-width: 30px;
+    padding-right: 5px;
+}
+@media (max-width: 1000px) {
+    .profit-boost ul li {
+        font-size: 19px;
+    }
+}
+@media (max-width: 730px) {
+    .profit-boost ul li {
+        font-size: 14px;
+    }
+    .profit-boost ul li a .category{
+        display: block;
+        padding-top: 6px;
+    }
+}
+@media (max-width: 370px) {
+    .profit-boost ul li a .category {
+         font-size: 9px;
+    }
+}
