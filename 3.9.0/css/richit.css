@@ -51,15 +51,16 @@ ul.service-list li i
 }
 
 .photo-grid img {
-	display: block;
 	height: auto;
-	max-width: 100%;
+    width: 100%;
 }
 .photo-grid figure {
-	height: 200px;
-	overflow: hidden;
-	position: relative;
-	width: 360px;
+	/*overflow: hidden;
+    margin: 7px;*/
+    margin-bottom: 50px;
+}
+figure .img-wrapper {
+    cursor: pointer;
 }
 .photo-grid .portfolio-item2 {
 	height: 235px;
@@ -93,8 +94,19 @@ ul.service-list li i
 .panel-body .nav li a{
     color: #02bdd5;
 }
+
+.flex-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+}
 .profit-boost ul li a img  {
-     max-width: 30px;
+    max-width: 30px;
     padding-right: 5px;
 }
 @media (max-width: 1000px) {
@@ -102,7 +114,12 @@ ul.service-list li i
         font-size: 19px;
     }
 }
-@media (max-width: 730px) {
+@media (max-width: 770px) {
+    .flex-container .col-sm-6 {
+        width: 70%;
+    }
+}
+@media (max-width: 768px) {
     .profit-boost ul li {
         font-size: 14px;
     }
@@ -110,8 +127,43 @@ ul.service-list li i
         display: block;
         padding-top: 6px;
     }
+
+/*    .img-wrapper {
+        height: 150px;
+    }
+    .img-wrapper img {
+        height: 150px;
+    }*/
+}
+@media (max-width: 600px) {
+    .flex-container .col-xs-8 {
+        width: 75%;
+    }
+}
+@media (max-width: 550px) {
+    .flex-container .col-xs-8 {
+        width: 95%;
+    }
+}
+@media (max-width: 420px) {
+    .photo-grid figure img {
+        height: 160px;
+    }
+    .photo-grid figure .img-wrapper {
+        height: 160px;
+    }
 }
 @media (max-width: 370px) {
     .profit-boost ul li a .category {
          font-size: 9px;
+    }
+    .flex-container .col-xs-8 {
+        width: 100%;
+    }
+    .photo-grid figure img {
+        height: 190px;
+    }
+    .photo-grid figure .img-wrapper {
+        height: 190px;
+    }
 }
