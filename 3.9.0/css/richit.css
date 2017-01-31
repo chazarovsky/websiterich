@@ -94,7 +94,7 @@ figure .img-wrapper {
 .panel-body .nav li a{
     color: #02bdd5;
 }
-
+/*Modules list*/
 .flex-container {
     display: -webkit-box;
     display: -moz-box;
@@ -105,16 +105,24 @@ figure .img-wrapper {
     flex-flow: row wrap;
     justify-content: center;
 }
+/*Tabs*/
 .profit-boost ul li a img  {
     max-width: 30px;
     padding-right: 5px;
 }
+/*Logo*/
+.richit-navbar .richit-brand a {
+    margin: 0;
+}
+
+
 @media (max-width: 1000px) {
     .profit-boost ul li {
         font-size: 19px;
     }
 }
 @media (max-width: 768px) {
+    /*Tabs*/
     .profit-boost ul li {
         font-size: 14px;
     }
@@ -122,8 +130,14 @@ figure .img-wrapper {
         display: block;
         padding-top: 6px;
     }
+    /*Modules list*/
     .flex-container .col-sm-6 {
         width: 70%;
+    }
+    /*Logo*/
+    .richit-navbar .richit-brand a {
+       /* margin: 0;*/
+        padding-top: 0;
     }
 }
 @media (max-width: 600px) {
@@ -156,5 +170,27 @@ figure .img-wrapper {
     }
     .photo-grid figure .img-wrapper {
         height: 190px;
+    }
+    
+}
+
+/*=====================*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)  {
+    /*Logo*/
+    .richit-navbar .richit-brand {
+        padding-top: 1px;
+    }
+    .richit-navbar .richit-brand a {
+        /**margin: 0;*/
+    }
+    .richit-navbar .richit-brand .richit-logo {
+       height: 30px;
+    }
+    .richit-navbar .richit-menu ul li > a {
+        padding: 10px;
     }
 }
