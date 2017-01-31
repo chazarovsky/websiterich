@@ -1,19 +1,19 @@
+.value-proposition {
+    padding: 100px;
+}
 #value-proposition1 {
     background-image: url(../images/header/item-5.jpg);
     color:aliceblue;
-    padding: 100px;
     background-size: cover;
 }
 #value-proposition2 {
     background-image: url(../images/header/item-3.jpg);
     color:aliceblue;
-    padding: 100px;
     background-size: cover;
 }
 #value-proposition3 {
     background-image: url(../images/header/item-6.jpg);
     color:aliceblue;
-    padding: 100px;
     background-size: cover;
 }
 .service-item h3{
@@ -188,6 +188,22 @@ figure .img-wrapper {
     }
     #stack .stack-richit {
         height: 60px;
+    }
+    /*Header*/
+    .main-header .header-content {
+        font-size: 35px;
+    }
+    .value-proposition {
+        padding: 28px;
+        height: 290px;
+        display: flex;
+        align-items: center;
+    }
+    #alfred-header {
+        font-size: 30px;
+    }
+    #about-description {
+        margin-top: -10px;
     }
 }
 
