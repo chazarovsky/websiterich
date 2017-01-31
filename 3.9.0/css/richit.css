@@ -136,9 +136,20 @@ figure .img-wrapper {
     }
     /*Logo*/
     .richit-navbar .richit-brand a {
-       /* margin: 0;*/
         padding-top: 0;
     }
+    /*Stack*/
+    #stack .stack-cisco {
+        padding-top: 20px;
+    }
+    #stack .stack-richit {
+        height: 90px;
+    }
+    #stack .stack-richit img {
+        position: relative;
+        top: -40px;
+    }
+    
 }
 @media (max-width: 600px) {
     .flex-container .col-xs-8 {
@@ -171,7 +182,13 @@ figure .img-wrapper {
     .photo-grid figure .img-wrapper {
         height: 190px;
     }
-    
+    /*Stack*/
+    #stack img {
+        width: 200px;
+    }
+    #stack .stack-richit {
+        height: 60px;
+    }
 }
 
 /*=====================*/
@@ -183,9 +200,6 @@ and (-webkit-min-device-pixel-ratio: 1)  {
     /*Logo*/
     .richit-navbar .richit-brand {
         padding-top: 1px;
-    }
-    .richit-navbar .richit-brand a {
-        /**margin: 0;*/
     }
     .richit-navbar .richit-brand .richit-logo {
        height: 30px;
