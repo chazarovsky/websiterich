@@ -118,6 +118,11 @@ figure .img-wrapper {
 .service-description p {
     text-align: justify;
 }
+#hero-area {
+        padding-top: 42%;
+        padding-bottom: 15%;
+        background-position: 86%;
+    }
 
 @media (max-width: 1000px) {
     .profit-boost ul li {
@@ -173,7 +178,6 @@ figure .img-wrapper {
     .richit-description .block .subtitle {
         margin-top: 30px;
     }
-    
     /*Footer*/
     .richit-copyright .center {
         display: block;
@@ -242,6 +246,14 @@ figure .img-wrapper {
     }
     .richit-description .block .subtitle {
         margin-top: 30px;
+    }
+    #hero-area {
+        padding-top: 75%;
+        padding-bottom: 17%;
+    }
+    #hero-area h1 {
+        font-size: 32px;
+        line-height: 34px;
     }
 }
 
