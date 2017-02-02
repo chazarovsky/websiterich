@@ -124,6 +124,7 @@ figure .img-wrapper {
 
 
 @media (max-width: 1024px) {
+    /*Tabs*/
     .profit-boost ul li {
         font-size: 19px;
     }
@@ -240,6 +241,10 @@ figure .img-wrapper {
     }
 }
 @media (max-width: 420px) {
+    .profit-boost .nav li a {
+        padding: 10px 0;
+        font-size: 13px;
+    }
     .photo-grid figure img {
         height: 160px;
     }
@@ -259,6 +264,7 @@ figure .img-wrapper {
     }
 }
 @media (max-width: 370px) {
+    /*Tabs*/
     .profit-boost ul li a .category {
          font-size: 9px;
     }
