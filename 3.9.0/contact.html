@@ -5,8 +5,8 @@
         ================================================== -->
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
         <title>RICH IT</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -34,13 +34,14 @@
         <link rel="stylesheet" href="css/main.css">
         <!-- responsive css -->
         <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/richit.css">
         
         <!-- Template Javascript Files
         ================================================== -->
         <!-- modernizr js -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <!-- jquery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <!-- owl carouserl js -->
         <script src="js/owl.carousel.min.js"></script>
         <!-- bootstrap js -->
@@ -53,6 +54,7 @@
         <script src="js/jquery.fancybox.js"></script>
         <!-- template main js -->
         <script src="js/main.js"></script>
+        <script src="js/validate.js"></script>
     </head>
     <body>
         <!--
@@ -60,7 +62,7 @@
         Header Section Start
         ================================================== -->
         <header id="top-bar" class="navbar-fixed-top animated-header">
-            <div class="container">
+            <div class="container richit-navbar">
                 <div class="navbar-header">
                     <!-- responsive nav button -->
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -72,30 +74,39 @@
                     <!-- /responsive nav button -->
                     
                     <!-- logo -->
-                    <div class="navbar-brand">
+                    <div class="navbar-brand richit-brand">
                         <a href="index.html" >
-                            <img src="images/logo.png" alt="">
+                            <img src="images/logo.png" class="richit-logo" alt="">
                         </a>
                     </div>
                     <!-- /logo -->
                 </div>
                 <!-- main menu -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                <nav class="collapse navbar-collapse navbar-right richit-menu" role="navigation">
                     <div class="main-menu">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.html" >Inicio</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos analíticos<span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a href="service.html">Servicios</a></li>
-                                        <li><a href="solutions.html">Soluciones</a></li>
+                                        <li><a href="bidas.html">Big Data & Analytics Suite</a></li>
+                                        <li><a href="profit-boost.html">Profit Boost Suite</a></li>
+                                        <li><a href="Alfred.html">Custom Analytics & Managed Datalab</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="others.html">Otros desarrollos</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos IoT<span class="caret"></span></a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="http://www.ursa.richit.ai" target="_blank">URSA</a></li>
+                                        <li><a href="farm.html">Farm Optimization</a></li>
+                                        <li><a href="combustible.html">Control de Combustible</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li><a href="about.html">Nosotros</a></li>
-                            <li><a href="blog-right-sidebar.html">Blog</a></li>
                             <li><a href="contact.html">Contacto</a></li>
                         </ul>
                     </div>
@@ -108,12 +119,12 @@
         ================================================== 
             Global Page Section Start
         ================================================== -->
-        <section class="global-page-header">
+        <section class="global-page-header main-header">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="block">
-                            <h2>Contacto</h2>
+                            <h2 class="header-content">Contacto</h2>
                             <ol class="breadcrumb">
                                 <li>
                                     <a href="index.html">
@@ -137,54 +148,52 @@
         <section id="contact-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-9">
                         <div class="block">
                             <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Contáctanos</h2>
                             <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
                                 Con gusto atenderemos tu solicitud y agendaremos una demo para tu organización
                             </p>
                             <div class="contact-form">
-                                <form id="contact-form" method="post" action="sendmail.php" role="form">
+                                <form id="contact-form" name="contactForm" method="post" action="php/contact-form.php" role="form">
                         
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
-                                        <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                                        <input type="text" placeholder="Nombre" class="form-control" name="name" id="name" data-rule="minlen:4" data-msg="*Escribe al menos 4 letras.">
+                                        <div class="validation"></div>
                                     </div>
                                     
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
-                                        <input type="text" placeholder="Your Enterprise Name" class="form-control" name="e-name" id="e-name">
+                                        <input type="text" placeholder="Nombre de la empresa" class="form-control" name="companyName" id="e-name">
+                                        <div class="validation"></div>
                                     </div>
                                     
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
-                                        <input type="email" placeholder="Your Email" class="form-control" name="email" id="email" >
+                                        <input type="email" placeholder="Email" class="form-control" name="email" id="email" data-rule="email" data-msg="*Ingresa un correo en formato válido, ejemplo: usuario@correo.com.">
+                                        <div class="validation"></div>
                                     </div>
                                     
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
-                                        <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+                                        <input type="text" placeholder="Asunto" class="form-control" name="subject" id="subject" data-rule="minlen:8" data-msg="*Escribe al menos 8 caracteres en el asunto.">
+                                        <div class="validation"></div>
                                     </div>
                                     
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
-                                        <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>    
+                                        <textarea rows="6" placeholder="Mensaje" class="form-control" name="message" id="message" data-rule="required" data-msg="*Por favor escríbenos tu mensaje."></textarea>
+                                        <div class="validation"></div>  
+                                    </div>
+                                    <div class="alert alert-success hidden" id="contactSuccess">
+                                        <strong>Gracias!</strong> Tu mensaje se ha envidado, en breve estamos en contacto contigo.
+                                    </div>
+
+                                    <div class="alert alert-danger hidden" id="contactError">
+                                        <strong>Error!</strong> Ocurrió un error al enviar tu mensaje.
                                     </div>
                                     
-                                    
                                     <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
-                                        <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="Send Message">
+                                        <button type="submit" id="contact-submit" class="btn btn-default btn-send" value="Enviar" data-loading-text="Enviando...">Enviar</button>
                                     </div>                      
                                     
                                 </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                         <div class="map-area">
-                            <h2 class="subtitle  wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Encuéntranos en </h2>
-                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
-                                Conoce nuestras oficinas 
-                                
-                            </p>
-                            <div class="map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.221916224687!2d-99.14240364925095!3d19.316174349334002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01ca1da5f69b%3A0x569f2db810d16d70!2sRich+IT!5e0!3m2!1ses-419!2smx!4v1479830978345" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                
                             </div>
                         </div>
                     </div>
@@ -194,61 +203,51 @@
                         <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".3s">
                             <i class="ion-ios-location-outline"></i>
                             <h5>Pétalo No. 47, Col. El Reloj, Coyoacán <br>CDMX, México</h5>
-                            <a>contacto@richit.com.mx</a>
-                            <p>tel: 55 1234 5678</p>
+                            <p>tel: +52 55 6718 1818</p>
+                            <p>Mauricio Pérez-Rubí Derbez</p>
+                            <a>perezrubi@richit.ai</a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
                             <i class="ion-ios-location-outline"></i>
-                            <h5>5223, <br>Brasil</h5>
+                            <h5>R. Francisca Resende Merciai, 102, Barão Geraldo Campinas,<br>São Paulo, Brasil</h5>
+                            <p>tel: +52 19 99266 2113</p>
+                            <p>Bernardo França Rocha</p>
+                            <a>rocha@richit.ai</a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
                             <i class="ion-ios-location-outline"></i>
-                            <h5>5223, <br>Chile</h5>
+                            <h5>Santiago de Chile<br>Chile</h5>
+                            <p>tel: +56 9 7969 1070</p>
+                            <p>Romina Galantzan Anguita</p>
+                            <a>rgalantzan@richit.ai</a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
                             <i class="ion-ios-location-outline"></i>
-                            <h5>5223, <br>EEUU</h5>
+                            <h5>66 W. Flager Street #948, Miami, FL, 33130<br>USA</h5>
+                            <p>tel: +1 954 610 6691</p>
+                            <p>Maria Jose Millan Freyre</p>
+                            <a>mmillan@richit.ai</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- 
-        ================================================== 
-            Call To Action Section Start
-        ================================================== -->
-        <section id="call-to-action">
-                <div class="container">
-                    <div class="row">
-                        
-                        <div class="col-md-12">
-                            <div class="block">
-                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">QUEREMOS SABER DE TI</h2>
-                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Aumenta tus ingresos y mejora tu productividad.</p>
-                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contáctanos</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-
+        
         <!-- 
         ================================================== 
             Footer Section Start
         ================================================== -->
         <footer id="footer">
                 <div class="container">
-                    <div class="col-md-8">
-                        <p class="copyright">Copyright: Rich IT <span>2016</span></p>
-                        <a>Aviso de Privacidad</a>
+                    <div class="col-md-8 richit-copyright">
+                        <p class="copyright center">Copyright: Rich IT <span>2016</span></p>
+                        <a class="center" href="aviso.html">Aviso de Privacidad</a>
                     </div>
                     <div class="col-md-4">
                         <!-- Social Media -->

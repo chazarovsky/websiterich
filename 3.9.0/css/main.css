@@ -1,8 +1,10 @@
+
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Glegoo);
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 h1,
 h2,
@@ -33,19 +35,19 @@ a:hover {
 }
 .section-heading {
   text-align: center;
-  margin-bottom: 65px;
+  margin-bottom: 35px;
 }
 .section-heading p {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 300;
-  color: #727272;
-  line-height: 20px;
+  color: #2a2d33;
+  line-height: 25px;
 }
 .title {
   font-size: 30px;
   line-height: 1.1;
   font-weight: 300;
-  color: #333;
+  color: #2a2d33;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -56,7 +58,13 @@ a:hover {
   text-transform: uppercase;
 }
 .subtitle-des {
-  color: #727272;
+  color: #2a2d33;
+  font-size: 18px;
+  margin-bottom: 35px;
+  font-weight: 300;
+}
+.subtitle-cert {
+  color: #2a2d33;
   font-size: 14px;
   margin-bottom: 35px;
   font-weight: 300;
@@ -144,8 +152,8 @@ a:hover {
   background: url('../images/slider.jpg') no-repeat 50%;
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 190px;
-  padding-bottom: 100px;
+  padding-top: 430px;
+  padding-bottom: 150px;
   color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   position: relative;
@@ -195,7 +203,7 @@ a:hover {
   border-radius: 0;
 }
 #call-to-action {
-  background: #051019;
+  background-image: url("../images/cta.jpg");
   background-size: cover;
   background-attachment: fixed;
   padding: 50px 0;
@@ -213,7 +221,7 @@ a:hover {
   color: #fff;
 }
 #call-to-action .block p {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
   margin-top: 20px;
@@ -233,7 +241,7 @@ a:hover {
   margin-right: 10px;
 }
 #about {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 #about .block {
   padding: 20px 30px 0 30px;
@@ -245,7 +253,7 @@ a:hover {
   text-transform: uppercase;
 }
 #about .block p {
-  color: #727272;
+  color: #2a2d33;
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 35px;
@@ -255,7 +263,7 @@ a:hover {
 }
 .works {
   padding: 80px 0;
-  background: #FCFCFC;
+  background: #FDFDFD;
 }
 .works .block {
   position: relative;
@@ -295,6 +303,10 @@ a:hover {
 }
 .works .block .img-overly .overly a i {
   font-size: 30px;
+  color: #fff;
+}
+.works .block .img-overly .overly p {
+  font-size: 25px;
   color: #fff;
 }
 figure {
@@ -364,10 +376,11 @@ figure .buttons {
 figure figcaption {
   padding: 20px 25px;
   margin-top: 0;
-  color: #666;
+  color: #444;
 }
 figure figcaption h4 {
   margin: 0;
+  text-transform: uppercase;
 }
 figure figcaption h4 a {
   color: #02bdd5;
@@ -397,8 +410,8 @@ figure figcaption p {
 }
 #feature p {
   line-height: 25px;
-  font-size: 14px;
-  color: #777777;
+  font-size: 15px;
+  color: #2a2d33;
 }
 #feature .icon {
   text-decoration: none;
@@ -545,7 +558,7 @@ ul.social-icons li {
 .global-page-header {
   background-attachment: fixed;
   background-size: cover;
-  padding: 120px 0 25px 0;
+  padding: 100px 0 5px 0;
   position: relative;
   background: #051019;
   color: #fff;
@@ -585,7 +598,7 @@ ul.social-icons li {
   margin-top: 0;
 }
 #product-showcase-banner .block p {
-  color: #666;
+  color: #2a2d33;
   line-height: 25px;
 }
 #product-showcase-banner .block .buttons {
@@ -666,7 +679,7 @@ ul.social-icons li {
   color: #5c5c5c;
 }
 #product-description .block .content p {
-  color: #787f8c;
+  color: #2a2d33;
   line-height: 25px;
 }
 #related-items {
@@ -738,8 +751,8 @@ ul.social-icons li {
 }
 .service-page .service-parts .block p {
   padding: 0 8px;
-  font-size: 14px;
-  color: #777;
+  font-size: 17px;
+  color: #2a2d33;
   line-height: 1.7;
 }
 .works.service-page figure .buttons {
@@ -750,7 +763,7 @@ ul.social-icons li {
 .works.service-page figure .buttons2 {
   position: absolute;
   top: 30%;
-  left: 5%;
+  left: 35%;
 }
 .works.service-page figure .buttons3 {
   position: absolute;
@@ -824,12 +837,13 @@ ul.social-icons li {
 }
 .company-description {
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 .company-description .block h3 {
   margin-top: 0;
 }
 .company-description .block p {
-  color: #727272;
+  color: #2a2d33;
 }
 #team {
   margin: 50px 0;
@@ -855,7 +869,7 @@ ul.social-icons li {
   font-size: 20px;
 }
 .team-member p {
-  font-size: 14px;
+  font-size: 15px;
 }
 .team-member .social-icons a {
   background: #02bdd5;
@@ -880,10 +894,10 @@ ul.social-icons li {
   font-weight: 300;
 }
 .about-feature .about-feature-1 {
-  background: #02bdd5;
+  background: #494f5b;
 }
 .about-feature .about-feature-2 {
-  background: #00B0C7;
+  background: #6c778f;
 }
 .about-feature .about-feature-3 {
   background: #00A6BB;
@@ -960,8 +974,8 @@ article {
   border: 3px solid #fff;
 }
 .sidebar .author .author-bio p {
-  font-size: 14px;
-  color: #888;
+  font-size: 15px;
+  color: #2a2d33;
 }
 .sidebar .categories ul li {
   border-bottom: 1px solid #f0f0f0;
