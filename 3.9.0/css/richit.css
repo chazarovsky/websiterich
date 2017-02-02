@@ -132,6 +132,12 @@ figure .img-wrapper {
         padding-bottom: 100px;
         height: 500px;
     }
+   /* .value-proposition {
+        padding: 100px 30px;
+    }*/
+    .value-proposition .container{
+        width: 750px;
+    }
 }
 @media (max-width: 768px) {
     /*Tabs*/
@@ -186,7 +192,15 @@ figure .img-wrapper {
     #hero-area {
         padding-top: 320px;
     }
-    
+    .value-proposition {
+        padding: 100px 30px;
+    }
+    .main-header h2 {
+        font-size: 30px;
+    }
+    .value-proposition .container{
+        width: 80%;
+    }
     /*Footer*/
     .richit-copyright .center {
         display: block;
@@ -267,6 +281,9 @@ figure .img-wrapper {
     /*Header*/
     .main-header .header-content {
         font-size: 35px;
+    }
+    .value-proposition h2 {
+        font-size: 23px;
     }
     .value-proposition {
         padding: 28px;
