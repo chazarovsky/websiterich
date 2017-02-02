@@ -5,18 +5,27 @@ function test_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
-    return $data; }
+    return $data; 
+}
 
-$contactEmail = 'vmaceda@richit.com.mx';
-
-$name = $userEmail =  $comment = $subject = $formError = "";
+$name = $companyName = $userEmail = $subject = $comment = $formError = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    var_dump($_POST);
     if (empty($_POST["name"])) {
         $formError = "Tu nombre es necesario";
     } else {
         $name = test_input($_POST["name"]);
         if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+            $formError = "Solo letras y espacios en el nombre";
+        }
+    }
+    
+    if (empty($_POST["companyName"])) {
+        $companyName = "Ninguna";
+    } else {
+        $companyName = test_input($_POST["companyName"]);
+        if (!preg_match("/^[a-zA-Z ]*$/",$companyName)) {
             $formError = "Solo letras y espacios en el nombre";
         }
     }
@@ -47,12 +56,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo json_encode($dataResponse);
     } else {
         $contactMessage = "<br><span style='color: #777777; font-weight: bold;'>Nombre:</span> " . $name
+                        . "<br><span style='color: #777777; font-weight: bold;'>Empresa:</span> " . $companyName
                         . "<br><span style='color: #777777; font-weight: bold;'>Mensaje:</span><br> " . $comment;
         $file = '';
         send_form($userEmail, $name, $subject, $contactMessage, $file);
 
-        /*$dataResponse = array('response' => 'success', 'text' => 'Gracias :)');
-        echo json_encode($dataResponse);*/
+        $dataResponse = array('response' => 'success', 'text' => 'Gracias :)');
+        echo json_encode($dataResponse);
     }
 }
 
