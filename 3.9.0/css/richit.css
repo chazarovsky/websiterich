@@ -16,6 +16,9 @@
     color:aliceblue;
     background-size: cover;
 }
+#hero-area {
+    background-position: 86%;
+}
 .service-item h3{
     color: whitesmoke;
     font-size: 40px;
@@ -118,15 +121,16 @@ figure .img-wrapper {
 .service-description p {
     text-align: justify;
 }
-#hero-area {
-        padding-top: 42%;
-        padding-bottom: 15%;
-        background-position: 86%;
-    }
 
-@media (max-width: 1000px) {
+
+@media (max-width: 1024px) {
     .profit-boost ul li {
         font-size: 19px;
+    }
+    #hero-area {
+        padding-top: 320px;
+        padding-bottom: 100px;
+        height: 500px;
     }
 }
 @media (max-width: 768px) {
@@ -178,6 +182,11 @@ figure .img-wrapper {
     .richit-description .block .subtitle {
         margin-top: 30px;
     }
+    /*Slides*/
+    #hero-area {
+        padding-top: 320px;
+    }
+    
     /*Footer*/
     .richit-copyright .center {
         display: block;
@@ -188,11 +197,28 @@ figure .img-wrapper {
         text-align: center;
     }
 }
+@media (max-width: 736px) {
+    #hero-area {
+        height: 350px;
+        padding-top: 220px;
+        padding-bottom: 30px;
+    }
+    #hero-area h1 {
+        font-size: 30px;
+    }
+}
 @media (max-width: 600px) {
     .flex-container .col-xs-8 {
         width: 75%;
     }
-    
+    /*Main slide*/
+    #hero-area {
+        height: 275px;
+        padding-top: 180px;
+    }
+    #hero-area h1 {
+        font-size: 25px;
+    }
 }
 @media (max-width: 550px) {
     .flex-container .col-xs-8 {
@@ -205,6 +231,17 @@ figure .img-wrapper {
     }
     .photo-grid figure .img-wrapper {
         height: 160px;
+    }
+    /*Main slide*/
+    #hero-area {
+        height: 330px;
+        padding-top: 220px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #hero-area h1 {
+        font-size: 25px;
+        line-height: 30px;
     }
 }
 @media (max-width: 370px) {
@@ -247,14 +284,7 @@ figure .img-wrapper {
     .richit-description .block .subtitle {
         margin-top: 30px;
     }
-    #hero-area {
-        padding-top: 75%;
-        padding-bottom: 17%;
-    }
-    #hero-area h1 {
-        font-size: 32px;
-        line-height: 34px;
-    }
+    
 }
 
 /*=====================*/
