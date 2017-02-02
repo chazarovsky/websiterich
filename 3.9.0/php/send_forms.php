@@ -26,7 +26,7 @@ function send_form($userEmail, $userName, $subject, $body, $file){
     $mail->IsHTML(true);
     $mail->MsgHTML($body);
     //indico destinatario
-    $address = "vmaceda29@gmail.com";
+    $address = "contacto@richit.ai";
     $mail->AddAddress($address, "Contacto Rich IT ");
     $mail->CharSet = 'UTF-8';
     if(!$mail->Send()) {
