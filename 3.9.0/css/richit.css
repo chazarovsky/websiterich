@@ -124,6 +124,13 @@ figure .img-wrapper {
 
 
 @media (max-width: 1024px) {
+    /*Menu*/
+    .richit-navbar .richit-brand .richit-logo {
+       height: 33px;
+    }
+    .richit-navbar .richit-menu ul li > a {
+        padding: 10px 8px;
+    }
     /*Tabs*/
     .profit-boost ul li {
         font-size: 19px;
@@ -133,9 +140,6 @@ figure .img-wrapper {
         padding-bottom: 100px;
         height: 500px;
     }
-   /* .value-proposition {
-        padding: 100px 30px;
-    }*/
     .value-proposition .container{
         width: 750px;
     }
@@ -159,15 +163,8 @@ figure .img-wrapper {
         margin-top: 0;
     }
     /*Stack*/
-    #stack .stack-cisco {
+    #stack .logo-stack {
         padding-top: 20px;
-    }
-    #stack .stack-richit {
-        height: 90px;
-    }
-    #stack .stack-richit img {
-        position: relative;
-        top: -40px;
     }
     /*Pages content*/
     .iot-products {
@@ -280,9 +277,6 @@ figure .img-wrapper {
     /*Stack*/
     #stack img {
         width: 200px;
-    }
-    #stack .stack-richit {
-        height: 60px;
     }
     /*Header*/
     .main-header .header-content {
