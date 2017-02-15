@@ -1,20 +1,23 @@
+.value-proposition {
+    padding: 100px;
+}
 #value-proposition1 {
     background-image: url(../images/header/item-5.jpg);
     color:aliceblue;
-    padding: 100px;
     background-size: cover;
 }
 #value-proposition2 {
     background-image: url(../images/header/item-3.jpg);
     color:aliceblue;
-    padding: 100px;
     background-size: cover;
 }
 #value-proposition3 {
     background-image: url(../images/header/item-6.jpg);
     color:aliceblue;
-    padding: 100px;
     background-size: cover;
+}
+#hero-area {
+    background-position: 86%;
 }
 .service-item h3{
     color: whitesmoke;
@@ -51,15 +54,16 @@ ul.service-list li i
 }
 
 .photo-grid img {
-	display: block;
 	height: auto;
-	max-width: 100%;
+    width: 100%;
 }
 .photo-grid figure {
-	height: 200px;
-	overflow: hidden;
-	position: relative;
-	width: 360px;
+	/*overflow: hidden;
+    margin: 7px;*/
+    margin-bottom: 50px;
+}
+figure .img-wrapper {
+    cursor: pointer;
 }
 .photo-grid .portfolio-item2 {
 	height: 235px;
@@ -93,16 +97,51 @@ ul.service-list li i
 .panel-body .nav li a{
     color: #02bdd5;
 }
+/*Modules list*/
+.flex-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+/*Tabs*/
 .profit-boost ul li a img  {
-     max-width: 30px;
+    max-width: 30px;
     padding-right: 5px;
 }
-@media (max-width: 1000px) {
+/*Logo*/
+.richit-navbar .richit-brand a {
+    margin: 0;
+}
+/*Pages content*/
+.service-description p {
+    text-align: justify;
+}
+
+
+@media (max-width: 1024px) {
+    /*Tabs*/
     .profit-boost ul li {
         font-size: 19px;
     }
+    #hero-area {
+        padding-top: 320px;
+        padding-bottom: 100px;
+        height: 500px;
+    }
+   /* .value-proposition {
+        padding: 100px 30px;
+    }*/
+    .value-proposition .container{
+        width: 750px;
+    }
 }
-@media (max-width: 730px) {
+@media (max-width: 768px) {
+    /*Tabs*/
     .profit-boost ul li {
         font-size: 14px;
     }
@@ -110,8 +149,184 @@ ul.service-list li i
         display: block;
         padding-top: 6px;
     }
+    /*Modules list*/
+    .flex-container .col-sm-6 {
+        width: 70%;
+    }
+    /*Logo*/
+    .richit-navbar .richit-brand a {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    /*Stack*/
+    #stack .stack-cisco {
+        padding-top: 20px;
+    }
+    #stack .stack-richit {
+        height: 90px;
+    }
+    #stack .stack-richit img {
+        position: relative;
+        top: -40px;
+    }
+    /*Pages content*/
+    .iot-products {
+        margin-top: 30px;
+    }
+    .iot-products .block p {
+        margin-top: 30px;
+        text-align: justify;
+    }
+    #contact-section {
+        padding-top: 30px;
+    }
+    #richit-map iframe {
+        width: 100%;
+    }
+    .richit-description {
+        margin-top: -10px;
+    }
+    .richit-description .block .subtitle {
+        margin-top: 30px;
+    }
+    /*Slides*/
+    #hero-area {
+        padding-top: 320px;
+    }
+    .value-proposition {
+        padding: 100px 30px;
+    }
+    .main-header h2 {
+        font-size: 30px;
+    }
+    .value-proposition .container{
+        width: 80%;
+    }
+    /*Footer*/
+    .richit-copyright .center {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #footer .social {
+        text-align: center;
+    }
+}
+@media (max-width: 736px) {
+    #hero-area {
+        height: 350px;
+        padding-top: 220px;
+        padding-bottom: 30px;
+    }
+    #hero-area h1 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 600px) {
+    .flex-container .col-xs-8 {
+        width: 75%;
+    }
+    /*Main slide*/
+    #hero-area {
+        height: 275px;
+        padding-top: 180px;
+    }
+    #hero-area h1 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 550px) {
+    .flex-container .col-xs-8 {
+        width: 95%;
+    }
+}
+@media (max-width: 420px) {
+    .profit-boost .nav li a {
+        padding: 10px 0;
+        font-size: 13px;
+    }
+    .photo-grid figure img {
+        height: 160px;
+    }
+    .photo-grid figure .img-wrapper {
+        height: 160px;
+    }
+    /*Main slide*/
+    #hero-area {
+        height: 330px;
+        padding-top: 220px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #hero-area h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
 }
 @media (max-width: 370px) {
+    /*Tabs*/
     .profit-boost ul li a .category {
          font-size: 9px;
+    }
+    .flex-container .col-xs-8 {
+        width: 100%;
+    }
+    .photo-grid figure img {
+        height: 190px;
+    }
+    .photo-grid figure .img-wrapper {
+        height: 190px;
+    }
+    /*Stack*/
+    #stack img {
+        width: 200px;
+    }
+    #stack .stack-richit {
+        height: 60px;
+    }
+    /*Header*/
+    .main-header .header-content {
+        font-size: 35px;
+    }
+    .value-proposition h2 {
+        font-size: 23px;
+    }
+    .value-proposition {
+        padding: 28px;
+        height: 290px;
+        display: flex;
+        align-items: center;
+    }
+    #alfred-header {
+        font-size: 30px;
+    }
+    /*Page content: ;*/
+    .richit-description {
+        margin-top: -10px;
+    }
+    .richit-description .block .subtitle {
+        margin-top: 30px;
+    }
+    
+}
+
+/*=====================*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)  {
+    /*Logo*/
+    .richit-navbar {
+        margin: 0;
+    }
+    .richit-navbar .richit-brand {
+        padding-top: 1px;
+    }
+    .richit-navbar .richit-brand .richit-logo {
+       height: 30px;
+    }
+    .richit-navbar .richit-menu ul li > a {
+        padding: 10px;
+    }
 }
