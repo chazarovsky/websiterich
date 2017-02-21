@@ -121,6 +121,10 @@ figure .img-wrapper {
 .service-description p {
     text-align: justify;
 }
+/*Footer*/
+#idioms {
+    text-align: right;
+}
 
 
 @media (max-width: 1024px) {
