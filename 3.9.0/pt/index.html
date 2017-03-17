@@ -6,8 +6,8 @@
         ================================================== -->
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
         <title>RICH IT</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -166,8 +166,8 @@
             <section id="video-info">
                 <div class="container" style="padding-bottom:50px;">
                     <video controls="controls">
-                        <source src="videos/richit_video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-                        <source src="videos/richit_video.webm" type='video/webm; codecs="vp8, vorbis"' />
+                        <source src="../videos/richit_video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                        <source src="../videos/richit_video.webm" type='video/webm; codecs="vp8, vorbis"' />
                     </video>
                 </div>
             </section> <!-- /#video -->
@@ -218,10 +218,20 @@
                                     <i class="ion-social-linkedin"></i>
                                 </a>
                             </li>
+                            <div id="idioms">
+                                <span>Language</span> 
+                                <select name="defineIdiom" id="idioms" onchange="location = this.value;">
+                                    <option value="../index.html">Spanish</option>
+                                    <option value="index.html" selected>Portuguese</option>
+                                    <!--<option value="../index.html">English</option>-->
+                                </select>
+                            </div>
                         </ul>
                     </div>
                 </div>
             </footer> <!-- /#footer -->
-                
+            <script>
+                console.log(window.location.href);
+            </script>    
         </body>
     </html>
