@@ -124,6 +124,12 @@ figure .img-wrapper {
 /*Footer*/
 #idioms {
     text-align: right;
+    color: gray;
+    font-size:12px;
+}
+#idioms span {
+    text-transform:uppercase;
+    font-weight: bold;
 }
 
 
