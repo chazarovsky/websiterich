@@ -84,6 +84,14 @@
                 <!-- main menu -->
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <div class="main-menu">
+                        <div id="idioms">
+                            <span>Language</span> 
+                            <select name="defineIdiom" id="idioms" onchange="location = this.value;">
+                                <option value="/aviso.html" selected>Spanish</option>
+                                <option value="pt/aviso.html">Portuguese</option>
+                                <!--<option value="">English</option>-->
+                            </select>
+                        </div>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.html" >Inicio</a></li>
                             <li class="dropdown">
@@ -284,16 +292,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div id="idioms">
-                        <span>Language</span> 
-                        <select name="defineIdiom" id="idioms" onchange="location = this.value;">
-                            <option value="/aviso.html" selected>Spanish</option>
-                            <option value="pt/aviso.html">Portuguese</option>
-                            <!--<option value="">English</option>-->
-                        </select>
-                    </div>
                 </div>
             </footer> <!-- /#footer -->
-        
     </body>
 </html>
