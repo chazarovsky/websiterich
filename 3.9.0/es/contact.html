@@ -34,7 +34,6 @@
         <link rel="stylesheet" href="../css/main.css">
         <!-- responsive css -->
         <link rel="stylesheet" href="../css/responsive.css">
-        <!-- richit css -->
         <link rel="stylesheet" href="../css/richit.css">
         
         <!-- Template Javascript Files
@@ -55,6 +54,7 @@
         <script src="../js/jquery.fancybox.js"></script>
         <!-- template main js -->
         <script src="../js/main.js"></script>
+        <script src="../js/validate.js"></script>
     </head>
     <body>
         <!--
@@ -87,15 +87,15 @@
                         <div id="idioms">
                             <span>Language</span> 
                             <select name="defineIdiom" id="idioms" onchange="location = this.value;">
-                                <option value="../en/farm.html">English</option>
-                                <option value="farm.html" selected>Portuguese</option>
-                                <option value="../es/farm.html">Spanish</option>
+                                <option value="../en/contact.html">English</option>
+                                <option value="../pt/contact.html">Portuguese</option>
+                                <option value="contact.html" selected>Spanish</option>
                             </select>
                         </div>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html" >Início</a></li>
+                            <li><a href="index.html" >Inicio</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produtos analíticos<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos analíticos<span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a href="bidas.html">Big Data & Analytics Suite</a></li>
@@ -105,17 +105,17 @@
                                 </div>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produtos IOT<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos IoT<span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a href="http://ursa.richit.ai" target="_blank">URSA</a></li>
                                         <li><a href="farm.html">Farm Optimization</a></li>
-                                        <li><a href="combustible.html">Controle de Combustível</a></li>
+                                        <li><a href="combustible.html">Control de Combustible</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="about.html">Quem Somos</a></li>
-                            <li><a href="contact.html">Contate-nos</a></li>
+                            <li><a href="about.html">Nosotros</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -132,54 +132,121 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="block">
-                            <h2 class="header-content">Farm Optimization</h2>
+                            <h2 class="header-content">Contacto</h2>
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="index.html">
+                                        <i class="ion-ios-home"></i>
+                                        Inicio
+                                    </a>
+                                </li>
+                                <li class="active">Contacto</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </div>   
+        </section><!--/#page-header-->
+
 
         <!-- 
         ================================================== 
-            Company Description Section Start
+            Contact Section Start
         ================================================== -->
-        <section class="company-description iot-products">
+        <section id="contact-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 wow fadeInLeft" data-wow-delay=".3s" >
-                        <img src="../images/about/farm.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <div class="block">
-                            <p  class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms">
-                                Por meio de uma integração vanguardista de fácil instalação e operação, projetamos um sistema de monitoramento, controle e otimização do rendimento na produção de carne de ave em granjas avícolas. Nosso sistema permite aumentar o rendimento de produção, em peso, até 10%, além de gerar e manter registros operacionais que demonstram uma gestão eficiente e respeitador do bem-estar animal durante o seu ciclo de vida. 
-                            </p>  
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Contáctanos</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                                Con gusto atenderemos tu solicitud y agendaremos una demo para tu organización
+                            </p>
+                            <div class="contact-form">
+                                <form id="contact-form" name="contactForm" method="post" action="php/contact-form.php" role="form">
+                        
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                        <input type="text" placeholder="Nombre" class="form-control" name="name" id="name" data-rule="minlen:4" data-msg="*Escribe al menos 4 letras.">
+                                        <div class="validation"></div>
+                                    </div>
+                                    
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                        <input type="text" placeholder="Nombre de la empresa" class="form-control" name="companyName" id="e-name">
+                                        <div class="validation"></div>
+                                    </div>
+                                    
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
+                                        <input type="email" placeholder="Email" class="form-control" name="email" id="email" data-rule="email" data-msg="*Ingresa un correo en formato válido, ejemplo: usuario@correo.com.">
+                                        <div class="validation"></div>
+                                    </div>
+                                    
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
+                                        <input type="text" placeholder="Asunto" class="form-control" name="subject" id="subject" data-rule="minlen:8" data-msg="*Escribe al menos 8 caracteres en el asunto.">
+                                        <div class="validation"></div>
+                                    </div>
+                                    
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
+                                        <textarea rows="6" placeholder="Mensaje" class="form-control" name="message" id="message" data-rule="required" data-msg="*Por favor escríbenos tu mensaje."></textarea>
+                                        <div class="validation"></div>  
+                                    </div>
+                                    <div class="alert alert-success hidden" id="contactSuccess">
+                                        <strong>Gracias!</strong> Tu mensaje se ha envidado, en breve estamos en contacto contigo.
+                                    </div>
+
+                                    <div class="alert alert-danger hidden" id="contactError">
+                                        <strong>Error!</strong> Ocurrió un error al enviar tu mensaje.
+                                    </div>
+                                    
+                                    <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                                        <button type="submit" id="contact-submit" class="btn btn-default btn-send" value="Enviar" data-loading-text="Enviando...">Enviar</button>
+                                    </div>                      
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row address-details">
+                    <div class="col-md-3">
+                        <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".3s">
+                            <i class="ion-ios-location-outline"></i>
+                            <h5>Pétalo No. 47, Col. El Reloj, Coyoacán <br>CDMX, México</h5>
+                            <p>tel: +52 55 6718 1818</p>
+                            <p>Mauricio Pérez-Rubí Derbez</p>
+                            <a>perezrubi@richit.ai</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
+                            <i class="ion-ios-location-outline"></i>
+                            <h5>R. Francisca Resende Merciai, 102, Barão Geraldo Campinas,<br>São Paulo, Brasil</h5>
+                            <p>tel: +52 19 99266 2113</p>
+                            <p>Bernardo França Rocha</p>
+                            <a>rocha@richit.ai</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
+                            <i class="ion-ios-location-outline"></i>
+                            <h5>Santiago de Chile<br>Chile</h5>
+                            <p>tel: +56 9 7969 1070</p>
+                            <p>Romina Galantzan Anguita</p>
+                            <a>rgalantzan@richit.ai</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
+                            <i class="ion-ios-location-outline"></i>
+                            <h5>66 W. Flager Street #948, Miami, FL, 33130<br>USA</h5>
+                            <p>tel: +1 954 610 6691</p>
+                            <p>Maria Jose Millan Freyre</p>
+                            <a>mmillan@richit.ai</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- 
-        ================================================== 
-            Call To Action Section Start
-        ================================================== -->
-        <section id="call-to-action">
-                <div class="container">
-                    <div class="row">
-                        
-                        <div class="col-md-12">
-                            <div class="block">
-                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">QUEREMOS SABER DE VOCÊ</h2>
-                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Aumente suas receitas e melhore sua produtividade.</p>
-                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms"><strong>Contate-nos</strong></a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-
         <!-- 
         ================================================== 
             Footer Section Start
@@ -211,6 +278,6 @@
                         </ul>
                     </div>
                 </div>
-            </footer> <!-- /#footer --> 
+            </footer> <!-- /#footer -->
     </body>
 </html>

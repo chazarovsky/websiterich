@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="no-js">
     <head>
@@ -34,7 +35,8 @@
         <link rel="stylesheet" href="../css/main.css">
         <!-- responsive css -->
         <link rel="stylesheet" href="../css/responsive.css">
-        <!-- richit css -->
+        <!-- video css -->
+        <link rel="stylesheet" href="../css/video.css">
         <link rel="stylesheet" href="../css/richit.css">
         
         <!-- Template Javascript Files
@@ -87,108 +89,123 @@
                         <div id="idioms">
                             <span>Language</span> 
                             <select name="defineIdiom" id="idioms" onchange="location = this.value;">
-                                <option value="../en/farm.html">English</option>
-                                <option value="farm.html" selected>Portuguese</option>
-                                <option value="../es/farm.html">Spanish</option>
+                                <option value="index.html" selected>English</option>
+                                <option value="../pt/index.html">Portuguese</option>
+                                <option value="../es/index.html">Spanish</option>
                             </select>
                         </div>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html" >Início</a></li>
+                            <li><a href="index.html" >Home</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produtos analíticos<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">ANALYTICAL PRODUCTS<span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a href="bidas.html">Big Data & Analytics Suite</a></li>
                                         <li><a href="profit-boost.html">Profit Boost Suite</a></li>
-                                        <li><a href="Alfred.html">Custom Analytics & Managed Datalab</a></li>
+                                        <li><a href="combustible.html">Custom Analytics & Managed Datalab</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produtos IOT<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">IoT products<span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a href="http://ursa.richit.ai" target="_blank">URSA</a></li>
                                         <li><a href="farm.html">Farm Optimization</a></li>
-                                        <li><a href="combustible.html">Controle de Combustível</a></li>
+                                        <li><a href="combustible.html">FUEL CONTROL</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="about.html">Quem Somos</a></li>
-                            <li><a href="contact.html">Contate-nos</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
                 <!-- /main nav -->
             </div>
         </header>
-
-        <!-- 
-        ================================================== 
-            Global Page Section Start
-        ================================================== -->
-        <section class="global-page-header main-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="block">
-                            <h2 class="header-content">Farm Optimization</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 
-        ================================================== 
-            Company Description Section Start
-        ================================================== -->
-        <section class="company-description iot-products">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 wow fadeInLeft" data-wow-delay=".3s" >
-                        <img src="../images/about/farm.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="block">
-                            <p  class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms">
-                                Por meio de uma integração vanguardista de fácil instalação e operação, projetamos um sistema de monitoramento, controle e otimização do rendimento na produção de carne de ave em granjas avícolas. Nosso sistema permite aumentar o rendimento de produção, em peso, até 10%, além de gerar e manter registros operacionais que demonstram uma gestão eficiente e respeitador do bem-estar animal durante o seu ciclo de vida. 
-                            </p>  
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         
-        <!-- 
-        ================================================== 
-            Call To Action Section Start
+        <!--
+        ==================================================
+        Slider Section Start
         ================================================== -->
-        <section id="call-to-action">
+        <section id="hero-area" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="block wow fadeInUp" data-wow-delay=".3s">
+                            
+                            <!-- Slider -->
+                            <section class="cd-intro">
+                                <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
+                                <span>
+                                    We transform your data into
+                                </span>
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">value</b>
+                                </span>
+                                </h1>
+                                </section> <!-- cd-intro -->
+                                <!-- /.slider -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--/#main-slider-->
+            <!--
+            ==================================================
+            Slider Section Start
+            ================================================== -->
+            <section id="about">
+                <div class="container">
+                    <div class="section-heading">
+                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">RICH IT</h1>
+                        <p class="wow fadeInDown" data-wow-delay=".5s">
+                            We join our customers in a journey to discover and unleash the potential of the information value <br>through integration and development of tools that can prompt knowledge and lead to well-informed decisions.
+                        </p>
+                    </div>
+                </div>
+            </section> <!-- /#about -->
+            <!--
+            ==================================================
+            Video Section Start
+            ================================================== -->
+            <section id="video-info">
+                <div class="container" style="padding-bottom:50px;">
+                    <video controls="controls">
+                        <source src="videos/richit_video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                        <source src="videos/richit_video.webm" type='video/webm; codecs="vp8, vorbis"' />
+                    </video>
+                </div>
+            </section> <!-- /#video -->
+            <!--
+            ==================================================
+            Call To Action Section Start
+            ================================================== -->
+            <section id="call-to-action">
                 <div class="container">
                     <div class="row">
-                        
                         <div class="col-md-12">
                             <div class="block">
-                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">QUEREMOS SABER DE VOCÊ</h2>
-                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Aumente suas receitas e melhore sua produtividade.</p>
-                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms"><strong>Contate-nos</strong></a>
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">WE WOULD LIKE TO KNOW ABOUT YOU</h2>
+                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Increase your income and improve your productivity</p>
+                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms"><strong>Contact us</strong></a>
                             </div>
                         </div>
                         
                     </div>
                 </div>
             </section>
-
-        <!-- 
-        ================================================== 
+            <!--
+            ==================================================
             Footer Section Start
-        ================================================== -->
-        <footer id="footer">
+            ================================================== -->
+            <footer id="footer">
                 <div class="container">
                     <div class="col-md-8 richit-copyright">
                         <p class="copyright center">Copyright: Rich IT <span>2016</span></p>
-                        <a class="center" href="aviso.html">Aviso de Privacidad</a>
+                        <a class="center" href="aviso.html">Privacy Notice</a>
                     </div>
                     <div class="col-md-4">
                         <!-- Social Media -->
@@ -211,6 +228,7 @@
                         </ul>
                     </div>
                 </div>
-            </footer> <!-- /#footer --> 
-    </body>
-</html>
+            </footer> <!-- /#footer -->
+                
+        </body>
+    </html>
