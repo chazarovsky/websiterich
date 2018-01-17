@@ -16,6 +16,11 @@
     color:aliceblue;
     background-size: cover;
 }
+#value-proposition4 {
+    background-image: url(../images/header/item-8.jpg);
+    color:aliceblue;
+    background-size: cover;
+}
 #hero-area {
     background-position: 86%;
 }
