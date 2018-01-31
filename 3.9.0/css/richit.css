@@ -16,6 +16,11 @@
     color:aliceblue;
     background-size: cover;
 }
+#value-proposition4 {
+    background-image: url(../images/header/item-8.jpg);
+    color:aliceblue;
+    background-size: cover;
+}
 #hero-area {
     background-position: 86%;
 }
@@ -120,6 +125,16 @@ figure .img-wrapper {
 /*Pages content*/
 .service-description p {
     text-align: justify;
+}
+/*Footer*/
+#idioms {
+    text-align: right;
+    color: gray;
+    font-size:12px;
+}
+#idioms span {
+    text-transform:uppercase;
+    font-weight: bold;
 }
 
 
