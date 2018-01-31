@@ -5,8 +5,8 @@
         ================================================== -->
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
         <title>RICH IT</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -19,23 +19,23 @@
         <!-- Template CSS Files
         ================================================== -->
         <!-- Twitter Bootstrs CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <!-- Ionicons Fonts Css -->
-        <link rel="stylesheet" href="css/ionicons.min.css">
+        <link rel="stylesheet" href="../css/ionicons.min.css">
         <!-- animate css -->
-        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="../css/animate.css">
         <!-- Hero area slider css-->
-        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="../css/slider.css">
         <!-- owl craousel css -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" href="../css/owl.carousel.css">
+        <link rel="stylesheet" href="../css/owl.theme.css">
+        <link rel="stylesheet" href="../css/jquery.fancybox.css">
         <!-- template main css file -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../css/main.css">
         <!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="../css/responsive.css">
         <!-- richit css -->
-        <link rel="stylesheet" href="css/richit.css">
+        <link rel="stylesheet" href="../css/richit.css">
         
         <!-- Template Javascript Files
         ================================================== -->
@@ -76,7 +76,7 @@
                     <!-- logo -->
                     <div class="navbar-brand richit-brand">
                         <a href="index.html" >
-                            <img src="images/logo.png" class="richit-logo" alt="">
+                            <img src="../images/logo.png" class="richit-logo" alt="">
                         </a>
                     </div>
                     <!-- /logo -->
@@ -84,10 +84,18 @@
                 <!-- main menu -->
                 <nav class="collapse navbar-collapse navbar-right richit-menu" role="navigation">
                     <div class="main-menu">
+                        <div id="idioms">
+                            <span>Language</span> 
+                            <select name="defineIdiom" id="idioms" onchange="location = this.value;">
+                                <option value="farm.html" selected>English</option>
+                                <option value="../pt/farm.html">Portuguese</option>
+                                <option value="../es/farm.html">Spanish</option>
+                            </select>
+                        </div>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html" >Inicio</a></li>
+                            <li><a href="index.html" >Home</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos analíticos<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Analytical Products<span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a href="bidas.html">Big Data & Analytics Suite</a></li>
@@ -97,17 +105,17 @@
                                 </div>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos IoT<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">IoT Products<span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a href="http://ursa.richit.ai" target="_blank">URSA</a></li>
                                         <li><a href="farm.html">Farm Optimization</a></li>
-                                        <li><a href="combustible.html">Control de Combustible</a></li>
+                                        <li><a href="combustible.html">Fuel Control</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="about.html">Nosotros</a></li>
-                            <li><a href="contact.html">Contacto</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -139,12 +147,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 wow fadeInLeft" data-wow-delay=".3s" >
-                        <img src="images/about/farm.jpg" alt="" class="img-responsive">
+                        <img src="../images/about/farm.jpg" alt="" class="img-responsive">
                     </div>
                     <div class="col-md-8">
                         <div class="block">
                             <p  class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms">
-                                Mediante una integración vanguardista de fácil instalación y operación, hemos diseñado un sistema de monitoreo, control y optimización del rendimiento en la producción de carne de ave en granjas avícolas. Nuestro sistema permite aumentar el rendimiento de la producción, en peso, de hasta en un 10%, además de generar y conservar bitácoras de operación que demuestran un manejo eficiente y respetuoso del bienestar del animal durante su ciclo de vida.
+                                We have designed a monitoring, control and performance optimization system in the poultry farm production through a cutting-edge easy-to-install and to operate integration. Our system allows an increase of 10% in performance in production and weight. In addition, the system generates and keeps operational logbooks that prove an efficient and respectful management of the wellbeing of the animal during its life cycle.
                             </p>  
                         </div>
                     </div>
@@ -162,9 +170,9 @@
                         
                         <div class="col-md-12">
                             <div class="block">
-                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">QUEREMOS SABER DE TI</h2>
-                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Aumenta tus ingresos y mejora tu productividad.</p>
-                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms"><strong>Contáctanos</strong></a>
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">WE WOULD LIKE TO KNOW ABOUT YOU</h2>
+                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Increase your income and improve your productivity</p>
+                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms"><strong>Contact us</strong></a>
                             </div>
                         </div>
                         
@@ -180,7 +188,7 @@
                 <div class="container">
                     <div class="col-md-8 richit-copyright">
                         <p class="copyright center">Copyright: Rich IT <span>2016</span></p>
-                        <a class="center" href="aviso.html">Aviso de Privacidad</a>
+                        <a class="center" href="aviso.html">Privacy notice</a>
                     </div>
                     <div class="col-md-4">
                         <!-- Social Media -->

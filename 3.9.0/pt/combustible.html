@@ -5,8 +5,8 @@
         ================================================== -->
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
         <title>RICH IT</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -19,42 +19,42 @@
         <!-- Template CSS Files
         ================================================== -->
         <!-- Twitter Bootstrs CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <!-- Ionicons Fonts Css -->
-        <link rel="stylesheet" href="css/ionicons.min.css">
+        <link rel="stylesheet" href="../css/ionicons.min.css">
         <!-- animate css -->
-        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="../css/animate.css">
         <!-- Hero area slider css-->
-        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="../css/slider.css">
         <!-- owl craousel css -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" href="../css/owl.carousel.css">
+        <link rel="stylesheet" href="../css/owl.theme.css">
+        <link rel="stylesheet" href="../css/jquery.fancybox.css">
         <!-- template main css file -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../css/main.css">
         <!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="../css/responsive.css">
         <!-- richit css -->
-        <link rel="stylesheet" href="css/richit.css">
+        <link rel="stylesheet" href="../css/richit.css">
         
         <!-- Template Javascript Files
         ================================================== -->
         <!-- modernizr js -->
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
         <!-- jquery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <!-- owl carouserl js -->
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
         <!-- bootstrap js -->
 
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
         <!-- wow js -->
-        <script src="js/wow.min.js"></script>
+        <script src="../js/wow.min.js"></script>
         <!-- slider js -->
-        <script src="js/slider.js"></script>
-        <script src="js/jquery.fancybox.js"></script>
+        <script src="../js/slider.js"></script>
+        <script src="../js/jquery.fancybox.js"></script>
         <!-- template main js -->
-        <script src="js/main.js"></script>
+        <script src="../js/main.js"></script>
     </head>
     <body>
         <!--
@@ -76,7 +76,7 @@
                     <!-- logo -->
                     <div class="navbar-brand richit-brand">
                         <a href="index.html" >
-                            <img src="images/logo.png" class="richit-logo" alt="">
+                            <img src="../images/logo.png" class="richit-logo" alt="">
                         </a>
                     </div>
                     <!-- /logo -->
@@ -84,10 +84,18 @@
                 <!-- main menu -->
                 <nav class="collapse navbar-collapse navbar-right richit-menu" role="navigation">
                     <div class="main-menu">
+                        <div id="idioms">
+                            <span>Language</span> 
+                            <select name="defineIdiom" id="idioms" onchange="location = this.value;">
+                                <option value="../en/combustible.html">English</option>
+                                <option value="combustible.html" selected>Portuguese</option>
+                                <option value="../es/combustible.html">Spanish</option>
+                            </select>
+                        </div>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html" >Inicio</a></li>
+                            <li><a href="index.html" >Início</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos analíticos<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produtos analíticos<span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a href="bidas.html">Big Data & Analytics Suite</a></li>
@@ -97,17 +105,17 @@
                                 </div>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos IoT<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produtos IOT<span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a href="http://ursa.richit.ai" target="_blank">URSA</a></li>
                                         <li><a href="farm.html">Farm Optimization</a></li>
-                                        <li><a href="combustible.html">Control de Combustible</a></li>
+                                        <li><a href="combustible.html">Controle de Combustível</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="about.html">Nosotros</a></li>
-                            <li><a href="contact.html">Contacto</a></li>
+                            <li><a href="about.html">Quem Somos</a></li>
+                            <li><a href="contact.html">Contate-nos</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -124,7 +132,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="block">
-                            <h2 class="header-content">Control de Combustible</h2>
+                            <h2 class="header-content">Controle de Combustível</h2>
                         </div>
                     </div>
                 </div>
@@ -139,14 +147,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 wow fadeInLeft" data-wow-delay=".3s" >
-                        <img src="images/about/combustible.jpg" alt="" class="img-responsive">
+                        <img src="../images/about/combustible.jpg" alt="" class="img-responsive">
                     </div>
                     <div class="col-md-8">
                         <div class="block">
                             <p  class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms">
-                                La integración de tecnologías de la información a través de la ciencia de datos hace posible controlar de una manera automática el rendimiento óptimo del combustible en grandes flotillas de automotores. En RICH IT, diseñamos e implementamos soluciones a la medida de nuestros clientes que permiten el monitoreo de los niveles, rendimiento y control automático, a través de todo el ciclo de uso, de un insumo tan preciado y costoso como lo es el combustible.</p> 
+                                A integração da tecnologia da informação por meio da ciência de dados torna possível controlar de uma maneira automática o rendimento ótimo de combustível em grandes frotas de veículos. Na RICH IT, desenhamos e implementamos  soluções a medida de nossos clientes, que permitem o monitoramento dos níveis, rendimento e controle automático, durante todo o ciclo de uso de um insumo tão apreciado e custoso como o combustível.</p> 
                             <p class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms">
-                                Esta solución está disponible para flotillas de automóviles, transporte de carga en general y redes de distribución, públicas y privadas, le permite generar importantes ahorros y un nivel de visibilidad total.
+                                Esta solução está disponível para frotas de automóveis, transporte de carga em geral e redes de distribuição, públicas e privadas, e permite gerar importantes economias e um nível de visibilidade total.
                             </p>                      
                         </div>
                     </div>
@@ -164,9 +172,9 @@
                         
                         <div class="col-md-12">
                             <div class="block">
-                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">QUEREMOS SABER DE TI</h2>
-                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Aumenta tus ingresos y mejora tu productividad.</p>
-                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms"><strong>Contáctanos</strong></a>
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">QUEREMOS SABER DE VOCÊ</h2>
+                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Aumente suas receitas e melhore sua produtividade.</p>
+                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms"><strong>Contate-nos</strong></a>
                             </div>
                         </div>
                         
@@ -182,7 +190,7 @@
                 <div class="container">
                     <div class="col-md-8 richit-copyright">
                         <p class="copyright center">Copyright: Rich IT <span>2016</span></p>
-                        <a class="center" href="aviso.html">Aviso de Privacidad</a>
+                        <a class="center" href="aviso.html">Aviso de Privacidade</a>
                     </div>
                     <div class="col-md-4">
                         <!-- Social Media -->
@@ -206,6 +214,5 @@
                     </div>
                 </div>
             </footer> <!-- /#footer -->
-        
     </body>
 </html>
