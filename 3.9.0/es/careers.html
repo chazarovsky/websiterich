@@ -40,21 +40,21 @@
         <!-- Template Javascript Files
         ================================================== -->
         <!-- modernizr js -->
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
         <!-- jquery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <!-- owl carouserl js -->
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
         <!-- bootstrap js -->
 
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
         <!-- wow js -->
-        <script src="js/wow.min.js"></script>
+        <script src="../js/wow.min.js"></script>
         <!-- slider js -->
-        <script src="js/slider.js"></script>
-        <script src="js/jquery.fancybox.js"></script>
+        <script src="../js/slider.js"></script>
+        <script src="../js/jquery.fancybox.js"></script>
         <!-- template main js -->
-        <script src="js/main.js"></script>
+        <script src="../js/main.js"></script>
     </head>
     <body>
         <!--
@@ -85,37 +85,26 @@
                 <nav class="collapse navbar-collapse navbar-right richit-menu" role="navigation">
                     <div class="main-menu">
                         <div id="idioms">
-                            <span>Language</span> 
+                            <span>Language</span>
                             <select name="defineIdiom" id="idioms" onchange="location = this.value;">
-                                <option value="farm.html" selected>English</option>
-                                <option value="../pt/farm.html">Portuguese</option>
-                                <option value="../es/farm.html">Spanish</option>
+                                <option value="../en/careers.html">English</option>
+                                <option value="careers.html" selected>Spanish</option>
                             </select>
                         </div>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="index.html" >Inicio</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Analytical Products<span class="caret"></span></a>
+                                <a href="supply.html" class="dropdown-toggle" data-toggle="dropdown">Oferta<span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a href="bidas.html">Big Data & Analytics Suite</a></li>
-                                        <li><a href="profit-boost.html">Profit Boost Suite</a></li>
-                                        <li><a href="Alfred.html">Custom Analytics & Managed Datalab</a></li>
+                                        <li><a href="services.html">Servicios</a></li>
+                                        <li><a href="products.html">Productos</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">IoT Products<span class="caret"></span></a>
-                                <div class="dropdown-menu">
-                                    <ul>
-                                        <li><a href="http://ursa.richit.ai" target="_blank">URSA</a></li>
-                                        <li><a href="farm.html">Farm Optimization</a></li>
-                                        <li><a href="combustible.html">Fuel Control</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html">Nosotros</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                            <li><a href="careers.html">Oportunidades de trabajo</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -132,7 +121,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="block">
-                            <h2 class="header-content">Farm Optimization</h2>
+                            <h2 class="header-content">Oportunidades de trabajo</h2>
                         </div>
                     </div>
                 </div>
@@ -143,23 +132,45 @@
         ================================================== 
             Company Description Section Start
         ================================================== -->
-        <section class="company-description iot-products">
+        <section class="company-description richit-description">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 wow fadeInLeft" data-wow-delay=".3s" >
-                        <img src="../images/about/farm.jpg" alt="" class="img-responsive">
+                    <div class="col-md-6 wow fadeInLeft" data-wow-delay=".3s" >
+                        <img src="../images/cards/item-1.jpg" alt="" class="img-responsive">
                     </div>
-                    <div class="col-md-8">
-                        <div class="block">
+                    <div class="col-md-6">
+                        <div class="block service-description">
+                            <h3 class="subtitle wow fadeInUp" data-wow-delay=".3s" data-wow-duration="500ms">Trabaja con nosotros</h3>
                             <p  class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms">
-                                We have designed a monitoring, control and performance optimization system in the poultry farm production through a cutting-edge easy-to-install and to operate integration. Our system allows an increase of 10% in performance in production and weight. In addition, the system generates and keeps operational logbooks that prove an efficient and respectful management of the wellbeing of the animal during its life cycle.
-                            </p>  
+                                RICH IT es una de las consultoras especializadas en ciencia de datos de mayor crecimiento en América Latina. Únete a nuestro equipo, manda tu CV, posición de interés y ejemplos de tu trabajo.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
+        <section id="service" class="section-padding wow fadeInDown delay-05s">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="service-item">
+                  <h3 class="title wow fadeInDown animated" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown; text-align: center;">Buscamos</h3>
+                    <hr>
+                    <ul class="service-list">
+                        <li><strong>Data Scientists:</strong> Aprendizaje estadístico, aprendizaje de máquina, etc.</li>
+                        <li><strong>Data Engineer:</strong> Integración de datos, arquitectura de datos, Linux, SQL, No SQL, Hadoop, Python, infrastructura física y en la nube.</li>
+                        <li><strong>Data Artist:</strong> Diseño de información, visualizaciones gráficas, mapas infografías, dashboards (Java Script, D3, CSS, HTML5, GIS, diseño, sentido estético)</li>
+                        <li><strong>Data Consultant:</strong> Asiste a las organizaciones en la implementación de mejores prácticas para la administración y minería de datos. Se apoya en metodologías como Cobit, PMP, ITIL, DMM, Data Governance CRISP DM, etc.</li>
+                        <li><strong>Data Developer:</strong> Desarrollo de productos de datos. Entrega los modelos como servicio y trabaja en ingesta de datos (C++, Python, Ruby, C#)</li>
+                        <li><strong>Data Project Manager:</strong> Administra proyectos de datos.</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
         <!-- 
         ================================================== 
             Call To Action Section Start
@@ -170,9 +181,9 @@
                         
                         <div class="col-md-12">
                             <div class="block">
-                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">WE WOULD LIKE TO KNOW ABOUT YOU</h2>
-                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Increase your income and improve your productivity</p>
-                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms"><strong>Contact us</strong></a>
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">QUEREMOS SABER DE TI</h2>
+                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Aumenta tus ingresos y mejora tu productividad.</p>
+                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms"><strong>Contáctanos</strong></a>
                             </div>
                         </div>
                         
@@ -188,7 +199,7 @@
                 <div class="container">
                     <div class="col-md-8 richit-copyright">
                         <p class="copyright center">Copyright: Rich IT <span>2016</span></p>
-                        <a class="center" href="aviso.html">Privacy notice</a>
+                        <a class="center" href="aviso.html">Aviso de Privacidad</a>
                     </div>
                     <div class="col-md-4">
                         <!-- Social Media -->
@@ -212,6 +223,5 @@
                     </div>
                 </div>
             </footer> <!-- /#footer -->
-        
     </body>
 </html>
