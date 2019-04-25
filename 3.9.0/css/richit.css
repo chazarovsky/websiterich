@@ -320,6 +320,196 @@ figure .img-wrapper {
     
 }
 
+/* tabla */
+
+// The essential styling
+.row2 {
+  box-sizing: border-box;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.cell {
+  display: table-cell;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+}
+
+@supports(display: flex) {
+  .row2 {
+    display: flex;
+  }
+  // display: block is needed to allow inline-block content inside a cell, if there is vertical alignment, we need display: flex
+  .cell {
+    display: block;
+  }
+  .cell-valign-middle,
+  .cell-valign-bottom {
+    display: flex;
+  }
+}
+
+.cell-min {
+  width: 1%;
+  flex: none auto;
+}
+
+.cell-max {
+  width: 100%;
+  flex: 1 100%;
+}
+
+.row2 {
+  border-collapse: seperate;
+  border-spacing: 8px 0;
+  padding: 4px;
+}
+
+.cell {
+  border-radius: 6px;
+  background: rgba(#888, 0.85);
+  margin-right: 8px;
+  padding: 6px;
+}
+
+.cellcro {
+  border-radius: 6px;
+  padding: 6px;
+  width: 100%;
+}
+
+.cellStatic{
+  border-radius: 6px;
+  background: rgba(#888, 0.85);
+  margin-right: 8px;
+  padding: 6px;
+  width: 15px;
+  max-width: 15px;
+
+}
+
+.cell cell-1-5 {
+    flex: none;
+    width: 20%;
+  }
+
+.cell cell-nowrap {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+.cell cell-valign-middle {
+    vertical-align: middle;
+    justify-content: center;
+  }
+
+.cell cell-valign-bottom {
+    vertical-align: bottom;
+    justify-content: flex-end;
+  }
+
+.cell cell-align-center {
+    text-align: center;
+  }
+
+.cell cell-align-right {
+    text-align: right;
+  }
+
+.cell cell-100px {
+    flex: none;
+    width: 25px;
+    max-width: 25px;
+  }
+
+
+/* cajitas de la tabla */
+
+.cajitas {
+  width: 25%;
+  height:25%;
+  background-color: darkviolet;
+}
+
+.rectangle1 {
+  border-radius: 6px;
+  height: 10px;
+  width: 15%;
+  background-color: #2686d5;
+}
+
+.rectangle2 {
+  margin-left: 5%;
+  border-radius: 6px;
+  height: 10px;
+  width: 45%;
+  background-color: #2686d5;
+}
+
+.rectangle3 {
+  margin-left: 45%;
+  border-radius: 6px;
+  height: 10px;
+  width:5%;
+  background-color: #2686d5;
+}
+
+.rectangle4 {
+  margin-left: 45%;
+  border-radius: 6px;
+  height: 10px;
+  width: 20%;
+  background-color: #2686d5;
+}
+
+
+.rectangle5 {
+  margin-left: 45%;
+  border-radius: 6px;
+  height: 10px;
+  width: 40%;
+  background-color: #2686d5;
+}
+
+.rectangle6 {
+  margin-left: 65%;
+  border-radius: 6px;
+  height: 10px;
+  width: 20%;
+  background-color: #2686d5;
+}
+
+.rectangle7 {
+  margin-left: 85%;
+  border-radius: 6px;
+  height: 10px;
+  width: 15%;
+  background-color: #2686d5;
+}
+
+.rectang0 {
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  color: #fafafa;
+  font-size: 16px;
+  background-color: #0b2236;
+}
+
+
+.rectanguloTabla {
+  margin-left: 4px;
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  color: #fafafa;
+  font-size: 16px;
+  background-color: #2686d5;
+}
+
+
 /*=====================*/
 @media only screen 
 and (min-device-width : 768px) 
