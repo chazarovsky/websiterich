@@ -1,0 +1,34 @@
+body{
+	
+	background-color: RGB(0,27,66);
+		
+}
+
+#timberland-region-map {
+  position: relative;
+}
+#timberland-region-map #timberland-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+#timberland-region-map .fallback-image {
+  max-width: 100%;
+}
+#timberland-region-map .loader {
+  position: absolute;
+  top: calc(50% - 16px);
+  left: calc(50% - 16px);
+}
+.wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: 'Josefin Sans', sans-serif;
+  
+}
+.wrapper h5 {
+  text-align: center;
+  text-transform: uppercase;
+}
