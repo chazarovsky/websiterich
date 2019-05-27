@@ -17,13 +17,13 @@ window.onload = function() {
 		west: 'http://35.235.95.12:3000/',
 		midwest: 'http://35.235.95.12:3000/',
 		south: 'http://35.235.68.160:5608/app/kibana#/dashboard/478f6740-7b3e-11e9-a55e-6b9ca2fb3578?_g=(refreshInterval:(pause:!t,value:0),time:(from:now-90d,mode:quick,to:now))&_a=(description:"rsp%20demo",filters:!(),fullScreenMode:!t,options:(darkTheme:!f,hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(),gridData:(h:13,i:"1",w:24,x:0,y:0),id:"3ad5a6e0-7b3e-11e9-a55e-6b9ca2fb3578",panelIndex:"1",title:Mensajes,type:visualization,version:"6.5.4"),(embeddableConfig:(),gridData:(h:13,i:"2",w:24,x:24,y:0),id:fa738210-7b43-11e9-a55e-6b9ca2fb3578,panelIndex:"2",title:"",type:visualization,version:"6.5.4"),(embeddableConfig:(),gridData:(h:10,i:"3",w:48,x:0,y:13),id:d5094d60-7b44-11e9-a55e-6b9ca2fb3578,panelIndex:"3",title:Neutral,type:visualization,version:"6.5.4")),query:(language:lucene,query:""),timeRestore:!f,title:rsp_demo,viewMode:full)',
-		// northeast: 'https://www.google.com/#q=northeast'
+		northeast: 'https://github.com/chazarovsky/websiterich/blob/master/3.9.0/images/RSPcanvas.jpeg?raw=true'
 	},
 	images = {
 		west: 'https://github.com/chazarovsky/websiterich/blob/master/3.9.0/images/texto1.png?raw=true',
 		midwest: 'https://github.com/chazarovsky/websiterich/blob/master/3.9.0/images/texto2.png?raw=true',
 		south: 'https://github.com/chazarovsky/websiterich/blob/master/3.9.0/images/texto03-01.png?raw=true',
-		northeast: 'https://cdn-images-1.medium.com/max/1600/1*ATck_WL05xl4cdzyk7quuw.png'
+		northeast: 'https://github.com/chazarovsky/websiterich/blob/master/3.9.0/images/lineaBlanca-01.png?raw=true'
 	},
 	polygons = {
 		west: [
@@ -34,30 +34,34 @@ window.onload = function() {
             {x:0, y:100},      //  -|_| 4
             */
             
-            {x:120, y:280},        // .  1
-            {x:275, y:280},      //  -  2
-            {x:275, y:380},    // -|_  3
-            {x:120, y:380},      //  -|_| 4
+            {x:265, y:800},        // .  1
+            {x:720, y:800},      //  -  2
+            {x:720, y:1000},    // -|_  3
+            {x:265, y:1000},      //  -|_| 4
         
             
 		],
 		midwest: [
             
-            {x:150, y:120},        // .  1
-            {x:460, y:120},      //  -  2
-            {x:460, y:295},    // -|_  3
-            {x:150, y:295},      //  -|_| 4
+            {x:700, y:480},        // .  1
+            {x:960, y:480},      //  -  2
+            {x:960, y:650},    // -|_  3
+            {x:700, y:650},      //  -|_| 4
 
 		],
 		south: [
             
-			{x:470, y:160},        // .  1
-            {x:650, y:160},      //  -  2
-            {x:650, y:295},    // -|_  3
-            {x:470, y:295},      //  -|_| 4
+			{x:1300, y:530},        // .  1
+            {x:1750, y:530},      //  -  2
+            {x:1750, y:765},    // -|_  3
+            {x:1300, y:765},    //  -|_| 4
 		],
+        
 		northeast: [
-			
+            {x:100, y:85},        // .  1
+            {x:800, y:85},      //  -  2
+            {x:800, y:220},    // -|_  3
+            {x:100, y:220},      //  -|_| 4
 		]
 	};
 
