@@ -17,7 +17,7 @@ window.onload = function() {
 		west: 'http://35.235.95.12:3000/',
 		midwest: 'http://35.235.95.12:3000/',
 		south: 'http://35.235.68.160:5608/app/kibana#/dashboard/478f6740-7b3e-11e9-a55e-6b9ca2fb3578?_g=(refreshInterval:(pause:!t,value:0),time:(from:now-90d,mode:quick,to:now))&_a=(description:"rsp%20demo",filters:!(),fullScreenMode:!t,options:(darkTheme:!f,hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(),gridData:(h:13,i:"1",w:24,x:0,y:0),id:"3ad5a6e0-7b3e-11e9-a55e-6b9ca2fb3578",panelIndex:"1",title:Mensajes,type:visualization,version:"6.5.4"),(embeddableConfig:(),gridData:(h:13,i:"2",w:24,x:24,y:0),id:fa738210-7b43-11e9-a55e-6b9ca2fb3578,panelIndex:"2",title:"",type:visualization,version:"6.5.4"),(embeddableConfig:(),gridData:(h:10,i:"3",w:48,x:0,y:13),id:d5094d60-7b44-11e9-a55e-6b9ca2fb3578,panelIndex:"3",title:Neutral,type:visualization,version:"6.5.4")),query:(language:lucene,query:""),timeRestore:!f,title:rsp_demo,viewMode:full)',
-		northeast: 'https://github.com/chazarovsky/websiterich/blob/master/3.9.0/images/RSPcanvas.jpeg?raw=true'
+		northeast: 'https://github.com/chazarovsky/websiterich/blob/master/3.9.0/images/arqCanvas-01.jpg?raw=true'
 	},
 	images = {
 		west: 'https://github.com/chazarovsky/websiterich/blob/master/3.9.0/images/texto1.png?raw=true',
