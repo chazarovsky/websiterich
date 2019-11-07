@@ -464,6 +464,21 @@ figure figcaption p {
   box-shadow: none;
   -webkit-box-shadow: none;
 }
+
+/* inicio urs agregado*/
+.card0:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  -webkit-box-shadow: -13px 13px 25px -4px rgba(21,46,71,0.52);
+  -moz-box-shadow: -13px 13px 25px -4px rgba(21,46,71,0.52);
+  box-shadow: -13px 13px 25px -4px rgba(21,46,71,0.52);
+}
+/* fin urs agregado*/
+
+
 #contact-section textarea {
   display: block;
   border-radius: 0;
@@ -485,7 +500,7 @@ figure figcaption p {
 #contact-section .phone {
   text-align: center;
   background: #F7F7F7;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 0px 0;
   margin-bottom: 20px;
 }
 #contact-section .address i,
