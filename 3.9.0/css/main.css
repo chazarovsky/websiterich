@@ -467,17 +467,15 @@ figure figcaption p {
 
 /* inicio urs agregado*/
 .card0:hover {
-  transform: translateY(-5px) scale(1.005) translateZ(0);
+transform: translateY(-4px) /*scale(1.005) translateZ(0)*/;
 }
 
 .card:hover {
-  transform: translateY(-5px) scale(1.005) translateZ(0);
-  -webkit-box-shadow: -13px 13px 25px -4px rgba(21,46,71,0.52);
-  -moz-box-shadow: -13px 13px 25px -4px rgba(21,46,71,0.52);
-  box-shadow: -13px 13px 25px -4px rgba(21,46,71,0.52);
+  webkit-box-shadow: -13px 15px 16px -4px rgba(21,46,71,0.29);
+  -moz-box-shadow: -13px 15px 16px -4px rgba(21,46,71,0.29);
+  box-shadow: -13px 15px 16px -4px rgba(21,46,71,0.29);
 }
 /* fin urs agregado*/
-
 
 #contact-section textarea {
   display: block;
