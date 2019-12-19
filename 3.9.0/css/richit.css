@@ -163,7 +163,7 @@ figure .img-wrapper {
     .value-proposition {
         padding: 100px 0px;
     }
-    
+
 }
 @media (max-width: 768px) {
     /*Tabs*/
@@ -322,7 +322,7 @@ figure .img-wrapper {
     .richit-description .block .subtitle {
         margin-top: 30px;
     }
-    
+
 }
 
 /* tabla */
@@ -515,10 +515,88 @@ figure .img-wrapper {
 }
 
 
+/* Agregado Urs */
+.bloque-0 {
+  margin-bottom: 30px;
+  width: 100%;
+text-align: center;
+}
+
+.bloque {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloque-hijo {
+  padding: 10px;
+  margin: 3px;
+  width: 50%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: #EDEEF1;
+  border-radius: 15px;
+}
+
+.bloque-izq-1 {
+  padding: 10px;
+  width: 100%;
+
+  text-align: center;
+  vertical-align: center;
+  font-size: 16px;
+  display: flex;
+   justify-content: center;
+   align-content: center;
+   flex-direction: column;
+}
+
+.bloque-izq-1:hover {
+  font-size: 0;
+}
+
+.bloque-izq-1:hover:after {
+  content: attr(data-hover);
+  font-size: 16px;
+  font-weight: 100;
+  color: #000;
+}
+
+.bloque-izq-1.izzzq:hover:after {
+  content: attr(data-hover);
+  font-size: 16px;
+  font-weight: 100;
+  color: #000;
+  text-align: justify;
+}
+
+.texto_espacio {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: justify;
+}
+
+.texto_espacio_01 {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+hr.new4 {
+  border: 1px solid #EDEEF1;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 60%;
+}
+
+
 /*=====================*/
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio: 1)  {
     /*Logo*/
@@ -538,12 +616,12 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 
 
 
-// Imágenes en sección nosotros
+// Imï¿½genes en secciï¿½n nosotros
 /*=====================*/
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .rowImg {
   display: flex;
-} 
+}
 
 .columnImg {
   float: left;

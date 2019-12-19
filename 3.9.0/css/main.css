@@ -470,6 +470,12 @@ figure figcaption p {
 transform: translateY(-4px) /*scale(1.005) translateZ(0)*/;
 }
 
+
+.card1:hover {
+background-color: #F4F5F7;
+}
+
+
 .card:hover {
   webkit-box-shadow: -13px 15px 16px -4px rgba(21,46,71,0.29);
   -moz-box-shadow: -13px 15px 16px -4px rgba(21,46,71,0.29);
