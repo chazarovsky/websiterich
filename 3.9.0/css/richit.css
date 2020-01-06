@@ -47,7 +47,7 @@
 }
 #service
 {
-    background: #051019;
+    background: #152e47;
 }
 ul.service-list li i
 {
@@ -156,7 +156,7 @@ figure .img-wrapper {
         font-size: 19px;
     }
     #hero-area {
-        padding-top: 320px;
+        padding-top: 220px;
         padding-bottom: 100px;
         height: 500px;
     }
@@ -209,13 +209,14 @@ figure .img-wrapper {
     }
     /*Slides*/
     #hero-area {
-        padding-top: 320px;
+        padding-top: 190px;
+        padding-bottom: 80px;
     }
     .value-proposition {
         padding: 100px 30px;
     }
     .main-header h2 {
-        font-size: 30px;
+        font-size: 36px;
     }
     .value-proposition .container{
         width: 80%;
@@ -232,9 +233,9 @@ figure .img-wrapper {
 }
 @media (max-width: 736px) {
     #hero-area {
-        height: 350px;
+        height: 450px;
         padding-top: 220px;
-        padding-bottom: 30px;
+        padding-bottom: 80px;
     }
     #hero-area h1 {
         font-size: 30px;
@@ -246,11 +247,11 @@ figure .img-wrapper {
     }
     /*Main slide*/
     #hero-area {
-        height: 275px;
-        padding-top: 180px;
+        height: 475px;
+        padding-top: 200px;
     }
     #hero-area h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 @media (max-width: 550px) {
@@ -272,7 +273,7 @@ figure .img-wrapper {
     /*Main slide*/
     #hero-area {
         height: 330px;
-        padding-top: 220px;
+        padding-top: 150px;
         padding-left: 30px;
         padding-right: 30px;
     }
