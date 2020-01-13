@@ -2,8 +2,8 @@
 include_once('class.phpmailer.php');
 
 function send_form($userEmail, $userName, $subject, $body, $file){
-    
-    $mail = new PHPMailer();   
+
+    $mail = new PHPMailer();
 
     //indico a la clase que use SMTP
     $mail->IsSMTP();
@@ -26,7 +26,8 @@ function send_form($userEmail, $userName, $subject, $body, $file){
     $mail->IsHTML(true);
     $mail->MsgHTML($body);
     //indico destinatario
-    $address = "perezrubi@richit.ai";
+    //$address = "perezrubi@richit.ai";
+    $address = "upalacios@richit.ai";
     $mail->AddAddress($address, "Contacto Rich IT ");
     $mail->CharSet = 'UTF-8';
     if(!$mail->Send()) {
