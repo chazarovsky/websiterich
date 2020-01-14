@@ -5,5 +5,5 @@
   $telefono = $_POST["telefono"];
   $contenido = "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nTeléfono: " . $telefono;
   mail($destino,"Descarga de brochure", $contenido);
-  header("contact.html");
+  header("Location:contact.html");
  ?>
