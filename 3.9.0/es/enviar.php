@@ -5,5 +5,6 @@
   $telefono = $_POST["telefono"];
   $contenido = "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nTeléfono: " . $telefono;
   mail($destino,"Descarga de brochure", $contenido);
-  header("Location:contact.html");
+  echo "<script> alert('correo enviado con éxito')</script>";
+  echo "<script> setTimeout(\"location.href='contact.html'\",1000)</script>";
  ?>
