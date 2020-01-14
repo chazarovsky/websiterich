@@ -6,5 +6,5 @@
   $contenido = "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nTeléfono: " . $telefono;
   mail($destino,"Descarga de brochure", $contenido);
   echo "<script> alert('correo enviado con éxito')</script>";
-  echo "<script> setTimeout(\"location.href='contact.html'\",1000)</script>";
+  echo "<script> setTimeout(\"location.href='es/contact.html'\",1000)</script>";
  ?>
