@@ -17,11 +17,9 @@ function send_form($userEmail, $userName, $subject, $body, $file){
     //indico el puerto que usa Gmail
     $mail->Port = 465;
     //indico un usuario / clave de un usuario de gmail
-    //$mail->Username = "richit.mailsender@gmail.com";
-    $mail->Username = "urspala@gmail.com";
-    //$mail->Password = "richit2017";
-    $mail->Password = "juankis9";
-    $mail->SetFrom('urspala@gmail.com', 'RichIT - website');
+    $mail->Username = "richit.mailsender@gmail.com";
+    $mail->Password = "richit2017";
+    $mail->SetFrom('richit.mailsender', 'RichIT - website');
     $mail->AddReplyTo($userEmail, $userName);
     $mail->Subject = $subject;
 
