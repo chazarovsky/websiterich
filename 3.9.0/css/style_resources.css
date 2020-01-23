@@ -1,0 +1,331 @@
+/*@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');*/
+
+body{
+  /*background: #f1f1ff;*/
+  /*font-family:Quicksand,sans-serif;*/
+  text-align:center;
+}
+.card-resources {
+    width: 300px;
+    height: 230px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #F7F7F7;
+    box-shadow: 3px 3px 18px -8px #263238;
+    color: #424242;
+    margin: 20px 15px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.card-R:hover {
+  -webkit-box-shadow: 7px 11px 27px 4px rgba(150,150,150,1);
+    -moz-box-shadow: 7px 11px 27px 4px rgba(150,150,150,1);
+    box-shadow: 7px 11px 27px 4px rgba(150,150,150,1);
+}
+
+.p2 {
+  padding: 5px;
+  margin: 0px;
+}
+ .texto_cardResources {
+   font-size: 28px;
+ }
+
+.modal-openResources {
+    display: inline-block;
+    border-radius: 3px;
+    background: #4caf50;
+    padding: 5px 15px;
+    color: #fff;
+}
+
+.chopper{
+  height: 100%;
+}
+
+.modal-labelResources  {
+    position: relative;
+}
+
+.modal-radio {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modalResources {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .25s, transform .25s;
+    z-index:99;
+}
+
+.modal0{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+.modal1{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+.modal2{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+.modal3{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+.modal4{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+.modal5{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+.modal6{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+.modal7{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+.modal8{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+.modal9{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+.modal10{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+.modal11{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+.modal12{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+.modal13{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+
+/*.modal3{
+  transform:translate(0,100%) scale(.9);
+}*/
+
+/*.modal4{
+  transform:scale(0) rotate(180deg);
+}*/
+
+
+#modal-open0:checked + .modal0 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#modal-open1:checked + .modal1 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#modal-open2:checked + .modal2{
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+#modal-open3:checked + .modal3 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#modal-open4:checked + .modal4{
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+#modal-open5:checked + .modal5 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#modal-open6:checked + .modal6 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#modal-open7:checked + .modal7{
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+#modal-open8:checked + .modal8 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#modal-open9:checked + .modal9 {
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+#modal-open10:checked + .modal10 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#modal-open11:checked + .modal11{
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+#modal-open12:checked + .modal12 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#modal-open13:checked + .modal13 {
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+/*
+#modal-open3:checked + .modal3{
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+#modal-open4:checked + .modal4{
+  transform:scale(1) rotate(0deg);
+  opacity:1;
+}
+*/
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.modalResources .content {
+    position: absolute;
+    width: 70%;
+    height: 70%; //modificar tamaño de la ventana
+    max-height: 100%;
+    top: 20%;
+    left: 15%;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 3px 15px -2px #222;
+    /*padding: 10px;*/
+}
+
+
+
+.close-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 20px;
+    border-radius: 50%;
+    border: 2px solid #f44336;
+    cursor: pointer;
+}
+
+.close-btn:after,
+.close-btn:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background: #f44336;
+    left: 15%;
+    top: 50%;
+    top: calc(50% - 1px);
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+}
+
+.close-btn:before {
+    transform: rotate(-45deg);
+}
+
+.action-btn{
+  display:inline-block;
+  padding: 10px 20px;
+  /*background:;*/
+  color:#fff;
+  border-radius:15px;
+}
+
+/* Estilos formulario */
+
+form {
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  border: 1px solid #c2c8cd;
+  border-radius: 3px;
+}
+
+#boton0, #boton1, #boton2, #boton3, #boton4, #boton5,
+#boton6, #boton7, #boton8, #boton9, #boton10, #boton11,
+#boton12, #boton13 {
+    background-color: #4caf50;
+    color: #fff;
+
+    border-radius: 3px;
+}
+
+#boton0, #boton1, #boton2, #boton3, #boton4, #boton5,
+#boton6, #boton7, #boton8, #boton9, #boton10, #boton11,
+#boton12, #boton13:hover {
+  cursor: pointer;
+}
+
+@media (max-width:735px) {
+  form {
+    width: 100%;
+  }
+}

@@ -1,4 +1,11 @@
 <?php
+
+$nombre = $_POST["nombre"];
+$correo = $_POST["correo"];
+$telefono = $_POST["telefono"];
+
+$contenido = "Nombre: " . $nombre . "<br>Correo: " . $correo . "<br>Teléfono: " . $telefono ;
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -33,7 +40,7 @@ try {
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Asunto muy importante';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->Body    = $contenido; //'This is the HTML message body <b>in bold!</b>';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
