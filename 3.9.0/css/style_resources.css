@@ -241,7 +241,7 @@ body{
 .modalResources .content {
     position: absolute;
     width: 70%;
-    height: 70%; //modificar tamaño de la ventana
+    height: 450px; //modificar tamaño de la ventana
     max-height: 100%;
     top: 20%;
     left: 15%;
@@ -250,8 +250,6 @@ body{
     box-shadow: 0 3px 15px -2px #222;
     /*padding: 10px;*/
 }
-
-
 
 .close-btn {
     position: absolute;
@@ -290,24 +288,38 @@ body{
   border-radius:15px;
 }
 
-/* Estilos formulario */
-
-form {
-  width: 450px;
+/* Estilos formulario*/
+.modalResources .content form {
+  position: relative;
+  width: 100%;
+  height: 60%;
   margin: auto;
   padding: 10px 20px;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 30px;
+  align-items: center;
 }
 
-input {
-  width: 100%;
+.modalResources .content form input {
+  width: 50%;
   margin-bottom: 20px;
   padding: 7px;
   box-sizing: border-box;
   border: 1px solid #c2c8cd;
   border-radius: 3px;
+  display: inline-block;
+
 }
+
+.titulo-label {
+  width: 50%;
+  margin-bottom: 2px;
+  display: inline-block;
+  text-align: left;
+  font-weight: 400;
+}
+
+
 
 #boton0, #boton1, #boton2, #boton3, #boton4, #boton5,
 #boton6, #boton7, #boton8, #boton9, #boton10, #boton11,
@@ -324,8 +336,31 @@ input {
   cursor: pointer;
 }
 
-@media (max-width:735px) {
-  form {
-    width: 100%;
+@media (max-width: 1200px) {
+  /* Estilos formulario*/
+  .modalResources .content form input {
+    width: 80%;
+  }
+
+  .titulo-label {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  /* Estilos formulario*/
+  .modalResources .content {
+      position: absolute;
+      width: 70%;
+      height: 100%; //modificar tamaño de la ventana
+
+  }
+
+  .modalResources .content form input {
+    width: 80%;
+  }
+
+  .titulo-label {
+    width: 80%;
   }
 }

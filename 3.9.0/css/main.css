@@ -215,7 +215,7 @@ a:hover {
 }
 #call-to-action .block {
   position: relative;
-  z-index: 99;
+  z-index: 98;
   color: #fff;
 }
 #call-to-action .block h2 {
