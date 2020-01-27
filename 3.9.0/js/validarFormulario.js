@@ -25,6 +25,4 @@ function validar(){
     alert("El correo no es valido");
     return false;
   }
-
-
 }
