@@ -177,14 +177,14 @@
                             </label>
                     </div>
 
-                    <form action="../php/enviar-prueba.php" method="post" onsubmit="return validar(); window.location.href='../images/slider.jpg'" id="form0">
+                    <form action="../php/enviar-prueba.php" method="post" onsubmit="return validar();" id="form0">
                       <label class="titulo-label">Nombre *</label>
                       <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
                       <label class="titulo-label">Correo *</label>
                       <input type="email" id="correo" name="correo" placeholder="Correo" required>
                       <label class="titulo-label">Teléfono</label>
                       <input type="text" name="telefono" placeholder="Teléfono">
-                      <input type="submit" value="Descargar" id="boton0">
+                      <button type="submit" value="Descargar" id="boton0" onclick="window.location.href='../images/slider.jpg'"></button>
                     </form>
 
                   <label class="modal-labelResources action-btn">
