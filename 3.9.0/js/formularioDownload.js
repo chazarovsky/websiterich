@@ -1,3 +1,3 @@
-document.getElementById('form0').onsubmit = function() {
+document.getElementById('form0').addEventListener('submit',function()){
   alert('clicked urs');
 }
