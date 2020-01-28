@@ -6,8 +6,8 @@ $(document).ready(function(){
   });
 
   $("#form1").submit(function() {
-    
-      window.location.href = '../images/slider.jpg';
+    $('a').attr({target: '_blank', 
+                    href  : '../images/slider.jpg});
   });
 
 });
