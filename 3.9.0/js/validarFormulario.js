@@ -26,17 +26,9 @@ function validar(){
     return false;
   }
 
-  document.getElementById('form0').addEventListener('submit',function(){
-    console.log('form 0');
+  const form0 = document.getElementById("form0");
+  form0.addEventListener("submit",(e) => {
+    e.preventDefault();
+    console.log("form0 is submited");
   });
-
-  document.getElementById('form1').addEventListener('submit',function(){
-    console.log('form 1');
-  });
-
-  document.getElementById('form2').addEventListener('submit',function(){
-    console.log('form 2');
-  });
-
-
 }
