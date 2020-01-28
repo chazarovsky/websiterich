@@ -6,7 +6,22 @@ $(document).ready(function(){
   });
 
   $("#form1").submit(function() {
-    $('a').attr({target: '_blank',
-                    href  : '../images/slider.jpg'});
+    $.ajax({
+        url: '../images/slider.jpg',
+        method: 'GET',
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.download = 'slider.jpg';
+            document.body.append(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+        }
+    });
   });
 });
