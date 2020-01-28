@@ -28,7 +28,7 @@ function validar(){
 
 
 
-    const form0 = document.getElementById("form0");
+   var form0 = document.getElementById("form0");
     form0.addEventListener("submit",(e) => {
       console.log("form0 is submited");
     });
