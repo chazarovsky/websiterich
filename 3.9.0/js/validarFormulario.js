@@ -29,8 +29,10 @@ function validar(){
 
 }
 
-const form0 = document.getElementById("form0");
-form0.addEventListener("submit",(e) => {
-  e.preventDefault();
-  console.log("form0 is submited");
-});
+window.onload=function(){
+  const form0 = document.getElementById("form0");
+  form0.addEventListener("submit",(e) => {
+    e.preventDefault();
+    console.log("form0 is submited");
+  });
+}
