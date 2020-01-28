@@ -6,7 +6,8 @@ $(document).ready(function(){
   });
 
   $("#form1").submit(function() {
-      window.location = '../images/slider.jpg';
+    e.preventDefault();  //stop the browser from following
+      window.location.href = '../images/slider.jpg';
   });
 
 });
