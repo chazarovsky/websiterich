@@ -4,7 +4,7 @@ $(document).ready(function(){
     alert( " form0 Handler for .submit() called." );
   });
 
-  $("#boton1").submit(function() {
+  $("#form1").submit(function() {
     $.ajax({
         url: '../images/slider.jpg',
         method: 'GET',
