@@ -7,7 +7,6 @@ $(document).ready(function(){
 
   $("#form1").submit(function() {
     $('a').attr({target: '_blank',
-                    href  : '../images/slider.jpg';
+                    href  : '../images/slider.jpg'});
   });
-
 });
