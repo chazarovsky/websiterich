@@ -6,7 +6,7 @@ $(document).ready(function(){
   });
 
   $("#form1").submit(function() {
-    alert( " form1 Handler for .submit() called." );
+      window.location = '../images/slider.jpg';
   });
-  
+
 });
