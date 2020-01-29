@@ -28,8 +28,8 @@ $(document).ready(function(){
 */
 
 
-$(function(){
-  e.preventDefault();
+
+$(document).ready(function(){
 
   if ($("#form0").submit()) {
     e.preventDefault();
