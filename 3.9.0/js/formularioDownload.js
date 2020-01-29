@@ -41,10 +41,12 @@ $(document).ready(function(){
     alert( " form2 Handler for .submit() called." );
   });*/
 
-$("form").on("submit", function() {
-   alert( " form" );
-}
+$("#form0").on("submit", function() {
+   alert( " form 0" );
+})
 
-)
+$("#form1").on("submit", function() {
+   alert( " form 1" );
+})
 
 });
