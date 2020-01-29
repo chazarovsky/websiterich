@@ -31,19 +31,19 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 
-  if ($("#form0").submit()) {
-    e.preventDefault();
+
+  $("#form0").submit(function() {
     alert( " form0 Handler for .submit() called." );
-  }
-  else if($("#form1").submit()) {
-    e.preventDefault();
+  });
+
+  $("#form1").submit(function() {
     alert( " form1 Handler for .submit() called." );
+  });
 
-  }
 
-  else if($("#form2").submit()) {
-    e.preventDefault();
-    alert( " form1 Handler for .submit() called." );
+  $("#form2").submit(function() {
+    alert( " form2 Handler for .submit() called." );
+  });
 
-  }
+  i
 });
