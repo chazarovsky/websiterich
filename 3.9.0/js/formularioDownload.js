@@ -39,7 +39,9 @@ $(document).ready(function(){
   });
   $("#form2").submit(function() {
     alert( " form2 Handler for .submit() called." );
-  });*/
+  });
+
+Ayuda
 
 $("#form0").on("submit", function() {
    alert( " form 0" );
@@ -47,6 +49,18 @@ $("#form0").on("submit", function() {
 
 $("#form1").on("submit", function() {
    alert( " form 1" );
-})
+})*/
+
+
+if ($('#form0').submit()) {
+    // The link has been clicked.
+    alert( " form 0" );
+} else if($('#form1').submit()) {
+    // The link has not been clicked.
+    alert( " form 1" );
+}
+
+
+
 
 });
