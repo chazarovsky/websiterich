@@ -32,14 +32,17 @@ $(function(){
 
 
   if ($("#form0").submit()) {
+    e.preventDefault();
     alert( " form0 Handler for .submit() called." );
   }
   else if($("#form1").submit()) {
+    e.preventDefault();
     alert( " form1 Handler for .submit() called." );
 
   }
 
   else if($("#form2").submit()) {
+    e.preventDefault();
     alert( " form1 Handler for .submit() called." );
 
   }
