@@ -52,17 +52,23 @@ $("#form1").on("submit", function() {
 })*/
 
 
-if ($('#form0').submit(event)) {
-    // The link has been clicked.
+$("form").on("submit", function(event) {
+  event.preventDefault();
+
+  var form0 = $(this).find("[id=form0]");
+  var form1 = $(this).find("[id=form1]");
+
+  var form0 = $form0.value();
+  var form1 = $form1.value();
+
+  if(form0 === "form0" ){
     alert( " form 0" );
-     event.preventDefault();
-} else if($('#form1').submit(event)) {
-    // The link has not been clicked.
+  }else if (form1 === "form1"){
     alert( " form 1" );
-    event.preventDefault();
-}
+  }
 
 
+})
 
 
 });
