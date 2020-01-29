@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 
 $(function(){
-
+  e.preventDefault();
 
   if ($("#form0").submit()) {
     e.preventDefault();
