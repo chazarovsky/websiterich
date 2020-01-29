@@ -241,7 +241,7 @@ body{
 .modalResources .content {
     position: absolute;
     width: 70%;
-    height: 450px; //modificar tamaño de la ventana
+    height: 450px; /*modificar tamaño de la ventana*/
     max-height: 100%;
     top: 20%;
     left: 15%;
@@ -352,8 +352,7 @@ body{
   .modalResources .content {
       position: absolute;
       width: 70%;
-      height: 100%; //modificar tamaño de la ventana
-
+      height: 100%; /*modificar tamaño de la ventana*/
   }
 
   .modalResources .content form input {
@@ -362,5 +361,36 @@ body{
 
   .titulo-label {
     width: 80%;
+  }
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+  /* Estilos formulario*/
+  .modalResources .content {
+      position: absolute;
+      width: 70%;
+      height: 100%; /*modificar tamaño de la ventana*/
+      overflow-y: initial !important;
+      top: 25%;
+
+  }
+
+
+  .modalResources .content form {
+     overflow-y: auto;
+     margin-top: 15px;
+  }
+
+  .modalResources .content form input {
+    width: 80%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 3px;
+  }
+
+  .titulo-label {
+    width: 80%;
+    padding: 0px;
+    margin: 0px;
   }
 }

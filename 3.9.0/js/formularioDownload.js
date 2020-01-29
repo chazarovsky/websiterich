@@ -1,4 +1,4 @@
-
+/*
 $(document).ready(function(){
   $("#form0").submit(function() {
     alert( " form0 Handler for .submit() called." );
@@ -23,4 +23,25 @@ $(document).ready(function(){
         }
     });
   });
+});
+*/
+
+$(document).ready(function(){
+
+  if ($("#form0").submit() == true) {
+    alert( " form0 Handler for .submit() called." );
+  }
+
+  else if(($("#form1").submit() == true)) {
+    alert( " form1 Handler for .submit() called." );
+
+  }
+
+  else if(($("#form2").submit() == true)) {
+    alert( " form1 Handler for .submit() called." );
+    
+  }
+
+
+
 });
