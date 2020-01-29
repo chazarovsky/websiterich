@@ -28,18 +28,18 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 
-  if ($("#form0").submit() == true) {
+  if ($("#form0").submit()) {
     alert( " form0 Handler for .submit() called." );
   }
 
-  else if(($("#form1").submit() == true)) {
+  else if(($("#form1").submit()) {
     alert( " form1 Handler for .submit() called." );
 
   }
 
-  else if(($("#form2").submit() == true)) {
+  else if(($("#form2").submit()) {
     alert( " form1 Handler for .submit() called." );
-    
+
   }
 
 
