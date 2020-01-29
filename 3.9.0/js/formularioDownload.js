@@ -29,6 +29,8 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
+
+  /*
   $("#form0").submit(function() {
     alert( " form0 Handler for .submit() called." );
   });
@@ -37,6 +39,12 @@ $(document).ready(function(){
   });
   $("#form2").submit(function() {
     alert( " form2 Handler for .submit() called." );
-  });
+  });*/
+
+$("form").on("submit", function() {
+   alert( " form" );
+}
+
+)
 
 });
