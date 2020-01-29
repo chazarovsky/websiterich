@@ -31,16 +31,16 @@ $(document).ready(function(){
   if ($("#form0").submit()) {
     alert( " form0 Handler for .submit() called." );
   }
-
-  else if(($("#form1").submit()) {
+  else if($("#form1").submit()) {
     alert( " form1 Handler for .submit() called." );
 
   }
 
-  else if(($("#form2").submit()) {
+  else if($("#form2").submit()) {
     alert( " form1 Handler for .submit() called." );
 
   }
+
 
 
 
