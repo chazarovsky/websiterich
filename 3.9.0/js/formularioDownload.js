@@ -25,8 +25,11 @@ $(document).ready(function(){
   });
 });
 
+*/
 
-$(document).ready(function(){
+
+$(function(){
+
 
   if ($("#form0").submit()) {
     alert( " form0 Handler for .submit() called." );
@@ -41,5 +44,3 @@ $(document).ready(function(){
 
   }
 });
-
-*/
