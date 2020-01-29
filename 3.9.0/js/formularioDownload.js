@@ -52,12 +52,14 @@ $("#form1").on("submit", function() {
 })*/
 
 
-if ($('#form0').submit()) {
+if ($('#form0').submit(event)) {
     // The link has been clicked.
     alert( " form 0" );
-} else if($('#form1').submit()) {
+     event.preventDefault();
+} else if($('#form1').submit(event)) {
     // The link has not been clicked.
     alert( " form 1" );
+    event.preventDefault();
 }
 
 
