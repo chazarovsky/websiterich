@@ -1,7 +1,7 @@
 function validar0(){
   var nombre, correo;
-  nombre = document.getElementById("nombre").value;
-  correo = document.getElementById("correo").value;
+  nombre = document.getElementById("nombre0").value;
+  correo = document.getElementById("correo0").value;
 
   expresion = /\w+@\w+\.+[a-z]/;
 
@@ -29,8 +29,8 @@ function validar0(){
 
 function validar1(){
   var nombre, correo;
-  nombre = document.getElementById("nombre").value;
-  correo = document.getElementById("correo").value;
+  nombre = document.getElementById("nombre1").value;
+  correo = document.getElementById("correo1").value;
 
   expresion = /\w+@\w+\.+[a-z]/;
 
