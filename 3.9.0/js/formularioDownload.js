@@ -31,7 +31,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 
   $("#form0").submit(function() {
-     window.open = '../images/slider.jpg';
+     window.location.href = '../images/slider.jpg';
   });
   $("#form1").submit(function() {
     $.ajax({
