@@ -51,24 +51,14 @@ $("#form1").on("submit", function() {
    alert( " form 1" );
 })*/
 
-
-$("form").on("submit", function(event) {
-  event.preventDefault();
-
-  var form0 = $(this).find("[id=form0]");
-  var form1 = $(this).find("[id=form1]");
-
-  var form0 = $form0.value();
-  var form1 = $form1.value();
-
-  if(form0 === "form0" ){
+$("form").click(function( event ) {
+  var target = $( event.target );
+  if ( target.is("#form0") ) {
     alert( " form 0" );
-  }else if (form1 === "form1"){
+  } else if ( target.is("#form1" )){
     alert( " form 1" );
   }
-
-
-})
+});
 
 
 });
