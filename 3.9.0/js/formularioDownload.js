@@ -30,7 +30,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 
-  $("#form0").submit(function() {
+  $("#form0").submit(function(e) {
+     e.preventDefault();
      window.location.href = '../images/slider.jpg';
   });
   $("#form1").submit(function() {
