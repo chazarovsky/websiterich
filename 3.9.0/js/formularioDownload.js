@@ -49,7 +49,7 @@ $("#form0").on("submit", function() {
 
 $("#form1").on("submit", function() {
    alert( " form 1" );
-})*/
+})
 
 $("form").click(function( event ) {
   var target = $( event.target );
@@ -59,6 +59,6 @@ $("form").click(function( event ) {
     alert( " form 1" );
   }
 });
-
+*/
 
 });
