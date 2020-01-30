@@ -31,13 +31,61 @@ $(document).ready(function(){
 $(document).ready(function(){
 
   $("#form0").submit(function() {
-    alert( " form0 Handler for .submit() called." );
+    $.ajax({
+        url: '../images/slider.jpg',
+        method: 'GET',
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.download = 'slider.jpg';
+            document.body.append(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+        }
+    });
   });
   $("#form1").submit(function() {
-    alert( " form1 Handler for .submit() called." );
+    $.ajax({
+        url: '../images/slider.jpg',
+        method: 'GET',
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.download = 'slider.jpg';
+            document.body.append(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+        }
+    });
   });
   $("#form2").submit(function() {
-    alert( " form2 Handler for .submit() called." );
+    $.ajax({
+        url: '../images/slider.jpg',
+        method: 'GET',
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.download = 'slider.jpg';
+            document.body.append(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+        }
+    });
   });
 
 });
