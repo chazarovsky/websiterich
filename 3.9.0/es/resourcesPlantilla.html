@@ -260,11 +260,11 @@
                             </label>
                     </div>
 
-                    <form action="../php/enviar-prueba.php" method="post" id="form2" onsubmit="return validar();">
+                    <form action="../php/enviar-prueba.php" method="post" id="form2" onsubmit="return validar2();">
                       <label class="titulo-label">Nombre *</label>
-                      <input type="text" name="nombre" placeholder="Nombre" required>
+                      <input type="text" id="nombre2" name="nombre" placeholder="Nombre" required>
                       <label class="titulo-label">Correo *</label>
-                      <input type="email" name="correo" placeholder="Correo" required>
+                      <input type="email" id="correo2" name="correo" placeholder="Correo" required>
                       <label class="titulo-label">Teléfono</label>
                       <input type="text" name="telefono" placeholder="Teléfono">
                       <input type="submit" value="Descargar" id="boton2">
@@ -300,11 +300,11 @@
                             </label>
                     </div>
 
-                    <form action="../php/enviar-prueba.php" method="post">
+                    <form action="../php/enviar-prueba.php" method="post" onsubmit="return validar3();">
                       <label class="titulo-label">Nombre *</label>
-                      <input type="text" name="nombre" placeholder="Nombre" required>
+                      <input type="text" id="nombre3" name="nombre" placeholder="Nombre" required>
                       <label class="titulo-label">Correo *</label>
-                      <input type="email" name="correo" placeholder="Correo" required>
+                      <input type="email" id="correo3" name="correo" placeholder="Correo" required>
                       <label class="titulo-label">Teléfono</label>
                       <input type="text" name="telefono" placeholder="Teléfono">
                       <input type="submit" value="Descargar" id="boton3">
