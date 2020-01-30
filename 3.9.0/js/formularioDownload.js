@@ -25,12 +25,11 @@ $(document).ready(function(){
   });
 });
 
-*/
+
 
 
 $(document).ready(function(){
 
-  /*
   $("#form0").submit(function() {
     alert( " form0 Handler for .submit() called." );
   });
@@ -41,24 +40,5 @@ $(document).ready(function(){
     alert( " form2 Handler for .submit() called." );
   });
 
-Ayuda
-
-$("#form0").on("submit", function() {
-   alert( " form 0" );
-})
-
-$("#form1").on("submit", function() {
-   alert( " form 1" );
-})
-
-$("form").click(function( event ) {
-  var target = $( event.target );
-  if ( target.is("#form0") ) {
-    alert( " form 0" );
-  } else if ( target.is("#form1" )){
-    alert( " form 1" );
-  }
 });
 */
-
-});
