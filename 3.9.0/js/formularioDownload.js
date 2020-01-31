@@ -33,23 +33,8 @@ $(document).ready(function(){
 
 
   $("#form0").on('submit', function () {
-    $.ajax({
-        url: '../images/slider.jpg',
-        method: 'GET',
-        xhrFields: {
-            responseType: 'blob'
-        },
-        success: function (data) {
-            var a = document.createElement('a');
-            var url = window.URL.createObjectURL(data);
-            a.href = url;
-            a.target = '_blank';
-            document.body.append(a);
-            a.click();
-            a.remove();
-            window.URL.revokeObjectURL(url);
-        }
-    });
+    e.preventDefault();  //stop the browser from following
+    window.location.href = '../images/slider.jpg';
   });
 
   $("#form1").submit(function() {
