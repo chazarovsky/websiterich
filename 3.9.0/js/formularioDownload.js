@@ -48,7 +48,7 @@ $(document).ready(function(){
             var a = document.createElement('a');
             var url = window.URL.createObjectURL(data);
             a.href = url;
-            a.download = 'slider.jpg';
+            a.download = 'Modelo_de_Datos.pdf';
             document.body.append(a);
             a.click();
             a.remove();
@@ -67,7 +67,7 @@ $(document).ready(function(){
             var a = document.createElement('a');
             var url = window.URL.createObjectURL(data);
             a.href = url;
-            a.download = 'slider.jpg';
+            a.download = 'Metadatos.pdf';
             document.body.append(a);
             a.click();
             a.remove();
@@ -77,8 +77,8 @@ $(document).ready(function(){
   });
 
   $("#form3").on('submit', function () {
-    var valFileDownloadPath = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
-    window.open(valFileDownloadPath , '_blank')
+    var valFileDownloadPath3 = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
+    window.open(valFileDownloadPath3 , '_blank')
   });
 
 });
