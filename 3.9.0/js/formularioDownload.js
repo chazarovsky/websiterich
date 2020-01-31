@@ -33,14 +33,13 @@ $(document).ready(function(){
 
 
   $("#form0").on('submit', function () {
-    var valFileDownloadPath = '../images/slider.jpg';
-
+    var valFileDownloadPath = '../brochures_gob/ebook_directricesDeAltoNivel.pdf';
     window.open(valFileDownloadPath , '_blank')
   });
 
   $("#form1").submit(function() {
     $.ajax({
-        url: '../images/slider.jpg',
+        url: '../brochures_gob/Modelo_de_Datos.pdf',
         method: 'GET',
         xhrFields: {
             responseType: 'blob'
@@ -59,7 +58,7 @@ $(document).ready(function(){
   });
   $("#form2").submit(function() {
     $.ajax({
-        url: '../images/slider.jpg',
+        url: '../brochures_gob/Metadatos.pdf',
         method: 'GET',
         xhrFields: {
             responseType: 'blob'
@@ -75,6 +74,11 @@ $(document).ready(function(){
             window.URL.revokeObjectURL(url);
         }
     });
+  });
+
+  $("#form3").on('submit', function () {
+    var valFileDownloadPath = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
+    window.open(valFileDownloadPath , '_blank')
   });
 
 });
