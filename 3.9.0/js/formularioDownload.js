@@ -30,10 +30,12 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 
-  $("#form0").submit(function(e) {
-     e.preventDefault();
-     window.location.href = '../images/slider.jpg';
-  });
+
+    var url = '../images/slider.jpg';
+      $("#form0").on('submit', function () {
+          $(this).attr("href", url);
+      });
+
   $("#form1").submit(function() {
     $.ajax({
         url: '../images/slider.jpg',
