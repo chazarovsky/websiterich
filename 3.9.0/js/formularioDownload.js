@@ -33,8 +33,9 @@ $(document).ready(function(){
 
 
   $("#form0").on('submit', function () {
-    e.preventDefault();  //stop the browser from following
-    window.location.href = '../images/slider.jpg';
+    var valFileDownloadPath = '../images/slider.jpg';
+
+    window.open(valFileDownloadPath , '_blank')
   });
 
   $("#form1").submit(function() {
