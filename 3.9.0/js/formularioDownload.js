@@ -31,10 +31,26 @@ $(document).ready(function(){
 $(document).ready(function(){
 
 
-    var url = '../images/slider.jpg';
-      $("#form0").on('submit', function () {
-          $(this).attr("href", url);
-      });
+
+  $("#form0").on('submit', function () {
+    $.ajax({
+        url: '../images/slider.jpg',
+        method: 'GET',
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.target = '_blank';
+            document.body.append(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+        }
+    });
+  });
 
   $("#form1").submit(function() {
     $.ajax({
