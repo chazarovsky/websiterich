@@ -74,15 +74,12 @@ $(document).ready(function(){
         }
     });
   });
-/*
+
   $("#form3").submit(function() {
     var valFileDownloadPath3 = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
     window.open(valFileDownloadPath3 , '_blank');
-  });*/
-
-  $("#form3").submit(function() {
-    var valFileDownloadPath = '.../brochures_gob/Metadatos.pdf';
-    window.open(valFileDownloadPath , '_blank');
   });
+
+
 
 });
