@@ -37,6 +37,11 @@ $(document).ready(function(){
     window.open(valFileDownloadPath , '_blank');
   });
 
+  $("#form01").on('submit', function () {
+    var valFileDownloadPath = '../brochures_gob/Modelado_de_Datos.pdf';
+    window.open(valFileDownloadPath , '_blank');
+  });
+/*
   $("#form1").submit(function() {
     $.ajax({
         url: '../brochures_gob/Modelado_de_Datos.pdf',
@@ -55,7 +60,7 @@ $(document).ready(function(){
             window.URL.revokeObjectURL(url);
         }
     });
-  });
+  });*/
   $("#form2").submit(function() {
     $.ajax({
         url: '../brochures_gob/Metadatos.pdf',
