@@ -38,8 +38,8 @@ $(document).ready(function(){
   });
 
   $("#form01").on('submit', function () {
-    var valFileDownloadPath = '../brochures_gob/Modelado_de_Datos.pdf';
-    window.open(valFileDownloadPath , '_blank');
+    var valFileDownloadPath2 = '../brochures_gob/Modelado_de_Datos.pdf';
+    window.open(valFileDownloadPath2 , '_blank');
   });
 /*
   $("#form1").submit(function() {
