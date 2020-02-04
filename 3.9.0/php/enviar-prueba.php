@@ -35,7 +35,7 @@ try {
 
     //Attachments
     //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-    $mail->addAttachment('../images/slider.jpg', 'new.jpg');    // Optional name
+    //$mail->addAttachment('../images/slider.jpg', 'new.jpg');    // Optional name
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
