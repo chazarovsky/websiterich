@@ -45,7 +45,7 @@ try {
 
     $mail->send();
     //echo 'El mensaje se envió correctamente';
-    header("Location: richit/es/resourcesPlantilla.html");
+    header("Location: http://richit.ai/es/resourcesPlantilla.html");
 } catch (Exception $e) {
     echo 'hubo un error al enviarse';
     echo 'Mailer mando Error: ' . $mail->ErrorInfo;
