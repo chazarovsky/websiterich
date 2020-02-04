@@ -44,7 +44,7 @@ try {
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo 'El mensaje se envió correctamente';
+    //echo 'El mensaje se envió correctamente';
     header("Location: richit/es/resourcesPlantilla.html");
 } catch (Exception $e) {
     echo 'hubo un error al enviarse';
