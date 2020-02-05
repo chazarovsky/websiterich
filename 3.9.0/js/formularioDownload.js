@@ -75,17 +75,17 @@ $(document).ready(function(){
   });
 
   $("#form10").submit(function() {
-    var valFileDownloadPath3 = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
+    var valFileDownloadPath3 = '../brochures_gob/Calidad_de_Datos.pdf';
     window.open(valFileDownloadPath3 , '_blank');
   });
 
   $("#form11").submit(function() {
-    var valFileDownloadPath3 = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
+    var valFileDownloadPath3 = '../brochures_gob/Arquitectura_de_datos.pdf';
     window.open(valFileDownloadPath3 , '_blank');
   });
 
   $("#form12").submit(function() {
-    var valFileDownloadPath3 = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
+    var valFileDownloadPath3 = '../brochures_gob/Almacenamiento_de_datos_y_operaciones.pdf';
     window.open(valFileDownloadPath3 , '_blank');
   });
 
