@@ -229,3 +229,175 @@ function validar6(){
     return false;
   }
 }
+
+function validar7(){
+  var nombre, correo;
+  nombre = document.getElementById("nombre7").value;
+  correo = document.getElementById("correo7").value;
+
+  expresion = /\w+@\w+\.+[a-z]/;
+
+  if(nombre === "" ||  correo === ""){
+    alert("El campo Nombre y Correo son obligatorios");
+    return false;
+  }
+  else if(nombre.length>120){
+    alert("El nombre es muy largo");
+    return false;
+  }
+  else if(correo.length>100){
+    alert("El correo es muy largo");
+    return false;
+  }
+  else if(correo.length>100){
+    alert("El correo es muy largo");
+    return false;
+  }
+  else if(!expresion.test(correo)){
+    alert("El correo no es valido");
+    return false;
+  }
+}
+function validar8(){
+  var nombre, correo;
+  nombre = document.getElementById("nombre8").value;
+  correo = document.getElementById("correo8").value;
+
+  expresion = /\w+@\w+\.+[a-z]/;
+
+  if(nombre === "" ||  correo === ""){
+    alert("El campo Nombre y Correo son obligatorios");
+    return false;
+  }
+  else if(nombre.length>120){
+    alert("El nombre es muy largo");
+    return false;
+  }
+  else if(correo.length>100){
+    alert("El correo es muy largo");
+    return false;
+  }
+  else if(correo.length>100){
+    alert("El correo es muy largo");
+    return false;
+  }
+  else if(!expresion.test(correo)){
+    alert("El correo no es valido");
+    return false;
+  }
+}
+function validar9(){
+  var nombre, correo;
+  nombre = document.getElementById("nombre9").value;
+  correo = document.getElementById("correo9").value;
+
+  expresion = /\w+@\w+\.+[a-z]/;
+
+  if(nombre === "" ||  correo === ""){
+    alert("El campo Nombre y Correo son obligatorios");
+    return false;
+  }
+  else if(nombre.length>120){
+    alert("El nombre es muy largo");
+    return false;
+  }
+  else if(correo.length>100){
+    alert("El correo es muy largo");
+    return false;
+  }
+  else if(correo.length>100){
+    alert("El correo es muy largo");
+    return false;
+  }
+  else if(!expresion.test(correo)){
+    alert("El correo no es valido");
+    return false;
+  }
+}
+
+function validar10(){
+  var nombre, correo;
+  nombre = document.getElementById("nombre10").value;
+  correo = document.getElementById("correo10").value;
+
+  expresion = /\w+@\w+\.+[a-z]/;
+
+  if(nombre === "" ||  correo === ""){
+    alert("El campo Nombre y Correo son obligatorios");
+    return false;
+  }
+  else if(nombre.length>120){
+    alert("El nombre es muy largo");
+    return false;
+  }
+  else if(correo.length>100){
+    alert("El correo es muy largo");
+    return false;
+  }
+  else if(correo.length>100){
+    alert("El correo es muy largo");
+    return false;
+  }
+  else if(!expresion.test(correo)){
+    alert("El correo no es valido");
+    return false;
+  }
+}
+
+function validar11(){
+  var nombre, correo;
+  nombre = document.getElementById("nombre11").value;
+  correo = document.getElementById("correo11").value;
+
+  expresion = /\w+@\w+\.+[a-z]/;
+
+  if(nombre === "" ||  correo === ""){
+    alert("El campo Nombre y Correo son obligatorios");
+    return false;
+  }
+  else if(nombre.length>120){
+    alert("El nombre es muy largo");
+    return false;
+  }
+  else if(correo.length>100){
+    alert("El correo es muy largo");
+    return false;
+  }
+  else if(correo.length>100){
+    alert("El correo es muy largo");
+    return false;
+  }
+  else if(!expresion.test(correo)){
+    alert("El correo no es valido");
+    return false;
+  }
+}
+
+function validar12(){
+  var nombre, correo;
+  nombre = document.getElementById("nombre12").value;
+  correo = document.getElementById("correo12").value;
+
+  expresion = /\w+@\w+\.+[a-z]/;
+
+  if(nombre === "" ||  correo === ""){
+    alert("El campo Nombre y Correo son obligatorios");
+    return false;
+  }
+  else if(nombre.length>120){
+    alert("El nombre es muy largo");
+    return false;
+  }
+  else if(correo.length>100){
+    alert("El correo es muy largo");
+    return false;
+  }
+  else if(correo.length>100){
+    alert("El correo es muy largo");
+    return false;
+  }
+  else if(!expresion.test(correo)){
+    alert("El correo no es valido");
+    return false;
+  }
+}

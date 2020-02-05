@@ -1,30 +1,24 @@
 /*
-$(document).ready(function(){
-  $("#form0").submit(function() {
-    alert( " form0 Handler for .submit() called." );
-  });
-
-  $("#form1").submit(function() {
-    $.ajax({
-        url: '../images/slider.jpg',
-        method: 'GET',
-        xhrFields: {
-            responseType: 'blob'
-        },
-        success: function (data) {
-            var a = document.createElement('a');
-            var url = window.URL.createObjectURL(data);
-            a.href = url;
-            a.download = 'slider.jpg';
-            document.body.append(a);
-            a.click();
-            a.remove();
-            window.URL.revokeObjectURL(url);
-        }
-    });
+Este fragmento crea un <a download> descarga automaticamente el archivo pero menos navegadores lo implementan
+$("#form1").submit(function() {
+  $.ajax({
+      url: '../brochures_gob/Modelado_de_Datos.pdf',
+      method: 'GET',
+      xhrFields: {
+          responseType: 'blob'
+      },
+      success: function (data) {
+          var a = document.createElement('a');
+          var url = window.URL.createObjectURL(data);
+          a.href = url;
+          a.download = 'Modelado_de_Datos.pdf';
+          document.body.append(a);
+          a.click();
+          a.remove();
+          window.URL.revokeObjectURL(url);
+      }
   });
 });
-
 */
 
 
@@ -36,43 +30,13 @@ $(document).ready(function(){
   });
 
   $("#form1").submit(function() {
-    $.ajax({
-        url: '../brochures_gob/Modelado_de_Datos.pdf',
-        method: 'GET',
-        xhrFields: {
-            responseType: 'blob'
-        },
-        success: function (data) {
-            var a = document.createElement('a');
-            var url = window.URL.createObjectURL(data);
-            a.href = url;
-            a.download = 'Modelado_de_Datos.pdf';
-            document.body.append(a);
-            a.click();
-            a.remove();
-            window.URL.revokeObjectURL(url);
-        }
-    });
+    var valFileDownloadPath = '../brochures_gob/Modelado_de_Datos.pdf';
+    window.open(valFileDownloadPath , '_blank');
   });
 
   $("#form2").submit(function() {
-    $.ajax({
-        url: '../brochures_gob/Metadatos.pdf',
-        method: 'GET',
-        xhrFields: {
-            responseType: 'blob'
-        },
-        success: function (data) {
-            var a = document.createElement('a');
-            var url = window.URL.createObjectURL(data);
-            a.href = url;
-            a.download = 'Metadatos.pdf';
-            document.body.append(a);
-            a.click();
-            a.remove();
-            window.URL.revokeObjectURL(url);
-        }
-    });
+    var valFileDownloadPath = '../brochures_gob/Metadatos.pdf';
+    window.open(valFileDownloadPath , '_blank');
   });
 
   $("#form3").submit(function() {
@@ -80,6 +44,50 @@ $(document).ready(function(){
     window.open(valFileDownloadPath3 , '_blank');
   });
 
+  $("#form4").submit(function() {
+    var valFileDownloadPath3 = '../brochures_gob/Grandes_Datos_y_Ciencia_de _Datos.pdf';
+    window.open(valFileDownloadPath3 , '_blank');
+  });
+
+  $("#form5").submit(function() {
+    var valFileDownloadPath3 = '../brochures_gob/Gobierno_de_Datos.pdf';
+    window.open(valFileDownloadPath3 , '_blank');
+  });
+
+  $("#form6").submit(function() {
+    var valFileDownloadPath3 = '../brochures_gob/Documento_y_Contenido.pdf';
+    window.open(valFileDownloadPath3 , '_blank');
+  });
+
+  $("#form7").submit(function() {
+    var valFileDownloadPath3 = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
+    window.open(valFileDownloadPath3 , '_blank');
+  });
+
+  $("#form8").submit(function() {
+    var valFileDownloadPath3 = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
+    window.open(valFileDownloadPath3 , '_blank');
+  });
+
+  $("#form9").submit(function() {
+    var valFileDownloadPath3 = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
+    window.open(valFileDownloadPath3 , '_blank');
+  });
+
+  $("#form10").submit(function() {
+    var valFileDownloadPath3 = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
+    window.open(valFileDownloadPath3 , '_blank');
+  });
+
+  $("#form11").submit(function() {
+    var valFileDownloadPath3 = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
+    window.open(valFileDownloadPath3 , '_blank');
+  });
+
+  $("#form12").submit(function() {
+    var valFileDownloadPath3 = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
+    window.open(valFileDownloadPath3 , '_blank');
+  });
 
 
 });
