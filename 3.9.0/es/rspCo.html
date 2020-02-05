@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-
   <meta charset="UTF-8">
   <title>RSP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -13,11 +12,8 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
   <link rel="stylesheet" href="../css/style-landing.css">
-  <!-- Formulario js -->
-  <script src="../js/validarFormulario.js"></script>
 </head>
 <body>
-
 
 <!-- partial:index.partial.html -->
 <header>
@@ -104,18 +100,9 @@
   </div>
   <div class="col-md-4 col-md-offset-1">
   <div class="form-container">
-    <h4>¿Deseas más información? </h4>
-    <p>Llena el formulario y te contactáremos a la brevedad </p>
+    <h4 style="padding-bottom:185px;padding-top:185px;text-align:center;">¡Gracias por llenar el formulario! nos pondremos en contacto contigo a la brevedad </h4>
     <!--<div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/d95584bed0373d78db4e72fb5d8d79502896004"><script src="https://cdn.pipedriveassets.com/web-form-assets/webforms.min.js"></script></div>-->
-    <form action="../php/enviar-prueba.php" method="post" id="formRSP" onsubmit="return validarRSP();">
-      <label class="titulo-label">Nombre *</label>
-      <input type="text" id="nombreRSO" name="nombre" placeholder="" required>
-      <label class="titulo-label">Correo *</label>
-      <input type="email" id="correoRSP" name="correo" placeholder="" required>
-      <label class="titulo-label">Teléfono</label>
-      <input type="text" name="telefono" placeholder="">
-      <input type="submit" value="Descargar" id="boton-f">
-    </form>
+
   </div>
 </div>
 
@@ -128,7 +115,7 @@
   <script src='../js/jquery_3_4_1.min.js'></script><script  src="./script.js"></script>
 
 <!--Track Conversion-->
-<!--<script type="text/javascript">
+<script type="text/javascript">
 
     (function() {
       var capterra_vkey = 'd43bc5a3d2c4852cdec7446b958830f0',
@@ -143,6 +130,6 @@
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(ct, s);
     })();
-  </script>-->
+  </script>
 </body>
 </html>
