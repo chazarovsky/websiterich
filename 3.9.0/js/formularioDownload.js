@@ -60,17 +60,17 @@ $(document).ready(function(){
   });
 
   $("#form7").submit(function() {
-    var valFileDownloadPath3 = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
+    var valFileDownloadPath3 = '../brochures_gob/Datos_Maestros_y_de_Referencia.pdf';
     window.open(valFileDownloadPath3 , '_blank');
   });
 
   $("#form8").submit(function() {
-    var valFileDownloadPath3 = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
+    var valFileDownloadPath3 = '../brochures_gob/Data_Warehousing_and_Business_Intelligence.pdf';
     window.open(valFileDownloadPath3 , '_blank');
   });
 
   $("#form9").submit(function() {
-    var valFileDownloadPath3 = '../brochures_gob/Integracion_e_Interoperabilidad.pdf';
+    var valFileDownloadPath3 = '../brochures_gob/Data_Security.pdf';
     window.open(valFileDownloadPath3 , '_blank');
   });
 
