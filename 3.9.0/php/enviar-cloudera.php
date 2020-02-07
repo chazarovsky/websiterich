@@ -1,7 +1,7 @@
 <?php
 
-$nombre = $_POST["nombreCloudera"];
-$correo = $_POST["correoCloudera"];
+$nombre = $_POST["nombre"];
+$correo = $_POST["correo"];
 $telefono = $_POST["telefono"];
 
 $contenido = "Nombre: " . $nombre . "<br>Correo: " . $correo . "<br>Teléfono: " . $telefono ;
