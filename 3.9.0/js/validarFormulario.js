@@ -27,10 +27,10 @@ function validarRSP(){
   }
 }
 
-function validarAnalytics(){
+function validarCloudera(){
   var nombre, correo;
-  nombre = document.getElementById("nombreAnalytics").value;
-  correo = document.getElementById("correoAnalytics").value;
+  nombre = document.getElementById("nombreCloudera").value;
+  correo = document.getElementById("correoCloudera").value;
 
   expresion = /\w+@\w+\.+[a-z]/;
 
