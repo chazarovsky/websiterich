@@ -27,9 +27,10 @@ try {
 
     //Recipients
     $mail->setFrom('upalacios@richit.ai', 'Formulario proveniente de RSP-Capterra');
-    $mail->addAddress('gmanzanares@richit.ai');     // Add a recipient
-    $mail->addAddress('upalacios@richit.ai');               // Name is optional
-    $mail->addAddress('urspala@gmail.com');
+    $mail->addAddress('echazaro@richit.ai');     // Add a recipient
+    $mail->addAddress('mdeloscobos@richit.ai');               // Name is optional
+    $mail->addAddress('eperezyera@richit.ai');
+    $mail->addAddress('upalacios@richit.ai');
     //$mail->addAddress('ellen@example.com');               // Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');
