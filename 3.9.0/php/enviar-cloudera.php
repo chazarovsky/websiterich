@@ -26,7 +26,7 @@ try {
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('upalacios@richit.ai', 'Formulario proveniente de Campaña de Google Cloudera');
+    $mail->setFrom('upalacios@richit.ai', 'Formulario proveniente de Campania de Google Cloudera');
     //$mail->addAddress('echazaro@richit.ai');     // Add a recipient
     //$mail->addAddress('mdeloscobos@richit.ai');               // Name is optional
     //$mail->addAddress('eperezyera@richit.ai');
