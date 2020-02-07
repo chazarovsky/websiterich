@@ -26,7 +26,7 @@ try {
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('upalacios@richit.ai', 'Formulario proveniente de Campania de Google Confluent');
+    $mail->setFrom('upalacios@richit.ai', 'Formulario proveniente de Retail rsp');
     $mail->addAddress('echazaro@richit.ai');     // Add a recipient
     $mail->addAddress('mdeloscobos@richit.ai');               // Name is optional
     $mail->addAddress('eperezyera@richit.ai');
@@ -48,7 +48,7 @@ try {
 
     $mail->send();
     //echo 'El mensaje se envió correctamente';
-    header("Location: http://richit.ai/es/kafka_mexico.html");
+    header("Location: http://richit.ai/en/rspE.html");
 } catch (Exception $e) {
     echo 'hubo un error al enviarse';
     echo 'Mailer mando Error: ' . $mail->ErrorInfo;
