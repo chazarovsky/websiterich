@@ -79,7 +79,16 @@
   <div class="col-md-4 col-md-offset-1">
   <div class="form-container">
     <h4>¿Deseas más información? </h4>
-    <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/13f8f700dceb696710a252dad4f84b1c2896004"><script src="https://cdn.pipedriveassets.com/web-form-assets/webforms.min.js"></script></div>
+    <!--<div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/13f8f700dceb696710a252dad4f84b1c2896004"><script src="https://cdn.pipedriveassets.com/web-form-assets/webforms.min.js"></script></div>-->
+    <form action="../php/enviar-cloudera.php" method="post" id="formAnalytics" onsubmit="return validarAnalytics();">
+      <label class="titulo-label">Nombre *</label>
+      <input type="text" id="nombreCloudera" name="nombre" required>
+      <label class="titulo-label">Correo *</label>
+      <input type="email" id="correoCloudera" name="correo"  required>
+      <label class="titulo-label">Teléfono</label>
+      <input type="text" name="telefono">
+      <input type="submit" value="Descargar" id="boton-f">
+    </form>
   </div>
 </div>
 <footer>
