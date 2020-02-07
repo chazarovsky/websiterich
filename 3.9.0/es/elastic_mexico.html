@@ -122,7 +122,17 @@
   <div class="col-md-4 col-md-offset-1">
   <div class="form-container">
     <h4>¿Deseas más información? </h4>
-    <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/13f8f700dceb696710a252dad4f84b1c2896004"><script src="https://cdn.pipedriveassets.com/web-form-assets/webforms.min.js"></script></div>
+    <p>Llena el formulario y te contactáremos a la brevedad </p>
+    <!--<div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/13f8f700dceb696710a252dad4f84b1c2896004"><script src="https://cdn.pipedriveassets.com/web-form-assets/webforms.min.js"></script></div>-->
+    <form action="../php/enviar-elastic.php" method="post" id="formElastic" onsubmit="return validarElastic();">
+      <label class="titulo-label">Nombre *</label>
+      <input type="text" id="nombreElastic" name="nombre" required>
+      <label class="titulo-label">Correo *</label>
+      <input type="email" id="correoElastic" name="correo"  required>
+      <label class="titulo-label">Teléfono</label>
+      <input type="text" name="telefono">
+      <input type="submit" value="Enviar" id="boton-f">
+    </form>
   </div>
 </div>
 <footer>
