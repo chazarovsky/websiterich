@@ -26,8 +26,10 @@ try {
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('upalacios@richit.ai', 'chopo');
-    $mail->addAddress('urspala@gmail.com', 'User');     // Add a recipient
+    $mail->setFrom('upalacios@richit.ai', 'Formulario proveniente de RSP-Capterra');
+    $mail->addAddress('gmanzanares@richit.ai');     // Add a recipient
+    $mail->addAddress('upalacios@richit.ai');               // Name is optional
+    $mail->addAddress('urspala@gmail.com');
     //$mail->addAddress('ellen@example.com');               // Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');
@@ -39,7 +41,7 @@ try {
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Asunto muy importante';
+    $mail->Subject = 'Formulario Web RICHIT';
     $mail->Body    = $contenido; //'This is the HTML message body <b>in bold!</b>';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
