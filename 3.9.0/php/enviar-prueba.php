@@ -26,7 +26,7 @@ try {
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('upalacios@richit.ai', 'Formulario proviniente de brochures de gobierno de datos');
+    $mail->setFrom('upalacios@richit.ai', 'Formulario proveniente de brochures de gobierno de datos');
     $mail->addAddress('gmanzanares@richit.ai', 'User');     // Add a recipient
     $mail->addAddress('upalacios@richit.ai');               // Name is optional
     $mail->addAddress('urspala@gmail.com', 'User');
