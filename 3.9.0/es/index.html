@@ -94,19 +94,22 @@
                             </select>
                         </div>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html" >Inicio</a></li>
-                            <li class="dropdown">
-                                <a href="supply.html" class="dropdown-toggle" data-toggle="dropdown">Oferta<span class="caret"></span></a>
-                                <div class="dropdown-menu">
-                                    <ul>
-                                        <li><a href="services.html">Servicios</a></li>
-                                        <li><a href="products.html">Productos</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="about.html">Nosotros</a></li>
-                            <li><a href="careers.html">Oportunidades de trabajo</a></li>
-                            <li><a href="contact.html">Contacto</a></li>
+                          <li><a href="index.html" >Inicio</a></li>
+                          <!--
+                          <li class="dropdown">
+                              <a href="supply.html" class="dropdown-toggle" data-toggle="dropdown">Oferta<span class="caret"></span></a>
+                              <div class="dropdown-menu">
+                                  <ul>
+                                      <li><a href="services.html">Servicios</a></li>
+                                      <li><a href="products.html">Productos</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                          -->
+                          <li><a href="services.html">Servicios</a></li>
+                          <li><a href="products.html">Productos</a></li>
+                          <li><a href="about.html">Nosotros</a></li>
+                          <li><a href="contact.html">Contacto</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -141,11 +144,11 @@
                             <!-- Slider -->
                             <section class="cd-intro">
                                 <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
-                                <span>
-                                    Transformamos datos en
+                                <span style="color:#fff;">
+                                    Calidad y agilidad en <br>
                                 </span>
                                 <span class="cd-words-wrapper">
-                                    <b class="is-visible">VALOR</b>
+                                    <b class="is-visible">soluciones analíticas</b>
                                 </span>
                                 </h1>
                                 </section> <!-- cd-intro -->
@@ -163,19 +166,71 @@
             <section id="about">
                 <div class="container">
                     <div class="section-heading">
+                      <hr class="new4">
+                      <br><br>
                         <h1 class="title wow fadeInDown" data-wow-delay=".3s">RICH IT</h1>
-                        <p class="wow fadeInDown" data-wow-delay=".5s">
-                            Acompañamos a nuestros clientes en una jornada de descubrimiento y explotación<br>del valor de la información, mediante el desarrollo e integración de herramientas<br>que detonan el conocimiento y la toma de decisiones mejor informadas.
-                        </p>
+                        <p class="wow fadeInDown texto_espacio" data-wow-delay=".5s">
+                            RICH IT es una compañía experta en ciencia, ingeniería y gobierno de datos. Con 10 años de experiencia, más de un trillón de registros digitales analizados y decenas de certificaciones: los clientes nos prefieren por nuestra calidad y tiempo de respuesta.
+                        </p><br><br><br>
+                        <hr class="new4">
                     </div>
                 </div>
             </section> <!-- /#about -->
+
+            <!--
+            ==================================================
+            Bloque
+            ================================================== -->
+            <div class="bloque-0">
+
+            <h1 class="title wow fadeInDown texto_espacio_01" data-wow-delay=".3s">Nuestra oferta</h1>
+            <!--<br><p class="wow fadeInDown" data-wow-delay=".3s">Calidad y agilidad en soluciones analíticas.</p><br>-->
+            <div class="bloque wow fadeInDown" data-wow-delay=".3s">
+              <div class="bloque-hijo card1 card">
+                <div class="bloque-izq-1" data-hover="Modelos analíticos para la el sector finaciero, retail y gobierno">
+                  Soluciones Analíticas
+                </div>
+              </div>
+            </div>
+
+            <div class="bloque wow fadeInDown" data-wow-delay=".3s">
+              <div class="bloque-hijo card1 card">
+                <div class="bloque-izq-1 izzzq" data-hover="Servicios de Ingeniería de datos: arquitectura, implementación, administración, migración, monitoreo, gestión de plataformas analíticas y lagos de datos.
+
+                  Servicios de gobierno de datos: Assessment de la madurez y programas de gobierno de datos apegados a la metodología DAMA
+
+                  Servicios de ciencia de datos: Quick wins, desarrollo y operación de modelos analíticos.
+                  ">
+
+                  <br>
+
+                  Servicios de Ingenieria, Gobierno y ciencia de datos
+                  <br>
+                  <br>
+                  <br>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="bloque wow fadeInDown" data-wow-delay=".3s">
+              <div class="bloque-hijo card1 card">
+                <div class="bloque-izq-1" data-hover="Elastic Search, Dremio, Confluent, Cloudera, Dgraph, Greenplum">
+                  Plataformas analíticas opensource
+                </div>
+              </div>
+            </div>
+            <br><br><br>
+            <hr class="new4">
+
+              </div>
+
             <!--
             ==================================================
             Video Section Start
             ================================================== -->
             <section id="video-info">
-                <div class="container" style="padding-bottom:50px;">
+                <div class="container" style="padding-bottom:50px; padding-top:40px;">
                     <video controls="controls">
                         <source src="../videos/richit_video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
                         <source src="../videos/richit_video.webm" type='video/webm; codecs="vp8, vorbis"' />
@@ -210,7 +265,7 @@
                         <p class="copyright center">Copyright: RICH IT <span>2019</span></p>
                         <a class="center" href="aviso.html">Aviso de Privacidad</a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" style="text-align:right;">
                         <!-- Social Media -->
                         <ul class="social">
                             <li>
@@ -229,6 +284,7 @@
                                 </a>
                             </li>
                         </ul>
+                        <a href="careers.html">Oportunidades de trabajo</a>
                     </div>
                 </div>
             </footer> <!-- /#footer -->

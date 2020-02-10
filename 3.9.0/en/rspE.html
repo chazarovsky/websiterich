@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>RSP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../Retail/css/reset.min.css">
+  <link rel='stylesheet' href='../Retail/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='../Retail/css/animate.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+  <link rel="stylesheet" href="../Retail/css/style_2.css">
+  <link rel="stylesheet" href="../Retail/css/style.css">
+    <link rel="stylesheet" href="../css/style-landing.css">
+  <!-- Formulario js -->
+  <script src="../js/validarFormulario.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <div class="topnav" id="myTopnav">
+      <!--<a href="#home" class="active">Home</a> -->
+      <div><a href="retail.html" class="nav-logo"></a></div>
+
+      <div class="dropdown">
+          <a class="dropbtn" href="retail.html">Gallery</a>
+      </div>
+  </div>
+</header>
+  <div class="jumbotron-rsp">
+
+    <div id="black"></div>
+    <div style="" class="animated fadeInDown">
+      <div class="container-fluid">
+        <div class="col-md-5 col-md-offset-1">
+
+        <h1>ABOUT <br class="visible-lg "/>RICH IT SMART PIPES "RSP"</h1>
+        <p>Smart pipes is fully managed opensource stack for data integration, governance, democratization and consumption of big data.</p>
+        <hr style="width:25%;text-align:left;margin:30px 0; border:2.5px solid #fff;"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="main-wrapper">
+    <div class="col-md-6 col-md-offset-1 main-content_2">
+      <h3>RSP</h3>
+      <p>
+        <br>
+        Rich it Smart Pipes is a fully managed analytical stack with open source tools like elasticsearch, kafka, neo4j, spark and dremio, that allow extraction, transformation, loading, integration,
+        standardization, governance, processing, democratization and consumption of data in a seamless manner so that your analytics teams can focus on extracting insights rather than in data engineering
+        activities. It can be implemented on premises or in any cloud.
+      </p>
+      <div class="container main-content_3">
+        <img src="../Retail/img/infografia_ingles-01.jpg" style="width:90%" alt="Infografía RSP">
+      </div>
+      <br><br>
+
+    </div>
+    <!--Formulario en cuenta Moni-->
+    <div class="col-md-4 col-md-offset-1">
+      <div class="form-container">
+        <h4>DO YOU WANT MORE INFORMATION?</h4>
+        <p>Llena el formulario y te contactáremos a la brevedad </p>
+        <!--<div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/d95584bed0373d78db4e72fb5d8d79502896004">
+          <script src="https://cdn.pipedriveassets.com/web-form-assets/webforms.min.js"></script>-->
+          <form action="../php/enviar-rspE.php" method="post" id="formRSPE" onsubmit="return validarRSPE();">
+            <label class="titulo-label">Nombre *</label>
+            <input type="text" id="nombreRSPE" name="nombre" required>
+            <label class="titulo-label">Correo *</label>
+            <input type="email" id="correoRSPE" name="correo"  required>
+            <label class="titulo-label">Teléfono</label>
+            <input type="text" name="telefono">
+            <input type="submit" value="Enviar" id="boton-f">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<footer>
+  <div class="container">© Copyright: RICH IT 2019</div>
+</footer>
+<!-- partial -->
+  <script src='../Retail/js/jquery_3_2_1.min.js'></script>
+</body>
+</html>

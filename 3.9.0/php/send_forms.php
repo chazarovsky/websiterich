@@ -2,8 +2,8 @@
 include_once('class.phpmailer.php');
 
 function send_form($userEmail, $userName, $subject, $body, $file){
-    
-    $mail = new PHPMailer();   
+
+    $mail = new PHPMailer();
 
     //indico a la clase que use SMTP
     $mail->IsSMTP();
@@ -19,14 +19,15 @@ function send_form($userEmail, $userName, $subject, $body, $file){
     //indico un usuario / clave de un usuario de gmail
     $mail->Username = "richit.mailsender@gmail.com";
     $mail->Password = "richit2017";
-    $mail->SetFrom('richit.mailsender@gmail.com', 'RichIT - website');
+    $mail->SetFrom('richit.mailsender', 'RichIT - website');
     $mail->AddReplyTo($userEmail, $userName);
     $mail->Subject = $subject;
 
     $mail->IsHTML(true);
     $mail->MsgHTML($body);
     //indico destinatario
-    $address = "perezrubi@richit.ai";
+    //$address = "perezrubi@richit.ai";
+    $address = "upalacios@richit.ai";
     $mail->AddAddress($address, "Contacto Rich IT ");
     $mail->CharSet = 'UTF-8';
     if(!$mail->Send()) {

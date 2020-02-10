@@ -39,7 +39,7 @@ header .logo {
 .jumbotron-elastic {
 	width: 100%;
 	min-height: 450px;
-	background: url('img/elasticFondo-01.png') center center;
+	background: url('../images/imgLanding/elasticFondo-01.png') center center;
 	background-size: cover;
 	opacity: 1;
 	display: table;
@@ -64,7 +64,7 @@ header .logo {
 .jumbotron-cloudera {
 	width: 100%;
 	min-height: 450px;
-	background: url('img/cloudera-01.png') center center;
+	background: url('../images/imgLanding/cloudera-01.png') center center;
 	background-size: cover;
 	opacity: 1;
 	display: table;
@@ -90,7 +90,7 @@ header .logo {
 .jumbotron-dremio {
 	width: 100%;
 	min-height: 450px;
-	background: url('img/fondoDremio-01.png') center center;
+	background: url('../images/imgLanding/fondoDremio-01.png') center center;
 	background-size: cover;
 	opacity: 1;
 	display: table;
@@ -116,7 +116,7 @@ header .logo {
 .jumbotron-kafka {
 	width: 100%;
 	min-height: 450px;
-	background: url('img/confluentFondo-01.png') center center;
+	background: url('../images/imgLanding/confluentFondo-01.png') center center;
 	background-size: cover;
 	opacity: 1;
 	display: table;
@@ -142,7 +142,7 @@ header .logo {
 .jumbotron-rsp {
 	width: 100%;
 	min-height: 450px;
-	background: url('img/rsp-01.png') center center;
+	background: url('../images/imgLanding/rsp-01.png') center center;
 	background-size: cover;
 	opacity: 1;
 	display: table;
@@ -210,14 +210,72 @@ header .logo {
 }
 .form-container {
 	background: #fff;
-	padding: 25px 5px 0px 5px;
+	padding: 25px 30px 20px 30px;
 	border-radius: 3px;
 	margin-top: -300px;
 }
-.form-container div {
-	margin: 20px 0;
+
+.form-container h4 {
+	font-size: 18px;
+	margin: 10px 0px 20px 0px;
 }
-.form-container input, .form-container select {
+
+.form-container p {
+	font-size: 16px;
+	margin: 0px 0px 15px 0px;
+}
+
+.form-container input{
+	position: relative;
+	width: 100%;
+	height: 60%;
+	margin: auto;
+	padding: 10px 20px;
+	margin-top: 5px;
+	align-items: center;
+	border-radius: 3px;
+	box-sizing: border-box;
+  border: 1px solid #c2c8cd;
+}
+
+.form-container label {
+/*	display: none*/
+	width: 50%;
+	margin-bottom: 2px;
+	display: inline-block;
+	text-align: left;
+	font-weight: 400;
+	margin: 15px 0px 5px 0px; ;
+}
+
+#boton-f {
+	background-color: #4caf50;
+	color: #fff;
+	border-radius: 3px;
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+::-webkit-input-placeholder {
+   color:transparent;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color:transparent;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color:transparent;
+}
+
+:-ms-input-placeholder {
+   color:transparent;
+}
+
+
+/*.form-container div {
+	margin: 20px 0;
+}¿*/
+/*.form-container input, .form-container select {
 	border: none;
 	border-bottom: 1px solid #ccc;
 	font-family: 'Open Sans', sans-serif; font-weight:300;
@@ -232,12 +290,8 @@ header .logo {
 .form-container option {
 	margin: 0;
 }
-.form-container label {
-	display: none
-}
-.form-container h4 {
-	margin: 0px 0px 0px 15px;
-}
+
+
 .form-container .placeholder {
 	color: #000 !important;
 	text-transform: uppercase;
@@ -262,24 +316,24 @@ font-family:Gibson-Light;
 	font-family: 'Montserrat', sans-serif; font-weight:700;
 	text-transform: uppercase;
 	color: white
-}
-
-:-moz-placeholder { /* Firefox 18- */
+}*/
+/*
+:-moz-placeholder { /* Firefox 18-
  color: #000 !important;
  text-transform:uppercase;
 letter-spacing:1px;
 font-size:12px;
 font-family: 'Open Sans', sans-serif; font-weight:300
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
+}*/
+/*
+::-moz-placeholder {  Firefox 19+
  color: #000 !important;
  text-transform:uppercase;
 letter-spacing:1px;
 font-size:12px;
 font-family: 'Open Sans', sans-serif; font-weight:300
-}
-
+}*/
+/*
 :-ms-input-placeholder {
  color: #000 !important;
  text-transform:uppercase;
@@ -287,6 +341,7 @@ letter-spacing:1px;
 font-size:12px;
 font-family: 'Open Sans', sans-serif; font-weight:300
 }
+*/
 footer {
 	color: #999;
 	position: absolute;

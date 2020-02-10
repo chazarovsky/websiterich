@@ -87,7 +87,7 @@ a:hover {
   margin-top: 32px;
 }
 .navbar-header .navbar-brand {
-  padding: 5px 0;
+  padding: 20px 0 5px 0;
 }
 .navbar-header .navbar-brand a {
   height: auto;
@@ -112,7 +112,7 @@ a:hover {
   background: transparent;
 }
 #top-bar.animated-header {
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
   background: #ffffff;
   box-shadow: none;
 }
@@ -132,7 +132,7 @@ a:hover {
   text-transform: uppercase;
 }
 #top-bar .main-menu li a:hover {
-  color: #02bdd5;
+  color: #4fc0ef;
 }
 .navbar-custom .nav li > a {
   position: relative;
@@ -149,10 +149,11 @@ a:hover {
   opacity: 0;
 }
 #hero-area {
-  background: url('../images/slider.jpg') no-repeat 50%;
-  background-size: cover;
-  background-attachment: fixed;
-  padding-top: 430px;
+  /*background: url('../images/slider.jpg') no-repeat 50%;*/
+  /*background-size: cover;*/
+  /*background-attachment: fixed;*/
+  background-color: #152e47;
+  padding-top: 230px;
   padding-bottom: 150px;
   color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -172,7 +173,7 @@ a:hover {
   z-index: 999;
 }
 #hero-area h1 {
-  font-size: 40px;
+  font-size: 48px;
   line-height: 50px;
   color: #fff;
   font-weight: 700;
@@ -203,9 +204,10 @@ a:hover {
   border-radius: 0;
 }
 #call-to-action {
-  background-image: url("../images/cta.jpg");
-  background-size: cover;
-  background-attachment: fixed;
+  /*background-image: url("../images/cta.jpg");*/
+  /*background-size: cover;*/
+  /*background-attachment: fixed;*/
+  background-color: #152e47;
   padding: 50px 0;
   text-align: center;
   position: relative;
@@ -213,7 +215,7 @@ a:hover {
 }
 #call-to-action .block {
   position: relative;
-  z-index: 99;
+  z-index: 98;
   color: #fff;
 }
 #call-to-action .block h2 {
@@ -229,7 +231,7 @@ a:hover {
 #call-to-action .block .btn-contact {
   background: #fff;
   border: none;
-  color: #02bdd5;
+  color: #4fc0ef;
   padding: 16px 35px;
   margin-top: 20px;
   font-size: 12px;
@@ -241,7 +243,7 @@ a:hover {
   margin-right: 10px;
 }
 #about {
-  padding: 30px 0;
+  padding: 0px 0;
 }
 #about .block {
   padding: 20px 30px 0 30px;
@@ -383,7 +385,7 @@ figure figcaption h4 {
   text-transform: uppercase;
 }
 figure figcaption h4 a {
-  color: #02bdd5;
+  color: #4fc0ef;
 }
 figure figcaption p {
   font-size: 14px;
@@ -470,6 +472,12 @@ figure figcaption p {
 transform: translateY(-4px) /*scale(1.005) translateZ(0)*/;
 }
 
+
+.card1:hover {
+background-color: #F4F5F7;
+}
+
+
 .card:hover {
   webkit-box-shadow: -13px 15px 16px -4px rgba(21,46,71,0.29);
   -moz-box-shadow: -13px 15px 16px -4px rgba(21,46,71,0.29);
@@ -505,7 +513,7 @@ transform: translateY(-4px) /*scale(1.005) translateZ(0)*/;
 #contact-section .email i,
 #contact-section .phone i {
   font-size: 45px;
-  color: #02bdd5;
+  color: #4fc0ef;
 }
 #contact-section .address h5,
 #contact-section .email h5,
@@ -532,7 +540,7 @@ transform: translateY(-4px) /*scale(1.005) translateZ(0)*/;
   margin-top: 10px;
 }
 #footer .copyright a {
-  color: #02bdd5;
+  color: ##4fc0ef;
 }
 #footer .social {
   text-align: right;
@@ -544,10 +552,10 @@ transform: translateY(-4px) /*scale(1.005) translateZ(0)*/;
 }
 #footer .social li a {
   font-size: 22px;
-  color: #02bdd5;
+  color: #4fc0ef;
 }
 .cd-headline.slide .cd-words-wrapper {
-  color: #02bdd5;
+  color: #4fc0ef;
 }
 ul.social-icons {
   height: auto;
@@ -573,14 +581,15 @@ ul.social-icons li {
   background-size: cover;
   padding: 100px 0 5px 0;
   position: relative;
-  background: #051019;
+  /*background: #152e47;*/
   color: #fff;
 }
 .global-page-header h2 {
   font-size: 42px;
   font-weight: bold;
-  color: #fff;
+  color: #152e47;
   text-transform: uppercase;
+  padding-top: 10px;
 }
 .global-page-header .breadcrumb {
   background: none;
@@ -1096,7 +1105,7 @@ article {
   background: #fff;
 }
 .navbar-toggle {
-  background: #000;
+  background: #152e47;
 }
 .dropdown-menu > ul {
   list-style: none;
@@ -1122,4 +1131,22 @@ article {
   padding: 8px 0;
   color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 370px) {
+  .navbar-header .navbar-brand {
+    padding: 5px 0 5px 0;
+ }
+}
+
+@media (max-width: 420px) {
+  .navbar-header .navbar-brand {
+    padding: 5px 0 5px 0;
+ }
+}
+
+@media (max-width: 800px) {
+  .navbar-header .navbar-brand {
+    padding: 8px 0 5px 0;
 }
