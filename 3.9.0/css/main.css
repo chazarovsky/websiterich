@@ -475,7 +475,8 @@ transform: translateY(-4px) /*scale(1.005) translateZ(0)*/;
 
 
 .card1:hover {
-background-color: #F4F5F7;
+background-color: #D4D9DD;
+color: #fff;
 }
 
 
