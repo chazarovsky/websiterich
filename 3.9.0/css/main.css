@@ -376,9 +376,14 @@ figure .buttons {
   left: 24%;
 }
 figure figcaption {
-  padding: 60px 25px;
+  padding: 30px 25px;
   margin-top: 0;
   color: #444;
+}
+
+figure figcaption.cardText {
+  padding:70px 25px;
+  margin-top: 0;
 }
 
 figure figcaption h4 {
