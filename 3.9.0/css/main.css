@@ -376,10 +376,11 @@ figure .buttons {
   left: 24%;
 }
 figure figcaption {
-  padding: 20px 25px;
+  padding: 60px 25px;
   margin-top: 0;
   color: #444;
 }
+
 figure figcaption h4 {
   margin: 0;
   text-transform: uppercase;
