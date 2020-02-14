@@ -39,7 +39,7 @@ header .logo {
 .jumbotron-elastic {
 	width: 100%;
 	min-height: 450px;
-	background: url('../images/imgLanding/elasticFondo-01.png') center center;
+	background: url('../images/imgLanding/elasticFondo.jpg') center center;
 	background-size: cover;
 	opacity: 1;
 	display: table;
@@ -64,7 +64,7 @@ header .logo {
 .jumbotron-cloudera {
 	width: 100%;
 	min-height: 450px;
-	background: url('../images/imgLanding/cloudera-01.png') center center;
+	background: url('../images/imgLanding/clouderaFondo.jpg') center center;
 	background-size: cover;
 	opacity: 1;
 	display: table;
@@ -90,7 +90,7 @@ header .logo {
 .jumbotron-dremio {
 	width: 100%;
 	min-height: 450px;
-	background: url('../images/imgLanding/fondoDremio-01.png') center center;
+	background: url('../images/imgLanding/dremioFondo.jpg') center center;
 	background-size: cover;
 	opacity: 1;
 	display: table;
@@ -116,7 +116,7 @@ header .logo {
 .jumbotron-kafka {
 	width: 100%;
 	min-height: 450px;
-	background: url('../images/imgLanding/confluentFondo-01.png') center center;
+	background: url('../images/imgLanding/confluentFondo.jpg') center center;
 	background-size: cover;
 	opacity: 1;
 	display: table;
@@ -142,7 +142,7 @@ header .logo {
 .jumbotron-rsp {
 	width: 100%;
 	min-height: 450px;
-	background: url('../images/imgLanding/rsp-01.png') center center;
+	background: url('../images/imgLanding/rspFondo.jpg') center center;
 	background-size: cover;
 	opacity: 1;
 	display: table;
