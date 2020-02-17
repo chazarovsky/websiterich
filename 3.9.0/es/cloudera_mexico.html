@@ -11,9 +11,54 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+
+
+  <!-- Template CSS Files
+  ================================================== -->
+  <!-- Twitter Bootstrs CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- Ionicons Fonts Css -->
+  <link rel="stylesheet" href="../css/ionicons.min.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="../css/animate.css">
+  <!-- Hero area slider css-->
+  <link rel="stylesheet" href="../css/slider.css">
+  <!-- owl craousel css -->
+
+  <link rel="stylesheet" href="../css/owl.theme.css">
+  <link rel="stylesheet" href="../css/jquery.fancybox.css">
+  <!-- template main css file -->
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- responsive css -->
+  <link rel="stylesheet" href="../css/responsive.css">
+  <!-- css -->
+
+  <link rel="stylesheet" href="../css/richit.css">
   <link rel="stylesheet" href="../css/style-landing.css">
 
-  
+  <!-- Template Javascript Files
+  ================================================== -->
+  <!-- modernizr js -->
+  <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+  <!-- jquery -->
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+  <script src='../js/jquery_3_4_1.min.js'>
+  </script><script  src="../js/script.js"></script>
+  <!-- owl carouserl js -->
+  <script src="../js/owl.carousel.min.js"></script>
+  <!-- bootstrap js -->
+
+  <script src="../js/bootstrap.min.js"></script>
+  <!-- wow js -->
+  <script src="../js/wow.min.js"></script>
+  <!-- slider js -->
+  <script src="../js/slider.js"></script>
+  <script src="../js/jquery.fancybox.js"></script>
+  <!-- template main js -->
+  <script src="../js/main.js"></script>
+
+
+
   <!-- Formulario js -->
   <script src="../js/validarFormulario.js"></script>
 
@@ -32,8 +77,58 @@
 <body>
 <!-- partial:index.partial.html -->
 <header>
-  <div class="container">
-    <a href="http://richit.ai/es/"><img src="../images/imgLanding/logo_richit.png" class="logo"/></div></a>
+  <header id="top-bar" class="navbar-fixed-top animated-header">
+      <div class="container richit-navbar">
+          <div class="navbar-header">
+              <!-- responsive nav button -->
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+              <!-- /responsive nav button -->
+
+              <!-- logo -->
+              <div class="navbar-brand richit-brand">
+                  <a href="index.html" >
+                      <img src="../images/logo.png" class="richit-logo" alt="">
+                  </a>
+              </div>
+              <!-- /logo -->
+          </div>
+          <!-- main menu -->
+          <nav class="collapse navbar-collapse navbar-right richit-menu" role="navigation">
+              <div class="main-menu">
+                  <div id="idioms">
+                      <span>Language</span>
+                      <select name="defineIdiom" id="idioms" onchange="location = this.value;">
+                          <option value="../en/rsp.html">English</option>
+                          <option value="rsp.html" selected>Spanish</option>
+                      </select>
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="index.html" >Inicio</a></li>
+                      <li class="dropdown">
+                          <a href="supply.html" class="dropdown-toggle" data-toggle="dropdown">Oferta<span class="caret"></span></a>
+                          <div class="dropdown-menu">
+                              <ul>
+                                  <li><a href="services.html">Servicios</a></li>
+                                  <li><a href="plataforms.html">Plataformas</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li><a href="products.html">Productos</a></li>
+                      <li><a href="about.html">Nosotros</a></li>
+                      <li><a href="recursos.html">Centro de Recursos</a></li>
+                      <li><a href="contact.html">Contacto</a></li>
+                  </ul>
+              </div>
+          </nav>
+          <!-- /main nav -->
+      </div>
+  </header>
+
 </header>
 <div class="jumbotron-cloudera">
 
