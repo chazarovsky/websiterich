@@ -42,7 +42,7 @@ header .logo {
 	background: url('../images/imgLanding/elasticFondo.jpg') center center;
 	background-size: cover;
 	opacity: 1;
-	display: table;
+	/*display: table;*/
 	width: 100%;
 	position: relative;
 	border-radius: 0px;
