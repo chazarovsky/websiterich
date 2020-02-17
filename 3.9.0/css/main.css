@@ -390,7 +390,7 @@ figure figcaption h4 {
   margin: 0;
   text-transform: uppercase;
 }
-figure figcaption h4 a {
+figure figcaption h4 {
   color: #4fc0ef;
 }
 figure figcaption p {
