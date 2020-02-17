@@ -65,7 +65,7 @@ header .logo {
 	background: url('../images/imgLanding/clouderaFondo.jpg') center center;
 	background-size: cover;
 	opacity: 1;
-	display: table;
+	/*display: table;*/
 	width: 100%;
 	position: relative;
 	border-radius: 0px;
@@ -89,7 +89,7 @@ header .logo {
 	background: url('../images/imgLanding/dremioFondo.jpg') center center;
 	background-size: cover;
 	opacity: 1;
-	display: table;
+	/*display: table;*/
 	width: 100%;
 	position: relative;
 	border-radius: 0px;
@@ -113,7 +113,7 @@ header .logo {
 	background: url('../images/imgLanding/confluentFondo.jpg') center center;
 	background-size: cover;
 	opacity: 1;
-	display: table;
+	/*display: table;*/
 	width: 100%;
 	position: relative;
 	border-radius: 0px;
@@ -137,7 +137,7 @@ header .logo {
 	background: url('../images/imgLanding/rspFondo.jpg') center center;
 	background-size: cover;
 	opacity: 1;
-	display: table;
+	/*display: table;*/
 	width: 100%;
 	position: relative;
 	border-radius: 0px;
