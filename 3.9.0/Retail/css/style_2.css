@@ -36,116 +36,15 @@ header {
 header .logo {
 	max-width: 120px;
 }
-.jumbotron-elastic {
-	width: 100%;
-	min-height: 450px;
-	background: url('img/elasticFondo-01.png') center center;
-	background-size: cover;
-	opacity: 1;
-	display: table;
-	width: 100%;
-	position: relative;
-	border-radius: 0px;
-	color: white;
-	text-transform: uppercase;
-	margin: 0;
-	-webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 85%);
-  clip-path: url(#poly);
-	overflow: hidden;
 
-}
-.jumbotron-elastic h1 {
-	font-size: 50px;
-}
-.jumbotron-elastic h2 {
-	font-size: 18px;
-	margin: 0;
-}
-.jumbotron-cloudera {
-	width: 100%;
-	min-height: 450px;
-	background: url('img/cloudera-01.png') center center;
-	background-size: cover;
-	opacity: 1;
-	display: table;
-	width: 100%;
-	position: relative;
-	border-radius: 0px;
-	color: white;
-	text-transform: uppercase;
-	margin: 0;
-	-webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 85%);
-  clip-path: url(#poly);
-	overflow: hidden;
-
-}
-.jumbotron-cloudera h1 {
-	font-size: 50px;
-}
-.jumbotron-cloudera h2 {
-	font-size: 18px;
-	margin: 0;
-}
-
-.jumbotron-dremio {
-	width: 100%;
-	min-height: 450px;
-	background: url('img/fondoDremio-01.png') center center;
-	background-size: cover;
-	opacity: 1;
-	display: table;
-	width: 100%;
-	position: relative;
-	border-radius: 0px;
-	color: white;
-	text-transform: uppercase;
-	margin: 0;
-	-webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 85%);
-  clip-path: url(#poly);
-	overflow: hidden;
-
-}
-.jumbotron-dremio h1 {
-	font-size: 50px;
-}
-.jumbotron-dremio h2 {
-	font-size: 18px;
-	margin: 0;
-}
-
-.jumbotron-kafka {
-	width: 100%;
-	min-height: 450px;
-	background: url('img/confluentFondo-01.png') center center;
-	background-size: cover;
-	opacity: 1;
-	display: table;
-	width: 100%;
-	position: relative;
-	border-radius: 0px;
-	color: white;
-	text-transform: uppercase;
-	margin: 0;
-	-webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 85%);
-  clip-path: url(#poly);
-	overflow: hidden;
-
-}
-.jumbotron-kafka h1 {
-	font-size: 50px;
-}
-.jumbotron-kafka h2 {
-	font-size: 18px;
-	margin: 0;
-}
 
 .jumbotron-rsp {
 	width: 100%;
 	min-height: 450px;
-	background: url('../img/rsp-01.png') center center;
+	background: url('../images/imgLanding/rspFondo.jpg') center center;
 	background-size: cover;
 	opacity: 1;
-	display: table;
+	/*display: table;*/
 	width: 100%;
 	position: relative;
 	border-radius: 0px;
