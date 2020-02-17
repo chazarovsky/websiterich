@@ -41,7 +41,7 @@ header .logo {
 .jumbotron-rsp {
 	width: 100%;
 	min-height: 450px;
-	background: url('../img/rspFondo.jpg') center center;
+	background: url('/Retail/img/rspFondo.jpg') center center;
 	background-size: cover;
 	opacity: 1;
 	/*display: table;*/
