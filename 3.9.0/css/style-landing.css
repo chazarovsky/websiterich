@@ -419,7 +419,7 @@ footer {
 
 .jumbotron-cloudera{
 	min-height: 460px;
-	padding: 5px 15px;
+	padding: 75px 15px;
 }
 .jumbotron-cloudera h1 {
 	font-size: 30px;
@@ -465,3 +465,64 @@ footer {
 	margin-top: 20px;
 }
 } /**** END 320 and 480 ****/
+
+@media (max-width: 370px) {
+.jumbotron-elastic {
+	min-height: 460px;
+	padding: 5px 15px;
+}
+.jumbotron-elastic h1 {
+	font-size: 30px;
+}
+.jumbotron-elastic h2 {
+	font-size: 16px;
+}
+
+.jumbotron-cloudera{
+	min-height: 460px;
+	padding: 75px 15px;
+}
+.jumbotron-cloudera h1 {
+	font-size: 30px;
+}
+.jumbotron-cloudera h2 {
+	font-size: 16px;
+}
+
+.jumbotron-dremio{
+	min-height: 460px;
+	padding: 5px 15px;
+}
+.jumbotron-dremio h1 {
+	font-size: 30px;
+}
+.jumbotron-dremio h2 {
+	font-size: 16px;
+}
+
+.jumbotron-kafka{
+	min-height: 460px;
+	padding: 5px 15px;
+}
+.jumbotron-kafka h1 {
+	font-size: 30px;
+}
+.jumbotron-kafka h2 {
+	font-size: 16px;
+}
+
+.jumbotron-rsp {
+	min-height: 460px;
+	padding: 5px 15px;
+}
+.jumbotron-rsp h1 {
+	font-size: 30px;
+}
+.jumbotron-rsp h2 {
+	font-size: 16px;
+}
+
+.form-container {
+	margin-top: 20px;
+}
+} /**** END 360****/
