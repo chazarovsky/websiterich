@@ -695,6 +695,47 @@
               </div>
             </div>
 
+            <!-- Modal 13 -->
+          <div class="card-resources card-R" style="background: aliceblue;">
+            <div class="content">
+              <h1 class="texto_cardResources" style="font-size:22px;">Test de evaluación de madurez en Gobierno y Gestión de Datos</h1>
+              <br>
+              <label class="modal-openResources modal-labelResources" for="modal-open13">
+                     <p class="p2">Descargar</p>
+                 </label>
+              <input type="radio" name="modal" value="open" id="modal-open13" class="modal-radio" />
+              <div class="modalResources modal13">
+                <label class="modal-labelResources overlay">
+                          <input type="radio" name="modal" value="close" class="modal-radio"/>
+                      </label>
+                <div class="content">
+                  <div class="top">
+                    <h2 >Heading </h2>
+                    <label class="modal-labelResources close-btn">
+                              <input type="radio" name="modal" value="close" class="modal-radio"/>
+                          </label>
+                  </div>
+
+                  <form action="../php/enviar-prueba.php" method="post" id="form13" onsubmit="return validar13();">
+                    <label class="titulo-label">Nombre *</label>
+                    <input type="text" id="nombre13" name="nombre" placeholder="Nombre" required>
+                    <label class="titulo-label">Correo *</label>
+                    <input type="email" id="correo13" name="correo" placeholder="Correo" required>
+                    <label class="titulo-label">Teléfono</label>
+                    <input type="text" name="telefono" placeholder="Teléfono">
+                    <input type="submit" value="Descargar" id="boton13">
+                  </form>
+
+
+                <!--<label class="modal-labelResources action-btn">-->
+
+                            <input type="radio" name="modal" value="close" class="modal-radio"/>
+                        </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
 </div>
 
           <!--

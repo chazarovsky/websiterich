@@ -89,5 +89,10 @@ $(document).ready(function(){
     window.open(valFileDownloadPath3 , '_blank');
   });
 
+  $("#form13").submit(function() {
+    var valFileDownloadPath3 = 'https://docs.google.com/forms/d/e/1FAIpQLSds0ziw87MIM89PlCzTN3xogzx08JIHt8vRGbOqHsPjpTnB3Q/viewform';
+    window.open(valFileDownloadPath3 , '_blank');
+  });
+
 
 });
