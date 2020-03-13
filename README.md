@@ -13,8 +13,8 @@ Cuando se eliminan o se cambia de nombre un archivo, aunque se hayan hecho en el
 
 ## Contenido del repositorio
 
-..*I- 3.9.0
+..* I- 3.9.0
 
-...I-> brochures_gob
+... I-> brochures_gob
 
 I-> … // contiene los pdf que se descargan en la sección en español de recursos.html
