@@ -16,7 +16,5 @@ Cuando se eliminan o se cambia de nombre un archivo, aunque se hayan hecho en el
 ## Contenido del repositorio
 
 > + 3.9.0
-
->> brochures_gob
-
->>> // contiene los pdf que se descargan en la sección en español de recursos.html
+>> - brochures_gob
+>>> * // contiene los pdf que se descargan en la sección en español de recursos.html
