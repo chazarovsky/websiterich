@@ -15,92 +15,90 @@ Cuando se eliminan o se cambia de nombre un archivo, aunque se hayan hecho en el
 
 ## Contenido del repositorio
 
-> 3.9.0
->> brochures_gob
->>> // contiene los pdf que se descargan en la sección en español de recursos.html
->> canvasInfografia
->>> // contiene las carpetas del canvas comercial sobre rsp
->>> * css
->>> * less
->>> * img
->>> * js
->>> * indexCanvas.html
+> __3.9.0__
+>> __brochures_gob__
+>>> *// contiene los pdf que se descargan en la sección en español de recursos.html*
 
->> css
->>> * animate.css                       // plantilla por default *
->>> * bootstrap.mincss                  // plantilla por default *
->>> * ionicons.min.css		              // plantilla por default *
->>> * jquery.fancybox.css               // plantilla por default *
->>> * video.css		                      // plantilla por default *
->>> * owl.css		                        // plantilla por default *
->>> * owl.theme.css                     // plantilla por default *
->>> * pricing.css                       // plantilla por default *
->>> * responsive.css                    // plantilla por default *
->>> * slider.css   		                  // plantilla por default *
->>> * main.css	                        // plantilla por default * se ha agregado código
->>> * richit.css	                      // plantilla por default * se ha agregado código
->>> * style_resources.css              //  css agregado para la sección de recursos.html 
->>> * style-landing.css	              //  css agregado para las landing en la sección de plataformas y campañas de google
+>> __canvasInfografia__
+>>> *// contiene las carpetas del canvas comercial sobre rsp*
+>>> * __css__
+>>> * __less__
+>>> * __img__
+>>> * __js__
+>>> * __indexCanvas.html__
 
->> en
->>> // archivos .html - contenido en inglés que no necesariamente es igual al contenido de la versión en español
+>> __css__
+>>> * __animate.css__                      *// plantilla por default*
+>>> * __bootstrap.mincss__                 *// plantilla por default*
+>>> * __ionicons.min.css__		   *// plantilla por default*
+>>> * __jquery.fancybox.css__              *// plantilla por default*
+>>> * __video.css__		           *// plantilla por default*
+>>> * __owl.css__		           *// plantilla por default*
+>>> * __owl.theme.css__                    *// plantilla por default*
+>>> * __pricing.css__                      *// plantilla por default*
+>>> * __responsive.css__                   *// plantilla por default*
+>>> * __slider.css__   		           *// plantilla por default*
+>>> * __main.css__	                   *// plantilla por default se ha agregado código*
+>>> * __richit.css__	                   *// plantilla por default se ha agregado código*
+>>> * __style_resources.css__              *// css agregado para la sección de recursos.html*
+>>> * __style-landing.css__	           *// css agregado para las landing en la sección de plataformas y campañas de google*
 
->> es
->>> // archivos .html - contenido en español que no necesariamente es igual al contenido de la versión en inglés
+>> __en__
+>>> *// archivos .html - contenido en inglés que no necesariamente es igual al contenido de la versión en español*
 
->> favicon.ico
+>> __es__
+>>> *// archivos .html - contenido en español que no necesariamente es igual al contenido de la versión en inglés*
 
->> fonts
->>> //fuentes
+>> __favicon.ico__
 
->> free-license.pdf   //licencia de la plantilla
+>> __fonts__
+>>> *//fuentes*
 
->> images
->>> //carpetaa de imágenes
+>> __free-license.pdf__   *//licencia de la plantilla*
 
->> js
->>> * ...
+>> __images__
+>>> *//carpetaa de imágenes*
+
+>> __js__
+>>> * ...*
 
 >> less
->>> * ...
+>>> * ...*
 
->> php  
->>> // En estos archivos se puede modificar el correo a quienes se les 
-     envían los datos de los formularios, así comodesde donde se envían.
->>> * class.phpmailer.php   // 
->>> * contact-form.php
->>> * send-forms.php
->>> * enviar-prueba.php  // este archivo envía los datos del formulario de
-                                                               recursos.html al área comercial, aqui se incluye el 
-google form de gobierno  de datos 
->>> * SMTP.php  // librería ocupada para envio de archivos por gmail
->>> * PHPMailer.php  // librería ocupada para envio de archivos por gmail
->>> * Exception.php  // librería ocupada para envio de archivos por gmail
->>> * enviar-rsp.php  // este archivo envía los datos del formulario de la sección      
-  					de rspC.html de la campaña en capterra al área 
-comercial
->>> * enviar-cloudera.php  // este archivo envía los datos del formulario de
-                                          cloudera_mexico.html al área comercial
->>> * enviar-dremio.php  // este archivo envía los datos del formulario de 
-			       dremio_mexico.html al área comercial
->>> * enviar-elastic.php  // este archivo envía los datos del formulario de 
-					      elasticsearch_mexico.html al área comercial
->>> * enviar-kafka.php  // este archivo envía los datos del formulario de 
-					      confluent_mexico.html al área comercial
->>> * enviar-rspE.php  // este archivo envía los datos del formulario de 				rspE.html, pág de la sección de retail en inglés    
-al área comercial
+>> __php __ 
+>>> *// En estos archivos se puede modificar el correo a quienes se les 
+     envían los datos de los formularios, así comodesde donde se envían.*
+>>> * __class.phpmailer.php__   // 
+>>> * __contact-form.php__
+>>> * __send-forms.php__
+>>> * __enviar-prueba.php__  *// este archivo envía los datos del formulario de recursos.html al área comercial, aqui se incluye el google                               form de gobierno  de datos*
+>>> * __SMTP.php__  *// librería ocupada para envio de archivos por gmail*
+>>> * __PHPMailer.php__  *// librería ocupada para envio de archivos por gmail*
+>>> * __Exception.php__  *// librería ocupada para envio de archivos por gmail*
+>>> * __enviar-rsp.php__  *// este archivo envía los datos del formulario de la sección     
+  			de rspC.html de la campaña en capterra al área comercial*
+>>> * __enviar-cloudera.php__  *// este archivo envía los datos del formulario de
+                                          cloudera_mexico.html al área comercial*
+>>> * __enviar-dremio.php__  *// este archivo envía los datos del formulario de 
+			       dremio_mexico.html al área comercial*
+>>> * __enviar-elastic.php__  *// este archivo envía los datos del formulario de 
+					      elasticsearch_mexico.html al área comercial*
+>>> * __enviar-kafka.php__  *// este archivo envía los datos del formulario de 
+					      confluent_mexico.html al área comercial*
+>>> * __enviar-rspE.php__  *// este archivo envía los datos del formulario de rspE.html, pág de la sección de retail en inglés    
+				al área comercial*
 
->> Retail   
->>> // archvios que se usan en la sección en inglés  richit.ai/en/retail.html
->>> * img
->>> * js
+>> __Retail__   
+>>> *// archvios que se usan en la sección en inglés  richit.ai/en/retail.html*
+>>> * __img__
+>>> * __js__
 
->> videos
+>> __videos__
 		
->> gulpfile.js
+>> __gulpfile.js__
 
->> package.json
+>> __package.json__
 
->> README.md
+>> __README.md__
 
 
