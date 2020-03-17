@@ -11,9 +11,12 @@ Al hacer cambios en la rama master éstos se generan directamente en el servidor
 ###### Importante:
 Cuando se eliminan o se cambia de nombre un archivo, aunque se hayan hecho en el repositorio, en el servidor se tienen que eliminar directamente.
 
+---
+
 ## Contenido del repositorio
 
-+ 3.9.0
+> + 3.9.0
 
-+ brochures_gob
- ... // contiene los pdf que se descargan en la sección en español de recursos.html
+>> brochures_gob
+
+>>> // contiene los pdf que se descargan en la sección en español de recursos.html
