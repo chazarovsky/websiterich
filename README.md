@@ -28,7 +28,7 @@ Cuando se eliminan o se cambia de nombre un archivo, aunque se hayan hecho en el
 >>> * __indexCanvas.html__
 
 >> __css__
->>> * __animate.css__                      *// plantilla por default*
+>>> * __animate.css__                      *// plantilla por default* 
 >>> * __bootstrap.mincss__                 *// plantilla por default*
 >>> * __ionicons.min.css__		   *// plantilla por default*
 >>> * __jquery.fancybox.css__              *// plantilla por default*
@@ -65,7 +65,7 @@ Cuando se eliminan o se cambia de nombre un archivo, aunque se hayan hecho en el
 >> less
 >>> * ...*
 
->> __php __ 
+>> __php__ 
 >>> *// En estos archivos se puede modificar el correo a quienes se les 
      envían los datos de los formularios, así comodesde donde se envían.*
 >>> * __class.phpmailer.php__   // 
