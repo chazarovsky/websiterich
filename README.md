@@ -17,4 +17,12 @@ Cuando se eliminan o se cambia de nombre un archivo, aunque se hayan hecho en el
 
 > + 3.9.0
 >> - brochures_gob
->>> * // contiene los pdf que se descargan en la sección en español de recursos.html
+>>> *// contiene los pdf que se descargan en la sección en español de recursos.html
+>> - canvasInfografia
+>>> *// contiene las carpetas del canvas comercial sobre rsp
+>>> * css
+>>> * less
+>>> * img
+>>> * js
+>>> * indexCanvas.html
+
