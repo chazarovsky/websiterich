@@ -107,6 +107,7 @@ Cuando se eliminan o se cambia de nombre un archivo, aunque se hayan hecho en el
 >>> *// archvios que se usan en la sección en inglés  richit.ai/en/retail.html*
 >>> * __img__
 >>> * __js__
+>>> * __css__
 
 >> __videos__
 		
