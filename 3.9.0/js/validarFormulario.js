@@ -9,15 +9,15 @@ function validarRSP(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -38,15 +38,15 @@ function validarCloudera(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -67,15 +67,15 @@ function validarDremio(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -96,15 +96,15 @@ function validarElastic(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -125,15 +125,15 @@ function validarKafka(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -154,15 +154,15 @@ function validarRSPE(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -183,15 +183,15 @@ function validar0(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -212,15 +212,15 @@ function validar1(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -241,15 +241,15 @@ function validar2(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -270,15 +270,15 @@ function validar3(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -299,15 +299,15 @@ function validar4(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -328,15 +328,15 @@ function validar5(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -357,15 +357,15 @@ function validar6(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -386,15 +386,15 @@ function validar7(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -414,15 +414,15 @@ function validar8(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -442,15 +442,15 @@ function validar9(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>60){
     alert("El correo es muy largo");
     return false;
   }
@@ -471,15 +471,15 @@ function validar10(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -500,15 +500,15 @@ function validar11(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -529,15 +529,15 @@ function validar12(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
@@ -558,15 +558,15 @@ function validar13(){
     alert("El campo Nombre y Correo son obligatorios");
     return false;
   }
-  else if(nombre.length>120){
+  else if(nombre.length>60){
     alert("El nombre es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>50){
     alert("El correo es muy largo");
     return false;
   }
-  else if(correo.length>100){
+  else if(correo.length>60){
     alert("El correo es muy largo");
     return false;
   }
