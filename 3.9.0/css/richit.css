@@ -149,6 +149,18 @@ figure .img-wrapper {
     font-weight: bold;
 }
 
+/* Clase para no repetir id - urs*/
+.idioms_cl {
+    text-align: right;
+    color: gray;
+    font-size:12px;
+}
+.idioms_cl span {
+    text-transform:uppercase;
+    font-weight: bold;
+}
+/**/
+
 
 @media (max-width: 1024px) {
     /*Menu*/
