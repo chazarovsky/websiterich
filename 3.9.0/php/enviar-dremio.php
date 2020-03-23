@@ -5,7 +5,6 @@ if(empty($_POST["nombre"]) || empty($_POST["correo"])){
   die ("Es necesario completar estos campos");
 }
 
-
 $nombre = $_POST["nombre"];
 $correo = $_POST["correo"];
 $telefono = $_POST["telefono"];
