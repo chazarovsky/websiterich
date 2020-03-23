@@ -1,7 +1,6 @@
 <?php
 
-// Validacion de que los valores no estan vacios
-
+// Validacion de que los valores por POST no estan vacios
 if(empty($_POST["nombre"]) || empty($_POST["correo"])){
   die ("Es necesario completar estos campos");
 }
@@ -10,6 +9,11 @@ if(empty($_POST["nombre"]) || empty($_POST["correo"])){
 $nombre = $_POST["nombre"];
 $correo = $_POST["correo"];
 $telefono = $_POST["telefono"];
+
+// Validacion de que las variables no estan vacias
+if(empty($nombre) || empty($correo)){
+  die ("Es necesario completar estos campos");
+}
 
 $contenido = "Nombre: " . $nombre . "<br>Correo: " . $correo . "<br>Teléfono: " . $telefono ;
 
