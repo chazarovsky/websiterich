@@ -57,7 +57,7 @@ try {
 
     $mail->send();
     //echo 'El mensaje se envió correctamente';
-    header("Location: http://richit.ai/es/kafka_mexico.html");
+    header("Location: http://richit.ai/es/confluent_mexico.html");
 } catch (Exception $e) {
     echo 'hubo un error al enviarse';
     echo 'Mailer mando Error: ' . $mail->ErrorInfo;
