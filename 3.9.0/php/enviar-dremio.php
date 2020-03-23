@@ -2,7 +2,7 @@
 
 // Validacion de que los valores no estan vacios
 
-if(empty($_POST["nombre"]) || empty($_POST["email"])){
+if(empty($_POST["nombre"]) || empty($_POST["correo"])){
   die ("Es necesario completar estos campos");
 }
 
