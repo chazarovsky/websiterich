@@ -1,5 +1,12 @@
 <?php
 
+// Validacion de que los valores no estan vacios
+
+if(empty($_POST["nombre"]) || empty($_POST["email"])){
+  die ("Es necesario completar estos campos");
+}
+
+
 $nombre = $_POST["nombre"];
 $correo = $_POST["correo"];
 $telefono = $_POST["telefono"];
