@@ -105,12 +105,14 @@ Cuando se eliminan o se cambia de nombre un archivo, aunque se hayan hecho en el
 
 >> __Retail__   
 >>> *// archvios que se usan en la sección en inglés  richit.ai/en/retail.html*
+
 >>> * __img__
 >>> * __js__
 >>> * __css__
 
 >> __videos__
->>> *// los videos se suben directamente al servidor para que su carga sea más rápida*		
+>>> *// los videos se suben directamente al servidor para que su carga sea más rápida*	
+
 >> __gulpfile.js__
 
 >> __package.json__
