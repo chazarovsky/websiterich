@@ -110,7 +110,7 @@ Cuando se eliminan o se cambia de nombre un archivo, aunque se hayan hecho en el
 >>> * __css__
 
 >> __videos__
-		
+>>> *// los videos se suben directamente al servidor para que su carga sea más rápida*		
 >> __gulpfile.js__
 
 >> __package.json__
