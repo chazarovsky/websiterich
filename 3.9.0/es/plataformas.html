@@ -4,12 +4,12 @@
         <!-- Basic Page Needs
         ================================================== -->
         <meta charset="utf-8">
-        <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+        <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8">-->
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="icon" href="../favicon.ico" type="image/x-icon">
-        <title>RICH IT - Oportunidad de Trabajo</title>
-        <meta name="description" content="careers, Oportunidad de trabajo">
-        <meta name="keywords" content="">
+        <title>Rich IT - Plataformas</title>
+        <meta name="description" content="Plataformas, Elasticsearch, Dremio, Cloudera.">
+        <meta name="keywords" content="Plataformas, Elasticsearch, Dremio, Cloudera.">
         <meta name="author" content="">
         <!-- Mobile Specific Metas
         ================================================== -->
@@ -57,6 +57,22 @@
         <script src="../js/jquery.fancybox.js"></script>
         <!-- template main js -->
         <script src="../js/main.js"></script>
+
+
+        <!-- Google Analytics cuenta de Génesis
+        ================================================== -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154062253-1">
+        </script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-154062253-1');
+        </script>
+
+
     </head>
     <body>
         <!--
@@ -78,7 +94,7 @@
                     <!-- logo -->
                     <div class="navbar-brand richit-brand">
                         <a href="index.html" >
-                            <img src="../images/logo.png" class="richit-logo" alt="">
+                            <img src="../images/logo.png" class="richit-logo" alt="logo-richit">
                         </a>
                     </div>
                     <!-- /logo -->
@@ -86,11 +102,11 @@
                 <!-- main menu -->
                 <nav class="collapse navbar-collapse navbar-right richit-menu">
                     <div class="main-menu">
-                        <div class="idioms_cl">
+                        <div class="idioms_cl" style="visibility:hidden;">
                             <span>Language</span>
                             <select name="defineIdiom" id="idioms" onchange="location = this.value;">
-                                <option value="../en/careers.html">English</option>
-                                <option value="careers.html" selected>Spanish</option>
+                                <option value="../en/platforms.html">English</option>
+                                <option value="plataformas.html" selected>Spanish</option>
                             </select>
                         </div>
                         <ul class="nav navbar-nav navbar-right">
@@ -99,95 +115,134 @@
                                 <a href="supply.html" class="dropdown-toggle" data-toggle="dropdown">Oferta<span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                      <li><a href="products.html">Soluciones analíticas</a></li>
-                                      <li><a href="services.html">Servicios</a></li>
-                                      <li><a href="plataforms.html">Plataformas</a></li>
+                                      <li><a href="productos.html">Soluciones analíticas</a></li>
+                                      <li><a href="servicios.html">Servicios</a></li>
+                                      <li><a href="plataformas.html">Plataformas</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="about.html">Nosotros</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
                             <li><a href="recursos.html">Mejores Prácticas</a></li>
-                            <li><a href="contact.html">Contacto</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
                         </ul>
                     </div>
                 </nav>
                 <!-- /main nav -->
             </div>
-
-            <!-- Google Analytics cuenta de Génesis
-            ================================================== -->
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154062253-1">
-            </script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'UA-154062253-1');
-            </script>
-
         </header>
 
         <!--
         ==================================================
-            Global Page Section Start
+            Page Header Section Start
         ================================================== -->
         <section class="global-page-header main-header">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="block">
-                            <h2 class="header-content">Oportunidades de trabajo</h2>
+                            <h2 class="header-content">Plataformas</h2>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
+        </section><!--/#Page header-->
         <!--
         ==================================================
-            Company Description Section Start
-        ================================================== -->
-        <section class="company-description richit-description">
+            Modules Section Start
+        ==================================================-->
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="block service-description">
-                            <h3 class="subtitle wow fadeInUp" data-wow-delay=".3s" data-wow-duration="500ms">Trabaja con nosotros</h3>
-                            <p  class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms">
-                                RICH IT es una de las consultoras especializadas en ciencia de datos de mayor crecimiento en América Latina. Únete a nuestro equipo, manda tu CV, posición de interés y ejemplos de tu trabajo.
-                            </p>
-                        </div>
+                <br>
+                <br>
+                <div class="row photo-grid flex-container">
+                    <div class="
+                       col-lg-4
+                       col-md-5
+                       col-sm-6
+                       col-xs-8">
+                       <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                         <a href="elasticsearch_mexico.html" target="_blank">
+                            <div class="img-wrapper">
+                                <img src="../images/cards/pl-03.jpg" class="img-responsive" alt="Elasticsearch logo" >
+                                <div class="overlay">
+                                    <div class="buttons2">
+                                        <p><br><br><br><br><br>Elastick Stack contiene un motor de búsqueda empresarial que permite indexar y analizar grandes cantidades de datos en tiempo real.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4 class="module-title">Elasticsearch</h4>
+                            </figcaption>
+                          </a>
+                        </figure>
+                    </div>
+                    <div class="
+                       col-lg-4
+                       col-md-5
+                       col-sm-6
+                       col-xs-8">
+                       <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                         <a href="confluent_mexico.html" target="_blank">
+                            <div class="img-wrapper">
+                                <img src="../images/cards/pl-04.jpg" class="img-responsive" alt="Conlfuent logo" >
+                                <div class="overlay">
+                                    <div class="buttons2">
+                                        <p><br><br><br><br><br>Confluent es una plataforma de transmisión de datos a gran escala basada en Apache Kafka.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4 class="module-title">Confluent</h4>
+                            </figcaption>
+                          </a>
+                        </figure>
                     </div>
                 </div>
-            </div>
-
-            <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="service-item">
-                  <h3 class="title wow fadeInDown animated" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown; text-align: center; color:#000;">Buscamos</h3>
-                    <hr>
-                    <ul class="service-list fadeInDown animated"  data-wow-delay=".5s" style=" color:#000;">
-                        <li ><strong >Científico de Datos:</strong> Aprendizaje estadístico, aprendizaje de máquina, etc.</li>
-                        <li ><strong >Ingeniero de Datos:</strong> Integración de datos, arquitectura de datos, Linux, SQL, No SQL, Hadoop, Python, infraestructura física y en la nube.</li>
-                        <li ><strong >Diseñador Visual:</strong> Diseño de información, sentido estético, visualizaciones gráficas, mapas, infografías, dashboards (Java Script, D3, CSS, HTML5, GIS).</li>
-                        <li ><strong >Consultor de Datos:</strong> Apoyo a las organizaciones en la implementación de mejores prácticas para la administración y minería de datos. Se apoya en metodologías como Cobit, PMP, ITIL, DMM, Data Governance CRISP DM, etc.</li>
-                        <li ><strong >Desarrollador de Software:</strong> Desarrollo de productos de datos. Entrega los modelos como servicio y trabaja en ingesta de datos (C++, Python, Ruby, C#).</li>
-                        <li><strong >Gestor de Proyecto:</strong> Administración de proyectos de datos.</li>
-                    </ul>
+                <div class="row photo-grid flex-container">
+                    <div class="
+                       col-lg-4
+                       col-md-5
+                       col-sm-6
+                       col-xs-8">
+                       <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                         <a href="cloudera_mexico.html">
+                            <div class="img-wrapper">
+                                <img src="../images/cards/pl-02.jpg" class="img-responsive" alt="Cloudera logo" >
+                                <div class="overlay">
+                                    <div class="buttons2">
+                                        <p><br><br><br><br><br>Cloudera es una plataforma de Big Data basada en Apache Hadoop que permite añadir funciones de seguridad, control y gestión.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4 class="module-title">Cloudera</h4>
+                            </figcaption>
+                          </a>
+                        </figure>
+                    </div>
+                    <div class="
+                       col-lg-4
+                       col-md-5
+                       col-sm-6
+                       col-xs-8">
+                       <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                          <a href="dremio_mexico.html" target="_blank">
+                            <div class="img-wrapper">
+                                <img src="../images/cards/pl-01.jpg" class="img-responsive" alt="Dremio logo" >
+                                <div class="overlay">
+                                    <div class="buttons2">
+                                        <p><br><br><br><br><br>Dremio es una plataforma de datos como servicio que ofrece un conjunto de conectores que facilitan la comunicación entre las fuentes de datos y consumidores analíticos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4 class="module-title">Dremio</h4>
+                            </figcaption>
+                          </a>
+                        </figure>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-        </section>
-
-        <!--
-        <section id="service" class="section-padding wow fadeInDown delay-05s">
-
-        </section> -->
+                </div>
 
         <!--
         ==================================================
@@ -196,18 +251,18 @@
         <section id="call-to-action">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-md-12">
                             <div class="block">
                                 <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">QUEREMOS SABER DE TI</h2>
                                 <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Aumenta tus ingresos y mejora tu productividad.</p>
-                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms"><strong>Contáctanos</strong></a>
+                                <a href="contacto.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms"><strong>Contáctanos</strong></a>
                             </div>
                         </div>
 
                     </div>
                 </div>
             </section>
+
 
         <!--
         ==================================================
@@ -217,7 +272,7 @@
                 <div class="container">
                     <div class="col-md-8 richit-copyright">
                         <p class="copyright center">Copyright: RICH IT <span>2020</span></p>
-                        <a class="center" href="aviso.html">Aviso de Privacidad</a>
+                        <a class="center" href="aviso_de_privacidad.html">Aviso de Privacidad</a>
                     </div>
                     <div class="col-md-4" style="text-align:right;">
                         <!-- Social Media -->
@@ -238,7 +293,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <a href="careers.html">Oportunidades de trabajo</a>
+                        <a href="bolsa_de_trabajo.html">Oportunidades de trabajo</a>
                     </div>
                 </div>
             </footer> <!-- /#footer -->

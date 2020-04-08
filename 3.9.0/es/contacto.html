@@ -4,10 +4,10 @@
         <!-- Basic Page Needs
         ================================================== -->
         <meta charset="utf-8">
-        <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8">-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="icon" href="../favicon.ico" type="image/x-icon">
-        <title>Rich IT</title>
+        <title>RICH IT - Contacto</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="">
@@ -34,7 +34,6 @@
         <link rel="stylesheet" href="../css/main.css">
         <!-- responsive css -->
         <link rel="stylesheet" href="../css/responsive.css">
-        <!-- richit css -->
         <link rel="stylesheet" href="../css/richit.css">
 
         <!-- Template Javascript Files
@@ -57,6 +56,7 @@
         <script src="../js/jquery.fancybox.js"></script>
         <!-- template main js -->
         <script src="../js/main.js"></script>
+        <script src="../js/validate.js"></script>
 
 
         <!-- Google Analytics cuenta de Génesis
@@ -100,147 +100,117 @@
                     <!-- /logo -->
                 </div>
                 <!-- main menu -->
-                <nav class="collapse navbar-collapse navbar-right richit-menu">
+                <nav class="collapse navbar-collapse navbar-right richit-menu" role="navigation">
                     <div class="main-menu">
-                        <div class="idioms_cl">
+                        <div id="idioms">
                             <span>Language</span>
                             <select name="defineIdiom" id="idioms" onchange="location = this.value;">
-                                <option value="../en/services.html">English</option>
-                                <option value="services.html" selected>Spanish</option>
+                                <option value="../en/contact.html">English</option>
+                                <option value="contacto.html" selected>Spanish</option>
                             </select>
                         </div>
                         <ul class="nav navbar-nav navbar-right">
+
                             <li><a href="index.html" >Inicio</a></li>
                             <li class="dropdown">
                                 <a href="supply.html" class="dropdown-toggle" data-toggle="dropdown">Oferta<span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                      <li><a href="products.html">Soluciones analíticas</a></li>
-                                      <li><a href="services.html">Servicios</a></li>
-                                      <li><a href="plataforms.html">Plataformas</a></li>
+                                      <li><a href="productos.html">Soluciones analíticas</a></li>
+                                      <li><a href="servicios.html">Servicios</a></li>
+                                      <li><a href="plataformas.html">Plataformas</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="about.html">Nosotros</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
                             <li><a href="recursos.html">Mejores Prácticas</a></li>
-                            <li><a href="contact.html">Contacto</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
                         </ul>
                     </div>
                 </nav>
                 <!-- /main nav -->
+
             </div>
+
         </header>
 
         <!--
         ==================================================
-            Page Header Section Start
+            Global Page Section Start
         ================================================== -->
+
         <section class="global-page-header main-header">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="block">
-                            <h2 class="header-content">Servicios</h2>
+                            <h2 class="header-content">Contacto</h2>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </section><!--/#Page header-->
+        </section>
+
         <!--
         ==================================================
-            Modules Section Start
+            Contact Section Start
         ================================================== -->
 
-        <div class="container">
-            <br>
-            <br>
-            <div class="row photo-grid flex-container">
-                <div class="
-                   col-lg-4
-                   col-md-5
-                   col-sm-6
-                   col-xs-8">
-                   <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                        <div class="img-wrapper">
-                            <img src="../images/cards/dg.jpg" class="img-responsive" alt="Gobierno de Datos" >
-                            <div class="overlay">
-                                <div class="buttons2">
-                                    <p>Organizamos tus datos. Levantamiento del estado de los datos del cliente y programas de gobierno de datos apegados a la metodología DAMA tales como administración de metadatos, datos maestros, modelado y arquitectura de datos.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <figcaption>
-                            <h4 class="module-title">Gobierno de Datos</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="
-                   col-lg-4
-                   col-md-5
-                   col-sm-6
-                   col-xs-8">
-                   <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                        <div class="img-wrapper">
-                            <img src="../images/cards/de.jpg" class="img-responsive" alt="Ingeniería de Datos" >
-                            <div class="overlay">
-                                <div class="buttons2">
-                                    <p>Integramos tus fuentes en una plataforma analítica. Migración de bases de datos, data lakes, plataformas de big data, desarrollo de conectores, tareas de limpieza, extracción, transformación y carga de datos en streaming o batch.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <figcaption>
-                            <h4 class="module-title">Ingeniería de Datos</h4>
-                        </figcaption>
-                    </figure>
-                </div>
+        <section id="contact-section" style="padding-top: 20px; padding-bottom:20px;">
+            <div class="container">
+                  <div class="row">
+                   <div class="col-md-12">
+                    <div class="block">
+                        <h3 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s" style="color:#000;">Contáctanos</h3>
+                        <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s" style="margin-bottom:35px;">
+                            Con gusto atenderemos tu solicitud y agendaremos una demo para tu organización
+                        </p>
+                    </div>
+                   </div>
+                  </div>
 
-                <div class="
-                   col-lg-4
-                   col-md-5
-                   col-sm-6
-                   col-xs-8">
-                   <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                        <div class="img-wrapper">
-                            <img src="../images/cards/dc.jpg" class="img-responsive" alt="Ciencia de Datos" >
-                            <div class="overlay">
-                                <div class="buttons2">
-                                    <p>Transformamos datos en valor. Estrategias de adopción de Machine learning y monetización de los datos. Generación de modelos analíticos por industria (financiera, gubernamental, retail, telco) o por área de negocio (ventas, marketing, operaciones, finanzas, RH).</p>
-                                </div>
-                            </div>
+                  <div class=" justify-content-around" style="align-items:center;">
+                    <div class="col-md-6">
+                        <div class="block">
+                          <div style="background: #fff; border-radius: 3px; margin-top: 0px;">
+                            <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/d95584bed0373d78db4e72fb5d8d79502896004"><script src="https://cdn.pipedriveassets.com/web-form-assets/webforms.min.js"></script></div>
+                          </div>
                         </div>
-                        <figcaption>
-                            <h4 class="module-title">Ciencia de Datos</h4>
-                        </figcaption>
-                    </figure>
-                </div>
+                    </div>
 
+                    <div class="col-md-6 card0">
+                      <div class="address wow fadeInLeft card" data-wow-duration="500ms" data-wow-delay=".3s">
+                        <i class="ion-ios-location-outline"></i>
+                        <h5>Pétalo 47, Col. El Reloj, <br> Alcaldía Coyoacán,<br>C.P. 04640, CDMX, México</h5>
+                          <p>tel: +52 55 6718 1818</p>
+                            <a>contacto@richit.ai</a>
+                            <br><br>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15060.279701408965!2d-99.1440016256064!3d19.322771788354213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01ca1da5f69b%3A0x569f2db810d16d70!2sRICH%20IT!5e0!3m2!1ses-419!2smx!4v1573081359176!5m2!1ses-419!2smx" width="100%" height="280" padding-top="15px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                      </div>
+                    </div>
+                  </div>
             </div>
-            <!--
-            <div class="row photo-grid flex-container">
-            </div>
-            -->
-        </div>
-
+        </section>
 
         <!--
         ==================================================
-            Call To Action Section Start
+        Call To Action Section Start
         ================================================== -->
         <section id="call-to-action">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="block">
-                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">QUEREMOS SABER DE TI</h2>
-                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Aumenta tus ingresos y mejora tu productividad.</p>
-                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms"><strong>Contáctanos</strong></a>
-                            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">QUEREMOS SABER DE TI</h2>
+                            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Aumenta tus ingresos y mejora tu productividad.</p>
+                            <a href="contacto.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms"><strong>Contáctanos</strong></a>
                         </div>
-
                     </div>
-                </div>
-            </section>
 
+                </div>
+            </div>
+        </section>
 
         <!--
         ==================================================
@@ -250,7 +220,7 @@
                 <div class="container">
                     <div class="col-md-8 richit-copyright">
                         <p class="copyright center">Copyright: RICH IT <span>2020</span></p>
-                        <a class="center" href="aviso.html">Aviso de Privacidad</a>
+                        <a class="center" href="aviso_de_privacidad.html">Aviso de Privacidad</a>
                     </div>
                     <div class="col-md-4" style="text-align:right;">
                         <!-- Social Media -->
@@ -271,7 +241,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <a href="careers.html">Oportunidades de trabajo</a>
+                        <a href="bolsa_de_trabajo.html">Oportunidades de trabajo</a>
                     </div>
                 </div>
             </footer> <!-- /#footer -->
