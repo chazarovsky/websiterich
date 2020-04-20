@@ -1,8 +1,17 @@
 <?php
 
+// Validacion de que los valores por POST no estan vacios
+if(empty($_POST["nombre"]) || empty($_POST["correo"])){
+  die ("Es necesario completar estos campos");
+}
+
 $nombre = $_POST["nombre"];
 $correo = $_POST["correo"];
 $telefono = $_POST["telefono"];
+
+if(empty($nombre) || empty($correo)){
+  die ("Es necesario completar estos campos");
+}
 
 $contenido = "Nombre: " . $nombre . "<br>Correo: " . $correo . "<br>Teléfono: " . $telefono ;
 
@@ -48,7 +57,7 @@ try {
 
     $mail->send();
     //echo 'El mensaje se envió correctamente';
-    header("Location: http://richit.ai/es/elastic_mexico.html");
+    header("Location: http://richit.ai/es/");
 } catch (Exception $e) {
     echo 'hubo un error al enviarse';
     echo 'Mailer mando Error: ' . $mail->ErrorInfo;

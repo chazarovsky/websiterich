@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Dremio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>RICH IT - Dremio</title>
+    <meta name="description" content="Dremio es una plataforma de datos como servicio que ofrece un conjunto de conectores que facilitan la comunicación entre las fuentes de datos y consumidores analíticos.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="icon" href="../favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -34,6 +35,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('config', 'UA-154062253-2');
 </script>
 
+            <!-- Google Analytics cuenta de Irving
+            ================================================== -->
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154062253-1">
+            </script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-154062253-1');
+            </script>
+
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -44,7 +57,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- partial:index.partial.html -->
 <header>
   <div class="container">
-    <a href="http://richit.ai/es/"><img src="../images/imgLanding/logo_richit.png" class="logo"/></div></a>
+    <a href="http://richit.ai/es/"><img src="../images/imgLanding/logo_richit.png" class="logo" alt="logo-richit"/></a>
+  </div>
 </header>
 <div class="jumbotron-dremio">
 
@@ -100,13 +114,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <label class="titulo-label">Correo *</label>
       <input type="email" id="correoDremio" name="correo"  required>
       <label class="titulo-label">Teléfono</label>
-      <input type="text" name="telefono">
+      <input type="number" name="telefono">
       <input type="submit" value="Enviar" id="boton-f">
     </form>
   </div>
 </div>
+</div>
 <footer>
-  <div class="container">© Copyright: RICH IT 2019</div>
+  <div class="container">© Copyright: RICH IT 2020</div>
 
 </footer>
 <!-- partial -->

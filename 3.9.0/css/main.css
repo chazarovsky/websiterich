@@ -242,6 +242,49 @@ a:hover {
 #call-to-action .block .btn-contact i {
   margin-right: 10px;
 }
+
+/*Ursula código para no repetir id*/
+.call-to-action_cl {
+  /*background-image: url("../images/cta.jpg");*/
+  /*background-size: cover;*/
+  /*background-attachment: fixed;*/
+  background-color: #152e47;
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+.call-to-action_cl .block {
+  position: relative;
+  z-index: 98;
+  color: #fff;
+}
+.call-to-action_cl .block h2 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+.call-to-action_cl .block p {
+  font-size: 17px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+}
+.call-to-action_cl .block .btn-contact {
+  background: #fff;
+  border: none;
+  color: #4fc0ef;
+  padding: 16px 35px;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+.call-to-action_cl .block .btn-contact i {
+  margin-right: 10px;
+}
+/*fin Ursula*/
+
 #about {
   padding: 0px 0;
 }

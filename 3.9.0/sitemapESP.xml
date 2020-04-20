@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+  <loc>https://www.richit.ai/es/</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/index.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/productos.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+
+</url>
+<url>
+  <loc>https://www.richit.ai/es/servicios.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+
+</url>
+<url>
+  <loc>https://www.richit.ai/es/plataformas.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/nosotros.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/recursos.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+
+</url>
+<url>
+  <loc>https://www.richit.ai/es/contacto.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/aviso_de_privacidad.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/bolsa_de_trabajo.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/rsp.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/rdm.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/rir.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/rqw.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/elasticsearch_mexico.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/confluent_mexico.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/cloudera_mexico.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/dremio_mexico.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/modulos.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.richit.ai/es/celulas_analiticas.html</loc>
+  <lastmod>2020-04-08T19:40:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

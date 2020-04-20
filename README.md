@@ -12,7 +12,8 @@ Al hacer cambios en la rama master éstos se generan directamente en el servidor
 Cuando se eliminan o se cambia de nombre un archivo, aunque se hayan hecho en el repositorio, en el servidor se tienen que eliminar directamente.
 
 ---
-
+#### __PHP__ versión 5.6.40
+---
 ## Contenido del repositorio
 
 > __3.9.0__
@@ -52,25 +53,39 @@ Cuando se eliminan o se cambia de nombre un archivo, aunque se hayan hecho en el
 >> __favicon.ico__
 
 >> __fonts__
->>> *//fuentes*
+>>> *// fuentes*
 
 >> __free-license.pdf__   *//licencia de la plantilla*
 
 >> __images__
->>> *//carpetaa de imágenes*
+>>> *// carpetaa de imágenes*
 
 >> __js__
->>> * ...*
+>>> * __bootstrap.min.js__ *// archivo por default de la plantilla*
+>>> * __CanvasRender.js__ *// archivo por default de la plantilla*
+>>> * __formularioDownload.js__ *// descarga de documentos en la sección de recursos.html*
+>>> * __jquery_3_4_1.min.js__ 
+>>> * __jquery.fancybox.js__ *// archivo por default de la plantilla*
+>>> * __jquery.min.js__ *// archivo por default de la plantilla*
+>>> * __main.js__ *// archivo por default de la plantilla*
+>>> * __owl.carousel.min.js__ *// archivo por default de la plantilla*
+>>> * __script__ *// archivo por default de la plantilla funciona para el boton del menu en móvil*
+>>> * __slider.js__ *// archivo por default de la plantilla*
+>>> * __validarFormulario.js__ *// validación de los campos del formulario*
+>>> * __validate.js__ *// archivo por default de la plantilla*
+>>> * __vendor__ * __modernizr-2.6.2.min.js__
+>>> * __wow.min.js__ *// archivo por default de la plantilla*
 
->> less
->>> * ...*
+>> __less__
+>>> * __main.less__ *// archivo por default de la plantilla*
+>>> * __responsive.less__ *// archivo por default de la plantilla*
 
 >> __php__ 
 >>> *// En estos archivos se puede modificar el correo a quienes se les 
-     envían los datos de los formularios, así comodesde donde se envían.*
->>> * __class.phpmailer.php__   // 
->>> * __contact-form.php__
->>> * __send-forms.php__
+     envían los datos de los formularios, así como, desde donde se envían.*
+>>> * __class.phpmailer.php__   *//antiguos archivos que había
+>>> * __contact-form.php__ *//antiguos archivos que había
+>>> * __send-forms.php__ *//antiguos archivos que había
 >>> * __enviar-prueba.php__  *// este archivo envía los datos del formulario de recursos.html al área comercial, aqui se incluye el google                               form de gobierno  de datos*
 >>> * __SMTP.php__  *// librería ocupada para envio de archivos por gmail*
 >>> * __PHPMailer.php__  *// librería ocupada para envio de archivos por gmail*
@@ -90,11 +105,14 @@ Cuando se eliminan o se cambia de nombre un archivo, aunque se hayan hecho en el
 
 >> __Retail__   
 >>> *// archvios que se usan en la sección en inglés  richit.ai/en/retail.html*
+
 >>> * __img__
 >>> * __js__
+>>> * __css__
 
 >> __videos__
-		
+>>> *// los videos se suben directamente al servidor para que su carga sea más rápida*	
+
 >> __gulpfile.js__
 
 >> __package.json__
