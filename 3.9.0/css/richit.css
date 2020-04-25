@@ -33,6 +33,12 @@
     background-size: cover;
 }
 
+#value-proposition7 {
+    background-image: url(../images/header/item-9.jpg);
+    color:aliceblue;
+    background-size: cover;
+}
+
 #hero-area {
     background-position: 86%;
 }

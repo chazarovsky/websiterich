@@ -4,12 +4,12 @@
         <!-- Basic Page Needs
         ================================================== -->
         <meta charset="utf-8">
-        <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8">-->
+        <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8">-->
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="icon" href="../favicon.ico" type="image/x-icon">
-        <title>RICH IT - Servicios</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <title>RICH IT - Mesa de Servicios Analíticos</title>
+        <meta name="description" content="Smart Pipes">
+        <meta name="keywords" content="Smart Pipes">
         <meta name="author" content="">
         <!-- Mobile Specific Metas
         ================================================== -->
@@ -36,6 +36,8 @@
         <link rel="stylesheet" href="../css/responsive.css">
         <!-- richit css -->
         <link rel="stylesheet" href="../css/richit.css">
+        <!-- video css -->
+        <link rel="stylesheet" href="../css/video.css">
 
         <!-- Template Javascript Files
         ================================================== -->
@@ -57,7 +59,6 @@
         <script src="../js/jquery.fancybox.js"></script>
         <!-- template main js -->
         <script src="../js/main.js"></script>
-
 
         <!-- Google Analytics cuenta de Génesis
         ================================================== -->
@@ -94,7 +95,7 @@
                     <!-- logo -->
                     <div class="navbar-brand richit-brand">
                         <a href="index.html" >
-                            <img src="../images/logo.png" class="richit-logo" alt="">
+                            <img src="../images/logo.png" class="richit-logo" alt="RICH IT Smart Pipes">
                         </a>
                     </div>
                     <!-- /logo -->
@@ -102,11 +103,11 @@
                 <!-- main menu -->
                 <nav class="collapse navbar-collapse navbar-right richit-menu">
                     <div class="main-menu">
-                        <div class="idioms_cl">
+                        <div class="idioms_cl" style="visibility:hidden;">
                             <span>Language</span>
                             <select name="defineIdiom" id="idioms" onchange="location = this.value;">
-                                <option value="../en/services.html">English</option>
-                                <option value="servicios.html" selected>Spanish</option>
+                                <option value="../en/rsp.html">English</option>
+                                <option value="rsp.html" selected>Spanish</option>
                             </select>
                         </div>
                         <ul class="nav navbar-nav navbar-right">
@@ -140,189 +141,114 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="block">
-                            <h2 class="header-content">Servicios</h2>
+                            <h2 class="header-content">Mesa de Servicios Analíticos</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </section><!--/#Page header-->
-        <!--
-        ==================================================
-            Modules Section Start
-        ================================================== -->
 
-        <div class="container">
-            <br>
-            <br>
-            <div class="row photo-grid flex-container">
-
-
-                <div class="
-                   col-lg-4
-                   col-md-5
-                   col-sm-6
-                   col-xs-8">
-                   <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                        <div class="img-wrapper">
-                            <img src="../images/cards/dg.jpg" class="img-responsive" alt="Gobierno de Datos" >
-                            <div class="overlay">
-                                <div class="buttons2">
-                                    <p>Organizamos tus datos. Levantamiento del estado de los datos del cliente y programas de gobierno de datos apegados a la metodología DAMA tales como administración de metadatos, datos maestros, modelado y arquitectura de datos.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <figcaption>
-                            <h4 class="module-title">Gobierno de Datos</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="
-                   col-lg-4
-                   col-md-5
-                   col-sm-6
-                   col-xs-8">
-                   <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                        <div class="img-wrapper">
-                            <img src="../images/cards/de.jpg" class="img-responsive" alt="Ingeniería de Datos" >
-                            <div class="overlay">
-                                <div class="buttons2">
-                                    <p>Integramos tus fuentes en una plataforma analítica. Migración de bases de datos, data lakes, plataformas de big data, desarrollo de conectores, tareas de limpieza, extracción, transformación y carga de datos en streaming o batch.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <figcaption>
-                            <h4 class="module-title">Ingeniería de Datos</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-
-                <div class="
-                   col-lg-4
-                   col-md-5
-                   col-sm-6
-                   col-xs-8">
-                   <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                        <div class="img-wrapper">
-                            <img src="../images/cards/dc.jpg" class="img-responsive" alt="Ciencia de Datos" >
-                            <div class="overlay">
-                                <div class="buttons2">
-                                    <p>Transformamos datos en valor. Estrategias de adopción de Machine learning y monetización de los datos. Generación de modelos analíticos por industria (financiera, gubernamental, retail, telco) o por área de negocio (ventas, marketing, operaciones, finanzas, RH).</p>
-                                </div>
-                            </div>
-                        </div>
-                        <figcaption>
-                            <h4 class="module-title">Ciencia de Datos</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-
-            </div>
-            <!--
-            <div class="row photo-grid flex-container">
-            </div>
-            -->
-        </div>
-
-        <section class="pagen-header">
-            <div class="container">
+        <section id="value-proposition7" class="value-proposition">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="block">
-                            <h2 class="header-content">Servicios Empaquetados</h2>
-                        </div>
+                    <h2 class="text-center wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms" style="color: #000;">RICH IT proporcionará acceso a una herramienta de gestión de solicitudes para el registro y la atención sistematizados.</h2>
                     </div>
                 </div>
+        </section>
+
+
+
+        <section class="works service-page" style="padding-bottom: 20px;">
+            <div class="container service-description">
+                <p class="subtitle-des wow fadeInUp animated" data-wow-delay=".5s" data-wow-duration="500ms">
+                  Una cuota mensual le dará derecho a un crédito de horas que podrán utilizarse en servicios especializados de ingeniería, gobierno o ciencia de datos, según sus circunstancias particulares.
+                </p>
+                <p class="subtitle-des wow fadeInUp animated" data-wow-delay=".5s" data-wow-duration="500ms">
+                    Estos servicios pueden programarse con una semana de anticipación en un modelo de atención 5×8×L-V. Podrá participar cualquiera de los siguientes especialistas:
+                </p>
+                <p>-Ingeniero de datos.</p>
+                <p>-Científico de datos.</p>
+                <p>-Especialista en administración de los datos.</p>
+                <p>-Arquitecto de datos.</p>
+                <p>-Diseñador de interfaces gráficas y experiencia de usuario.</p>
+
+                <p>Rich it proporcionará acceso a una herramienta de gestión de solicitudes para el registro y la atención sistematizados.</p>
+
             </div>
-        </section><!--/#Page header-->
+        </section>
 
-        <!--
+
+        <section class="works service-page" style="padding:0px;">
+            <div class="container service-description">
+                <h2>Catálogo de la Mesa de Servicios</h2><br>
+                                <h3 class="subtitle wow fadeInUp" data-wow-delay=".3s" data-wow-duration="500ms">Ingeniería de datos:</h3>
+                                <ul>
+                                    <li class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms" style="margin-left: 5%">Realización de ingesta de datos.</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms" style="margin-left: 5%">Evaluación y ajuste de la estructura de datos.</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms" style="margin-left: 5%">Operacionalización de modelos.</li>
+                                </ul>
+
+                                <br>
+
+                                <h3 class="subtitle wow fadeInUp" data-wow-delay=".3s" data-wow-duration="500ms">Infraestructura de datos:</h3>
+                                <ul>
+                                    <li class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms" style="margin-left: 5%">Horas de soporte a plataformas analíticas de código abierto.</li>
+                                </ul>
+
+                                <br>
+
+                                <h3 class="subtitle wow fadeInUp" data-wow-delay=".3s" data-wow-duration="500ms">Ciencia de datos:</h3>
+                                <ul>
+                                    <li class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms" style="margin-left: 5%">Diseño de tableros.</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms" style="margin-left: 5%">Desarrollo de tableros.</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms" style="margin-left: 5%">Desarrollo de modelos.</li>
+                                </ul>
+
+                                <br>
+
+                                <h3 class="subtitle wow fadeInUp" data-wow-delay=".3s" data-wow-duration="500ms">Ciencia de datos:</h3>
+                                <ul>
+                                    <li class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms" style="margin-left: 5%">Evaluación de la calidad de los datos.</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms" style="margin-left: 5%">Perfilado de datos.</li>
+                                </ul>
+
+                                <br>
+                                <br><br>
+
+                <br>
+            </div>
+        </section>
+<!--
         ==================================================
-            Modules Section Start
+        Benefits Section Start
         ================================================== -->
-            <div class="container">
-                <br>
-                <br>
-                <div class="row photo-grid flex-container">
-
-                    <div class="
-                       col-lg-4
-                       col-md-5
-                       col-sm-6
-                       col-xs-8">
-                        <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                          <a href="rdm.html">
-                            <div class="img-wrapper">
-                                <img src="../images/cards/item-8.jpg" class="img-responsive" alt="RICH IT Data Maturity Model" >
-                                <div class="overlay">
-                                    <div class="buttons2">
-                                        <p>Identifique, de forma ágil, actividades clave en su organización para potencializar el aprovechamiento de su información. Haga que sus esfuerzos de analítica y TI sean auditables, documentables, reales y confiables para la toma de decisiones.<br><br><b>Da click para mayor información.</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption class="cardText">
-                                <h4>
-                                       RICH IT Data Maturity Model “RDM&sup2”
-                                </h4>
-                            </figcaption>
-                          </a>
-                        </figure>
+        <section id="service" class="section-padding wow fadeInDown delay-05s">
+          <div class="container">
+            <div class="row">
+                <div class="service-item">
+                    <div class="col-md-12">
+                      <br>
+                        <h3 class="title wow fadeInDown animated" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown; text-align: center;">Beneficios</h3>
+                        <hr>
                     </div>
-
-
-                    <div class="
-                       col-lg-4
-                       col-md-5
-                       col-sm-6
-                       col-xs-8">
-                        <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                          <a href="rqw.html">
-                            <div class="img-wrapper">
-                                <img src="../images/cards/item-rqw.jpg" class="img-responsive" alt="Richit Quick Wins" >
-                                <div class="overlay">
-                                    <div class="buttons2">
-                                        <p>Descubra y explote el valor de sus datos de la mano del equipo de RICH IT. <br><br><br><b>Da click para mayor información.</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption class="cardText">
-                                <h4>
-                                      Richit Quick Wins "RQW"
-                                </h4>
-                            </figcaption>
-                          </a>
-                        </figure>
+                      <div class="col-md-6 col-xs-12">
+                            <ul class="service-list">
+                                <li>Niveles de servicio garantizados.</li>
+                                <li>Equipo certificado y altamente especializado.</li>
+                                <li>Expertos y líderes en la industria.</li>
+                            </ul>
                     </div>
+                      <div class="col-md-6 col-xs-12">
+                            <ul>
+                                <li>Disminución en tiempos de implementación de hasta 50%.</li>
+                                <li>Mitigación de riesgos relacionados con la instalación, configuración o la administración deficiente de plataformas de big data.</li>
 
-                    <div class="
-                       col-lg-4
-                       col-md-5
-                       col-sm-6
-                       col-xs-8">
-                        <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                          <a href="mesa-de-servicios-analiticos.html">
-                            <div class="img-wrapper">
-                                <img src="../images/header/item-9.jpg" class="img-responsive" alt="Mesa de Servicios Analíticos" >
-                                <div class="overlay">
-                                    <div class="buttons2">
-                                        <p>RICH IT proporcionará acceso a una herramienta de gestión de solicitudes para el registro y la atención sistematizados. <br><br><br><b>Da click para mayor información.</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption class="cardText">
-                                <h4>
-                                      Mesa de Servicios Analíticos
-                                </h4>
-                            </figcaption>
-                          </a>
-                        </figure>
-                    </div>
-
-                </div>
-
-                </div>
-
-
-
+                            </ul>
+                        </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <!--
         ==================================================
             Call To Action Section Start
