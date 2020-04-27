@@ -36,9 +36,9 @@ try {
 
     //Recipients
     $mail->setFrom('upalacios@richit.ai', 'Formulario proveniente de Soluciones para el sector financiero público y privado');
-    //$mail->addAddress('echazaro@richit.ai');     // Add a recipient
-    //$mail->addAddress('mdeloscobos@richit.ai');               // Name is optional
-    //$mail->addAddress('eperezyera@richit.ai');
+    $mail->addAddress('echazaro@richit.ai');     // Add a recipient
+    $mail->addAddress('mdeloscobos@richit.ai');               // Name is optional
+    $mail->addAddress('eperezyera@richit.ai');
     $mail->addAddress('upalacios@richit.ai');
     //$mail->addAddress('ellen@example.com');               // Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
