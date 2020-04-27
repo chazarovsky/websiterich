@@ -84,6 +84,56 @@ header .logo {
 	margin: 0;
 }
 
+.jumbotron-cgp{
+	width: 100%;
+	min-height: 450px;
+	background: url('../images/imgLanding/item-11.jpg') center center;
+	background-size: cover;
+	opacity: 1;
+	/*display: table;*/
+	width: 100%;
+	position: relative;
+	border-radius: 0px;
+	color: white;
+	text-transform: uppercase;
+	margin: 0;
+	overflow: hidden;
+	padding-top: 140px;
+
+}
+.jumbotron-cgp h1 {
+	font-size: 50px;
+}
+.jumbotron-cgp h2 {
+	font-size: 18px;
+	margin: 0;
+}
+
+.jumbotron-ml{
+	width: 100%;
+	min-height: 450px;
+	background: url('../images/imgLanding/item-12.jpg') center center;
+	background-size: cover;
+	opacity: 1;
+	/*display: table;*/
+	width: 100%;
+	position: relative;
+	border-radius: 0px;
+	color: white;
+	text-transform: uppercase;
+	margin: 0;
+	overflow: hidden;
+	padding-top: 140px;
+
+}
+.jumbotron-ml h1 {
+	font-size: 50px;
+}
+.jumbotron-ml h2 {
+	font-size: 18px;
+	margin: 0;
+}
+
 .jumbotron-dremio {
 	width: 100%;
 	min-height: 450px;

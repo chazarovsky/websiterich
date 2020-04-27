@@ -230,6 +230,35 @@ function validarCPG(){
   }
 }
 
+function validarML(){
+  var nombre, correo;
+  nombre = document.getElementById("nombreML").value;
+  correo = document.getElementById("correoML").value;
+
+  expresion = /\w+@\w+\.+[a-z]/;
+
+  if(nombre === "" ||  correo === ""){
+    alert("El campo Nombre y Correo son obligatorios");
+    return false;
+  }
+  else if(nombre.length>60){
+    alert("El nombre es muy largo");
+    return false;
+  }
+  else if(correo.length>50){
+    alert("El correo es muy largo");
+    return false;
+  }
+  else if(correo.length>50){
+    alert("El correo es muy largo");
+    return false;
+  }
+  else if(!expresion.test(correo)){
+    alert("El correo no es valido");
+    return false;
+  }
+}
+
 function validar0(){
   var nombre, correo;
   nombre = document.getElementById("nombre0").value;
