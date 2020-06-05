@@ -529,7 +529,7 @@ color: #fff;
 
 
 .card:hover {
-  webkit-box-shadow: -13px 15px 16px -4px rgba(21,46,71,0.29);
+  -webkit-box-shadow: -13px 15px 16px -4px rgba(21,46,71,0.29);
   -moz-box-shadow: -13px 15px 16px -4px rgba(21,46,71,0.29);
   box-shadow: -13px 15px 16px -4px rgba(21,46,71,0.29);
 }
