@@ -40,6 +40,7 @@ try {
     $mail->addAddress('mdeloscobos@richit.ai');               // Name is optional
     $mail->addAddress('eperezyera@richit.ai');
     $mail->addAddress('upalacios@richit.ai');
+    $mail->addAddress('gmanzanares@richit.ai');
     //$mail->addAddress('ellen@example.com');               // Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');
