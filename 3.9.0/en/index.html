@@ -1,436 +1,400 @@
-<html><head>
-        <meta charset="utf-8">
-        <title>RICH IT</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <style type="text/css">
-          body, main {
-            margin: 0 auto;
-          }
-          .body, .tip {
-            stroke: #fff;
-          }
-          html {
-            line-height: 1.15;
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-            box-sizing: border-box;
-          }
-          footer, header, main {
-            display: block;
-          }
-          header {
-            border-bottom: 1px solid #efefef;
-          }
-          svg:not(:root) {
-            overflow: hidden;
-          }
-          body {
-            max-width: 960px;
-            color: #525252;
-            font-family: Roboto, sans-serif;
-          }
-          main {
-            text-align: center;
-          }
-          .u-clearfix:after {
-            content: "";
-            clear: both;
-            display: table;
-          }
-          .exhaust.two, .fuel, .removehole {
-            display: none;
-          }
-          h1, h2, h3, h4, h5, p, ul {
-            font-family: 'Roboto';
-            font-size: 64px;
-            padding: 0;
-            margin: 0;
-            font-weight: 400;
-          }
-          header {
-            padding-top: 20px;
-            padding-bottom: 10px;
-          }
-          .figure {
-            margin-top: 19vh;
-            height: 181px;
-          }
-          .figure__animation {
-            max-width: 265px;
-            position: relative;
-            z-index: -9;
-          }
-          .tip {
-            stroke-width: 3px;
-            -webkit-transform: translateY(-7px);
-            transform: translateY(-7px);
-          }
-          .body {
-            fill: #6DDCBD;
-            -webkit-transform: scaleX(1.25);
-            transform: scaleX(1.25);
-            -webkit-transform-origin: center;
-            transform-origin: center;
-            stroke-width: 3px;
-          }
-          .box {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-          }
-          .circle {
-            fill: #6DDCBD;
-            stroke: #fff;
-            stroke-width: 7px;
-          }
-          .exhaust {
-            border-bottom-left-radius: 4px;
-          }
-          .exhaust.two, .exhaust__line {
-            -webkit-animation: thurst 70ms infinite ease-in-out alternate;
-            animation: thurst 70ms infinite ease-in-out alternate;
-          }
-          .smoke {
-            -webkit-animation: smoke .1s infinite ease-in-out alternate;
-            animation: smoke .1s infinite ease-in-out alternate;
-            -webkit-transform-origin: center;
-            transform-origin: center;
-            opacity: .8;
-          }
-          @-moz-document url-prefix() {
-            .smoke {
-              animation: smokeFirefox .2s infinite ease-in-out alternate;
-            }
-          }
-          @-webkit-keyframes smoke {
-            0% {
-              -webkit-transform: scale(1.58, 1.2) translateY(-55px) skew(3deg);
-              transform: scale(1.58, 1.2) translateY(-55px) skew(3deg);
-            }
-            100% {
-              -webkit-transform: scale(1.6, 1.22) translateY(-55px) skew(-3deg);
-              transform: scale(1.6, 1.22) translateY(-55px) skew(-3deg);
-            }
-          }
-          @keyframes smoke {
-            0% {
-              -webkit-transform: scale(1.58, 1.2) translateY(-55px) skew(3deg);
-              transform: scale(1.58, 1.2) translateY(-55px) skew(3deg);
-            }
-            100% {
-              -webkit-transform: scale(1.6, 1.22) translateY(-55px) skew(-3deg);
-              transform: scale(1.6, 1.22) translateY(-55px) skew(-3deg);
-            }
-          }
-          @-webkit-keyframes smokeFirefox {
-            0% {
-              -webkit-transform: scale(1.58, 1.2) translateY(-75px) skew(0);
-              transform: scale(1.58, 1.2) translateY(-75px) skew(0);
-            }
-            100% {
-              -webkit-transform: scale(1.58, 1.21) translateY(-75px) skew(1deg);
-              transform: scale(1.58, 1.21) translateY(-75px) skew(1deg);
-            }
-          }
-          @keyframes smokeFirefox {
-            0% {
-              -webkit-transform: scale(1.58, 1.2) translateY(-75px) skew(0);
-              transform: scale(1.58, 1.2) translateY(-75px) skew(0);
-            }
-            100% {
-              -webkit-transform: scale(1.58, 1.21) translateY(-75px) skew(1deg);
-              transform: scale(1.58, 1.21) translateY(-75px) skew(1deg);
-            }
-          }
-          .flame 0%, .flame 100% {
-            -webkit-transform: translate(265px, 249px) scale(1.9) rotate(180deg);
-            transform: translate(265px, 249px) scale(1.9) rotate(180deg);
-          }
-          .flame {
-            -webkit-animation: burnInner2 .1s infinite ease-in-out alternate;
-            animation: burnInner2 .1s infinite ease-in-out alternate;
-          }
-          @-webkit-keyframes burnInner2 {
-            0% {
-              -webkit-transform: translate(265px, 249px) scale(1.9) rotate(180deg) skew(5deg);
-              transform: translate(265px, 249px) scale(1.9) rotate(180deg) skew(5deg);
-            }
-            100% {
-              -webkit-transform: translate(265px, 253px) scale(2.2) rotate(180deg) skew(-5deg);
-              transform: translate(265px, 253px) scale(2.2) rotate(180deg) skew(-5deg);
-            }
-          }
-          @keyframes burnInner2 {
-            0% {
-              -webkit-transform: translate(265px, 249px) scale(1.9) rotate(180deg) skew(5deg);
-              transform: translate(265px, 249px) scale(1.9) rotate(180deg) skew(5deg);
-            }
-            100% {
-              -webkit-transform: translate(265px, 253px) scale(2.2) rotate(180deg) skew(-5deg);
-              transform: translate(265px, 253px) scale(2.2) rotate(180deg) skew(-5deg);
-            }
-          }
-          @-webkit-keyframes thurst {
-            0% {
-              opacity: 1;
-            }
-            100% {
-              opacity: .5;
-            }
-          }
-          @keyframes thurst {
-            0% {
-              opacity: 1;
-            }
-            100% {
-              opacity: .5;
-            }
-          }
-          h2 {
-            font-size: 22px;
-            max-width: 500px;
-            margin: 5px auto 0;
-          }
-          main p {
-            font-size: 16px;
-            line-height: 20px;
-            max-width: 390px;
-            margin: 15px auto 0;
-            color: #888888;
-          }
-          footer {
-            padding: 25px 0;
-            position: fixed;
-            left: 50%;
-            bottom: 0;
-            width: 960px;
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-            border-top: 1px solid #efefef;
-          }
-          .option {
-            float: left;
-            width: 33.33%;
-            box-sizing: border-box;
-            padding-right: 5px;
-          }
-          .option svg {
-            width: 25px;
-            height: 25px;
-            fill: gray;
-            border: 1px solid #d6d6d6;
-            padding: 5px;
-            border-radius: 100%;
-            float: left;
-            margin-right: 10px;
-          }
-          .option div {
-            display: table;
-          }
-          .option h4 {
-            color: #19865C;
-            font-size: 19px;
-          }
-          .option p {
-            font-weight: 300;
-            font-size: 15px;
-            padding-top: 3px;
-            color: #757575;
-          }
-          @media (max-width: 996px) {
-            body, footer {
-              max-width: 780px;
-            }
-            .logo h2 {
-              margin-left: 0px;
-            }
-          }
-          @media (max-width: 800px) {
-            footer, main {
-              position: relative;
-            }
-            footer {
-              height: 100%;
-            }
-            .option {
-              position: relative;
-              width: 100%;
-              left: auto;
-              right: auto;
-              top: auto;
-              padding: 0 25px;
-              margin-bottom: 60px;
-            }
-            .two {
-              margin-left: 0px;
-              -webkit-transform: none;
-              transform: none;
-            }
-            .logo, .option, .release-notes {
-              float: none;
-            }
-            .figure {
-              margin-top: 10px;
-            }
-            main {
-              padding: 0 25px;
-            }
-            main h2 {
-              font-size: 18px;
-            }
-            main p {
-              font-size: 14px;
-            }
-            header {
-              padding-left: 20px;
-              padding-right: 20px;
-            }
-            footer {
-              overflow: hidden;
-              width: 100%;
-              margin-top: 50px;
-            }
-          }
-          @media (min-width: 801px) and (max-height: 730px) {
-            .figure {
-              margin-top: 80px;
-            }
-          }
-          @media (min-width: 801px) and (max-height: 600px) {
-            footer {
-              position: relative;
-              margin: 135px auto 0;
-            }
-            .figure {
-              margin-top: 50px;
-            }
-          }
-        </style>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="es">
 
-      <main>
-        <div class="figure">
-          <svg class="figure__animation" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#FFF" d="M0 0h512v512H0z"></path>
-            <text transform="translate(97.173 475.104)"></text>
-    <path
-       style="fill:#C75C5C"
-       id="path131"
-       d="m 307.2,224.6 c 0,4.6 -0.5,9 -1.6,13.2 -2.5,-4.4 -5.6,-8.4 -9.2,-12 -4.6,-4.6 -10,-8.4 -16,-11.2 2.8,-11.2 4.5,-22.9 5,-34.6 1.8,1.4 3.5,2.9 5,4.5 10.5,10.3 16.8,24.5 16.8,40.1 z m -75,-10 c -6,2.8 -11.4,6.6 -16,11.2 -3.5,3.6 -6.6,7.6 -9.1,12 -1,-4.3 -1.6,-8.7 -1.6,-13.2 0,-15.7 6.3,-29.9 16.6,-40.1 1.6,-1.6 3.3,-3.1 5.1,-4.5 0.6,11.8 2.2,23.4 5,34.6 z" />
-    <path
-       style="fill:#E0E0D1;stroke-width:1.13084793"
-       id="path133"
-       d="M 279.7,217.6 C 292.6,156.0889 297.41593,91.406719 256.3,33.124023 216.71327,89.749633 220.1,156.0889 232.9,217.6 Z"
-       class="body" />
-    <path
-       style="fill:#C75C5C"
-       id="path135"
-       d="m 273,62.366664 c -4.4,-10.6 -9.9,-20.6 -16.6,-29.7 -6.7,9 -12.2,19 -16.6,29.7 z"
-       class="tip" />
-    <circle
-       style="fill:#ffffff"
-       id="circle137"
-       r="15.5"
-       cy="160.14563"
-       cx="256.29999" />
-    <circle
-       style="fill:#4F5D73"
-       id="circle139"
-       r="12.19"
-       cy="160.14563"
-       cx="256.29999"
-       class="circle" />
-    <path
-       style="fill:#54c0eb"
-       id="path141"
-       d="m 267.5,155.24593 -16,16 c 4.5,2 9.8,1.1 13.5,-2.5 3.6,-3.7 4.5,-9.1 2.5,-13.5 z"
-       class="removehole" />
-    <path
-       style="fill:#ffd05b"
-       id="path143"
-       d="m 276.8,234.9 c 0.4,-2.4 0.6,-5.1 0.6,-7.9 0,-12.1 -3.9,-21.8 -8.8,-21.8 -4.9,0 -8.8,9.8 -8.8,21.8 0,2.8 0.2,5.4 0.6,7.9 z m -24.5,0 c 0.4,-2.4 0.6,-5.1 0.6,-7.9 0,-12.1 -3.9,-21.8 -8.8,-21.8 -4.8,0 -8.8,9.8 -8.8,21.8 0,2.8 0.2,5.4 0.6,7.9 z"
-       class="fuel" />
-    <path
-       style="fill:#e6e9ee"
-       id="path145"
-       d="m 416.6,358.8 c 0,-1.8 -0.4,-3.6 -1,-5.2 -2.1,-5.6 -7.5,-9.6 -13.8,-9.6 -0.7,0 -1.4,0.1 -2.1,0.2 -0.3,-9.6 -8.2,-17.3 -17.9,-17.3 -2.1,0 -4.2,0.4 -6.1,1.1 -3,-5.6 -8.9,-9.4 -15.7,-9.4 -0.5,0 -1,0 -1.5,0.1 -0.5,0 -1,-0.1 -1.5,-0.1 -6.8,0 -12.7,3.8 -15.7,9.4 -1.9,-0.7 -3.9,-1.1 -6.1,-1.1 -9.9,0 -17.9,8 -17.9,17.9 0,1.1 0.1,2.3 0.3,3.3 -0.9,-0.2 -1.8,-0.3 -2.8,-0.3 -5.1,0 -9.5,2.6 -12.1,6.5 -2.2,-1.4 -4.9,-2.3 -7.8,-2.3 -7.6,0 -13.8,5.9 -14.4,13.3 h -0.1 c -5.9,0 -11,3.6 -13.2,8.7 -2.6,-3 -6.5,-5 -10.9,-5 h -0.1 -0.5 -0.1 -0.1 c -4.3,0 -8.2,1.9 -10.9,5 -2.2,-5.1 -7.3,-8.7 -13.2,-8.7 h -0.1 c -0.6,-7.5 -6.8,-13.3 -14.4,-13.3 -2.9,0 -5.5,0.8 -7.8,2.3 -2.6,-3.9 -7,-6.5 -12.1,-6.5 -0.9,0 -1.9,0.1 -2.8,0.3 0.2,-1.1 0.3,-2.2 0.3,-3.3 0,-9.9 -8,-17.9 -17.9,-17.9 -2.1,0 -4.2,0.4 -6.1,1.1 -3,-5.6 -8.9,-9.4 -15.7,-9.4 -0.5,0 -1,0 -1.5,0.1 -0.5,0 -1,-0.1 -1.5,-0.1 -6.8,0 -12.7,3.8 -15.7,9.4 -1.9,-0.7 -3.9,-1.1 -6.1,-1.1 -9.7,0 -17.6,7.7 -17.9,17.3 -0.7,-0.1 -1.4,-0.2 -2.1,-0.2 -6.3,0 -11.7,4 -13.8,9.6 -0.6,1.6 -1,3.4 -1,5.2 0,4 1.6,7.6 4.2,10.3 -0.5,1.2 -0.8,2.6 -0.8,4 0,6 4.9,10.9 10.9,10.9 H 402 c 6,0 10.9,-4.9 10.9,-10.9 0,-1.4 -0.3,-2.8 -0.8,-4 2.9,-2.7 4.5,-6.3 4.5,-10.3 z"
-       class="smoke" />
-    <rect
-       style="fill:#E0995E"
-       id="rect147"
-       height="8"
-       width="30"
-       y="220"
-       x="241"
-       class="exhaust" />
-    <rect
-       style="fill:#ff871c"
-       id="rect149"
-       height="9"
-       width="20"
-       y="231"
-       x="245"
-       class="exhaust two" />
-    <rect
-       style="fill:#e6e9ee"
-       id="rect151"
-       height="90"
-       width="7"
-       y="240"
-       x="252"
-       class="exhaust__line" />
-    <path
-       style="fill:#F5CF87"
-       id="path153"
-       d="m 6.7,1.14 2.8,4.7 c 0,0 1.3,3 -1.82,3.22 H 2.28 C 2.28,9.06 -1,8.92 0.54,5.8 L 3.3,1.1 c 0,0 1.7,-2.3 3.4,0 z"
-       class="flame" />
-    <circle
-       style="fill:#ffffff"
-       id="circle137-5"
-       r="15.5"
-       cy="122.89391"
-       cx="256.65402" />
-    <circle
-       style="fill:#4F5D73"
-       id="circle139-3"
-       r="12.199999"
-       cy="122.89391"
-       cx="256.65402"
-       class="circle" />
-    <path
-       style="fill:#54c0eb"
-       id="path141-5"
-       d="m 267.85405,117.99419 -16,16 c 4.5,2 9.8,1.1 13.5,-2.5 3.6,-3.7 4.5,-9.1 2.5,-13.5 z"
-       class="removehole" />
-    <circle
-       style="fill:#ffffff"
-       id="circle137-6"
-       r="15.5"
-       cy="84.191475"
-       cx="256.7229" />
-    <circle
-       style="fill:#4F5D73"
-       id="circle139-2"
-       r="12.199999"
-       cy="84.191475"
-       cx="256.7229"
-       class="circle" />
-    <path
-       style="fill:#54c0eb;stroke-width:0.99999994"
-       id="path141-9"
-       d="m 267.92296,79.29166 -16,15.999907 c 4.5,1.999991 9.8,1.099994 13.5,-2.499985 3.6,-3.699979 4.5,-9.099949 2.5,-13.499922 z"
-       class="removehole" />
+<head>
 
-          </svg>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <title>RICH IT</title>
+
+  <!-- Bootstrap 4.5.3 core CSS -->
+  <link href="../css/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../css/css/scrolling-nav.css" rel="stylesheet">
+  <!-- animate css -->
+  <link rel="stylesheet" href="../css/css/animate.css">
+  <!-- wow js -->
+  <script src="../js/js/wow.min.js"></script>
+  <!-- font-awesome js -->
+  <link rel="stylesheet" href="../css/css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap 4.5.3 core JavaScript -->
+  <script src="./js/js/jquery.min.js"></script>
+  <script src="./js/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="./js/js/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="./js/js/scrolling-nav.js"></script>
+  <script>
+              new WOW().init();
+  </script>
+
+</head>
+
+<body >
+
+  <!-- Navigation -->
+  <header>
+        <nav class="navbar navbar-expand-lg navbar-dark azul-richit fixed-top" id="mainNav">
+          <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="../img/richit-logo.png" alt="RICHIT-logo" height="50px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link underline-btn js-scroll-trigger" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link underline-btn js-scroll-trigger" href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link underline-btn js-scroll-trigger" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+
+    <!-- Cards -->
+   <section id="inicio" class=" azul-richit text-white">
+
+         <div class="container text-center">
+           <h1 class="wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1000ms">Finance Analytics</h1>
+           <br>
+           <p class="lead_0 wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1000ms">Elige la mejor opción para tus Análisis Financieros</p>
+         </div>
+
+        <div class="content-card wow fadeInUp" data-wow-delay=".9s" data-wow-duration="1500ms">
+           <!-- card -->
+           <div class="card  partner_card">
+             <a href="richit-smart-pipes.html">
+                 <div class="icon"><img src="../img/rsp-icono-1.png" alt="RSP" height="80px"></div>
+                 <p class="title">Instituciones Financieras</p>
+                 <p class="text">Rich it Smart Pipes</p>
+             </a>
+           </div>
+           <!-- end card -->
+           <!-- card -->
+           <div class="card partner_card">
+             <a href="https://datoscapital.com/">
+                 <div class="icon"><img src="../img/datos-capital-logo.png" alt="RSP" height="70px"></div>
+                 <p class="title">Pequeñas y medianas empresas</p>
+                 <p class="text">Datos Capital</p>
+            </a>
+           </div>
+           <!-- end card -->
         </div>
-        <H1>Próximamente</H1>
 
-      </main>
+  </section>
+
+  <div style="margin-top: -5px;"><img src="../img/formas-landing.svg" alt="RSP" ></div>
+
+ <!-- Nosotros -->
+  <section id="nosotros">
+
+      <div class="container">
+          <div class="row">
+              <div class="col-md-7">
+                  <div >
+                      <h3 class="wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1500ms">Acerca de Nosotros</h3>
+                      <p class="wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1500ms">
+                          <br>
+                          <br>
+                          <br>
+                          RICH IT es una empresa mexicana con la misión de crear y transformar datos para mejorar la vida en el mundo. A la fecha hemos analizado más de un trillón de registros digitales para grandes organizaciones.
+                          <br>
+                          <br>
+                          <br>
+                          Estamos especializados en analitica de datos para la industria de servicios financieros. Los clientes nos prefieren por nuestra calidad y tiempo de respuesta de nuestras soluciones.
+                      </p>
+
+                  </div>
+              </div>
+              <div class="col-md-5 wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1500ms">
+                  <img class="img-acerca" src="../img/acerca-de-nosotros.png" alt="Ciencia de Datos en Rich it">
+              </div>
+          </div>
+      </div>
+      <!-- Beneficios y Diferencias -->
+      <div>
+              <div class="container wow fadeInUp" style="margin-top: 70px; padding:35px 0 80px 0;" data-wow-delay=".3s" data-wow-duration="1500ms">
+                <div class="row beneficios">
+                  <div class="col-md-6 col-xs-12">
+                    <div class="service-item">
+                      <h3 class="title"  style="visibility: visible; text-align: center;">¿Qué beneficios ofrecemos?</h3>
+                        <hr>
+                        <ul class="service-list">
+                            <li>Concéntrate en capitalizar tus datos. Nosotros los unificamos, enriquecemos y organizamos por ti.</li>
+                            <li>Algoritmos especializados para el sector financiero.Empodera a tus analistas y científicos con datos organizados.</li>
+                            <li>Algoritmos especializados para el sector financiero.</li>
+                            <li>Tiempos récord para obtener ventajas del machine learning y el big data.</li>
+                            <li>Niveles de servicio garantizados.</li>
+                            <li>Líderes en la industria de ciencia de datos.</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xs-12">
+                    <div class="service-item">
+                      <h3 class="title" style="visibility: visible; text-align: center;">¿En qué nos diferenciamos?</h3>
+                        <hr>
+                        <ul>
+                            <li>Expertise en analitica para servicios financieros.</li>
+                            <li>Tiempos de respuesta ágiles aún para grandes volúmenes de datos.</li>
+                            <li>Certificaciones de seguridad y gobierno de la información.</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+  </section>
+
+   <!-- Media -->
+    <div class="container wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1000ms">
+      <div class="container text-center ">
+        <h3 style="margin-top: 50px;margin-bottom: 50px;">Media</h3>
+      </div>
+            <!--Media logos-->
+            <div class="row row--center">
+
+              <div class="col-md-3 col-xs-6 col-sm-6 partner">
+                <a href="http://www.cienciamx.com/index.php/tecnologia/materiales/2260-gist-tech-i-2015?fb_comment_id=1064974486865688_1316187028411098#f3f82ce245501b" class="partner__link" target="_blank">
+                <img class="partner_img_2" src="../img/media/conacyt-logo.png" alt="Conacyt">
+                </a>
+              </div>
+
+            <div class="col-md-3  col-xs-6 col-sm-6 partner">
+                <a href="https://www.maspormas.com/cdmx/omni-la-app-para-llegar-a-tu-destino-en-el-df/" class="partner__link" target="_blank">
+                <img class="partner_img_2" src="../img/media/masxmas-logo.png" alt="masxmas">
+                </a>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-6 partner">
+                <a href="https://www.elfinanciero.com.mx/universidades/usas-transporte-publico-esta-app-es-para-ti.html" class="partner__link" target="_blank">
+                <img class="partner_img_2" src="../img/media/elfinanciero-logo.png" alt="El financiero">
+                </a>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-6 partner">
+                <a href="https://www.reforma.com/aplicacioneslibre/preacceso/articulo/default.aspx?id=588612&po=4&urlredirect=http://www.reforma.com/aplicaciones/articulo/default.aspx?Id=588612&po=4" class="partner__link" target="_blank">
+                <img class="partner_img_2" src="../img/media/reforma-logo.png" alt="Reforma">
+                </a>
+            </div>
+
+          </div>
+    </div>
+
+    <!-- Clientes -->
+    <div class="container wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1000ms">
+      <div class="container text-center">
+        <h3 style="margin-top: 50px;margin-bottom: 50px;">Nuestros Clientes</h3>
+      </div>
+            <div class="row row--center">
+                <!--Clientes logos 1ra fila-->
+                <div class="col-md-3 col-xs-6 col-sm-6 partner">
+                  <a href="https://www.delltechnologies.com/es-mx/index.htm" class="partner__link" target="_blank">
+                  <img class="partner_img" src="../img/clientes/DELL-EMC.png" alt="DELL-EMC">
+                  </a>
+                </div>
+
+                <div class="col-md-3  col-xs-6 col-sm-6 partner">
+                  <a href="https://www.seproban.com/" class="partner__link" target="_blank">
+                  <img class="partner_img" src="../img/clientes/seproban.png" alt="SEPROBAN">
+                  </a>
+                </div>
+
+               <div class="col-md-3 col-xs-6 col-sm-6 partner">
+                  <a href="https://www.eglobal.com.mx/" class="partner__link" target="_blank">
+                  <img class="partner_img" src="../img/clientes/e-global.png" alt="e-global">
+                  </a>
+               </div>
+
+              <div class="col-md-3 col-xs-6 col-sm-6 partner">
+                  <a href="https://www.suramexico.com/home/" class="partner__link" target="_blank">
+                  <img class="partner_img" src="../img/clientes/sura.png" alt="sura">
+                  </a>
+              </div>
+
+          </div>
+
+          <div class="row row--center">
+              <!--Clientes logos 2da Fila-->
+              <div class="col-md-3 col-xs-6 col-sm-6 partner">
+                <a href="https://www.banxico.org.mx/" class="partner__link" target="_blank">
+                <img class="partner_img" src="../img/clientes/Banco-de-Mexico.png" alt="Banco-de-Mexico">
+                </a>
+              </div>
+
+              <div class="col-md-3  col-xs-6 col-sm-6 partner">
+                <a href="https://www.conautoford.com.mx/" class="partner__link" target="_blank">
+                <img class="partner_img" src="../img/clientes/conauto.png" alt="conauto">
+                </a>
+              </div>
+
+             <div class="col-md-3 col-xs-6 col-sm-6 partner">
+                <a href="https://www.montepiedad.com.mx/" class="partner__link" target="_blank">
+                <img class="partner_img" src="../img/clientes/Nacional-Monte-de-Piedad.png" alt="Nacional-Monte-de-Piedad">
+                </a>
+             </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-6 partner">
+                <a href="https://www.bancosabadell.mx/empresas/es/home-sitemx.html" class="partner__link" target="_blank">
+                <img class="partner_img" src="../img/clientes/banco-sabadell.png" alt="banco-sabadell">
+                </a>
+            </div>
+
+          </div>
+
+     </div>
 
 
 
-</body></html>
+  <div style="margin-top: 68px;"><img src="../img/formas-landing-gris.svg" alt="RSP" ></div>
+
+  <!-- Contacto -->
+  <section id="contacto" class="gris" style="padding-top: 50px; padding-bottom: 130px;">
+    <div class="container wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1000ms">
+
+      <div class="sect sect--padding-bottom">
+        <div class="container">
+          <div class="row">
+           <h3 class="wow fadeInUp" data-wow-delay=".3s" data-wow-duration="500ms" style="margin-top: 50px;margin-bottom: 50px;">Contáctanos</h3>
+
+          </div>
+          <p style="margin-bottom: 50px;">Con gusto atenderemos tu solicitud y agendaremos una demo para tu organización.</p>
+          <div class="row row--margin">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+              <div class="contacts">
+
+                <a href="index.html" class="contacts__link"><img src="../img/richit-logo.png" alt="RICHIT-logo" height="30px"></a>
+
+                <p class="contacts__address">
+                  Pétalo 47, Col. El Reloj, <br>
+                  Alcaldía Coyoacán,<br>
+                  C.P. 04640, CDMX, México
+                </p>
+                <p class="contacts__info">
+                  tel. +52 55 6718 1818
+                </p>
+                <p class="contacts__info">
+                  conta<!-- paro@porfa -->cto@<!-- @abci.dej -->richit<!-- @abcui.del -->.ai
+                </p>
+              </div>
+            </div>
+            <!-- Formulario -->
+            <!--
+            <div class="col-md-6">
+              <form id="contact" class="form">
+
+                 <div class="form-group">
+                   <div class="form__field--half">
+                     <input type="text" placeholder="Nombre*" class="form__field form__text"></input>
+                   </div>
+                 </div>
+
+                <div class="form-group">
+                  <div class="form__field--half">
+                    <input type="text" placeholder="Email*" class="form__field form__text"></input>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="form__field--half">
+                    <input type="text" placeholder="Teléfono" class="form__field form__text"></input>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <button class="btn btn--up btn--width" type="submit">Submit</button>
+                </div>
+
+              </form>
+            </div>
+          -->
+      <div class="col-md-1"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer>
+  <div class="footer">
+    <div class="inner-footer  wow fadeInUp"  data-wow-delay=".3s" data-wow-duration="1000ms">
+
+        <div class="footer-items">
+            <h2>Finance Analytics</h2>
+            <div class="border-0"></div>
+            <ul>
+              <p>Para instituciones:</p>
+                  <a href="richit-smart-pipes.html"><li>RICH IT SMART PIPES</li></a>
+                  <br>
+                      <div class="border-0"></div>
+                      <p>Para pequeñas y medianas empresas:</p>
+                      <a href="https://datoscapital.com/"><li>DATOS CAPITAL</li></a>
+            </ul>
+        </div>
+
+        <div class="footer-items">
+            <h2>RICH IT</h2>
+            <div class="border-0"></div>
+            <ul>
+              <a href="#inicio"><li>Inicio</li></a>
+              <a href="#nosotros"><li>Nosotros</li></a>
+              <a href="#contacto"><li>Contacto</li></a>
+              <!--<a href="#"><li>Términos y condiciones</li></a>-->
+            </ul>
+        </div>
+        <!-- Direccion, Correo, telefono y redes sociales -->
+        <div class="footer-items">
+            <h2>Contacto</h2>
+            <div class="border-0"></div>
+            <ul>
+              <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://www.google.com.mx/maps/place/RICH+IT/@19.3162969,-99.1425539,17z/data=!3m1!4b1!4m5!3m4!1s0x85ce01ca1da5f69b:0x569f2db810d16d70!8m2!3d19.3162969!4d-99.1403652">CDMX, México</a></li>
+              <li><i class="fa fa-phone"></i>+52 55 6718 1818</li>
+              <li><i class="fa fa-envelope-o" aria-hidden="true"></i>conta<!-- paro@porfa -->cto@<!-- @abci.dej -->richit<!-- @abcui.del -->.ai</li>
+            </ul>
+            <div class="social-media">
+              <a href="https://www.facebook.com/richitsolution"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/richitsolution"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/company/richit?trk=prof-exp-company-name"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="https://www.youtube.com/channel/UCM5vjKEJNN2D0fQ65mv-pxA"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+    </div>
+   <!-- Footer end end end -->
+   <div class="container">
+      <div class="row justify-content-between footer-bottom">
+        <div class="col-4 col-sm-6 wow fadeInDown" data-wow-delay=".6s" data-wow-duration="1000ms">
+           Copyright &copy; RICH IT 2021
+        </div>
+        <div class="col-4 wow fadeInDown" style="text-align:end;"  data-wow-delay=".6s" data-wow-duration="1000ms">
+          <a  href="aviso-de-privacidad.html" class="aviso">Aviso de Privacidad</a>
+        </div>
+      </div>
+   </div>
+
+  </div>
+</footer>
+
+
+
+
+
+</body>
+
+</html>
