@@ -37,9 +37,6 @@ try {
 
     //Recipients
     $mail->setFrom('upalacios@richit.ai', 'Formulario proveniente de brochures de gobierno de datos');
-    $mail->addAddress('echazaro@richit.ai');     // Add a recipient
-    $mail->addAddress('mdeloscobos@richit.ai');               // Name is optional
-    $mail->addAddress('eperezyera@richit.ai');
     $mail->addAddress('upalacios@richit.ai');
     $mail->addAddress('gmanzanares@richit.ai');
     //$mail->addReplyTo('info@example.com', 'Information');
