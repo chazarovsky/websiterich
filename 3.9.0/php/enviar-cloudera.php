@@ -34,7 +34,7 @@ if($_POST) {
     .'From: ' . $contacto . "\r\n";
 
     // Datos para el correo
-    $destinatario = "upalacios@richit.ai;
+    $destinatario = "upalacios@richit.ai";
     $asunto = "Contacto Campaña Cloudera";
 
     $contenido= "";
@@ -45,7 +45,7 @@ if($_POST) {
 
 
     if(mail($destinatario, $asunto, $contenido, $headers)) {
-        header("Location: http://richit.ai/es/");
+        echo "<p >Gracias por contactarnos, $nombre. Nos pondremos en contacto contigo a la brevedad.</p>";
     } else {
         echo '<p>We are sorry but the email did not go through.</p>';
     }
