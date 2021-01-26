@@ -10,21 +10,21 @@ if($_POST) {
     $correo = "";
     $telefono = "";
 
-    if(isset($_POST['nombre-elastic']) && $_POST['nombre-elastic'] != '') {
-        if (strlen($_POST['nombre-elastic']) > 35 || strlen($_POST['nombre-elastic']) < 2) {
+    if(isset($_POST['nombre-elasticsearch']) && $_POST['nombre-elasticsearch'] != '') {
+        if (strlen($_POST['nombre-elasticsearch']) > 35 || strlen($_POST['nombre-elasticsearch']) < 2) {
             echo '<p>Something went wrong</p>';
         } else {
-            $nombre = filter_var($_POST['nombre-elastic'], FILTER_SANITIZE_STRING);
+            $nombre = filter_var($_POST['nombre-elasticsearch'], FILTER_SANITIZE_STRING);
         }
     }
 
-    if(isset($_POST['correo-elastic']) && $_POST['correo-elastic'] != '') {
-        $correo = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['correo-elastic']);
+    if(isset($_POST['correo-elasticsearch']) && $_POST['correo-elasticsearch'] != '') {
+        $correo = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['correo-elasticsearch']);
         $correo = filter_var($correo, FILTER_VALIDATE_EMAIL);
     }
 
-    if($_POST['telefono-elastic'] == '' || (strlen($_POST['telefono-elastic']) < 16) ) {
-        $telefono = $_POST['telefono-elastic'];
+    if($_POST['telefono-elasticsearch'] == '' || (strlen($_POST['telefono-elasticsearch']) < 16) ) {
+        $telefono = $_POST['telefono-elasticsearch'];
     }
 
     $contacto = "contacto";
