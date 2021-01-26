@@ -45,7 +45,7 @@ if($_POST) {
 
 
     if(mail($destinatario, $asunto, $contenido, $headers)) {
-        echo "<p >Gracias por contactarnos, $nombre. Nos pondremos en contacto contigo a la brevedad.</p>";
+      header("Location: http://richit.ai/es/");
     } else {
         echo '<p>We are sorry but the email did not go through.</p>';
     }
