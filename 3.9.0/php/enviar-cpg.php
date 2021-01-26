@@ -14,7 +14,7 @@ if($_POST) {
         if (strlen($_POST['nombre-CPG']) > 35 || strlen($_POST['nombre-CPG']) < 2) {
             echo '<p>Something went wrong</p>';
         } else {
-            $nombre = filter_var($_POST['nombre'], FILTER_SANITIZE_STRING);
+            $nombre = filter_var($_POST['nombre-CPG'], FILTER_SANITIZE_STRING);
         }
     }
 

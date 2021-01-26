@@ -10,21 +10,21 @@ if($_POST) {
     $correo = "";
     $telefono = "";
 
-    if(isset($_POST['nombre']) && $_POST['nombre'] != '') {
-        if (strlen($_POST['nombre']) > 35 || strlen($_POST['nombre']) < 2) {
+    if(isset($_POST['nombre-contacto-richit']) && $_POST['nombre-contacto-richit'] != '') {
+        if (strlen($_POST['nombre-contacto-richit']) > 35 || strlen($_POST['nombre-contacto-richit']) < 2) {
             echo '<p>Something went wrong</p>';
         } else {
-            $nombre = filter_var($_POST['nombre'], FILTER_SANITIZE_STRING);
+            $nombre = filter_var($_POST['nombre-contacto-richit'], FILTER_SANITIZE_STRING);
         }
     }
 
-    if(isset($_POST['correo']) && $_POST['correo'] != '') {
-        $correo = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['correo']);
+    if(isset($_POST['correo-contacto-richit']) && $_POST['correo-contacto-richit'] != '') {
+        $correo = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['correo-contacto-richit']);
         $correo = filter_var($correo, FILTER_VALIDATE_EMAIL);
     }
 
-    if($_POST['telefono'] == '' || (strlen($_POST['telefono']) < 16) ) {
-        $telefono = $_POST['telefono'];
+    if($_POST['telefono-contacto-richit'] == '' || (strlen($_POST['telefono-contacto-richit']) < 16) ) {
+        $telefono = $_POST['telefono-contacto-richit'];
     }
 
     $contacto = "contacto";
