@@ -1,65 +1,57 @@
 <?php
 
-// Validacion de que los valores no estan vacios
-if(empty($_POST["nombre"]) || empty($_POST["correo"])){
-  die ("Es necesario completar estos campos");
-}
+error_reporting(-1);
+ini_set('display_errors', 'On');
+set_error_handler("var_dump");
 
-$nombre = $_POST["nombre"];
-$correo = $_POST["correo"];
-$telefono = $_POST["telefono"];
+if($_POST) {
+    $nombre = "";
+    $cargo = "";
+    $correo = "";
+    $telefono = "";
 
-if(empty($nombre) || empty($correo)){
-  die ("Es necesario completar estos campos");
-}
+    if(isset($_POST['nombre']) && $_POST['nombre'] != '') {
+        if (strlen($_POST['nombre']) > 35 || strlen($_POST['nombre']) < 2) {
+            echo '<p>Something went wrong</p>';
+        } else {
+            $nombre = filter_var($_POST['nombre'], FILTER_SANITIZE_STRING);
+        }
+    }
 
-$contenido = "Nombre: " . $nombre . "<br>Correo: " . $correo . "<br>Teléfono: " . $telefono ;
+    if(isset($_POST['correo']) && $_POST['correo'] != '') {
+        $correo = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['correo']);
+        $correo = filter_var($correo, FILTER_VALIDATE_EMAIL);
+    }
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+    if($_POST['telefono'] == '' || (strlen($_POST['telefono']) < 16) ) {
+        $telefono = $_POST['telefono'];
+    }
 
-require 'Exception.php';
-require 'PHPMailer.php';
-require 'SMTP.php';
+    $contacto = "contacto";
 
-$mail = new PHPMailer(true);
-try {
-    //Server settings
-    $mail->SMTPDebug = 0;                                 // Enable verbose debug output
-    $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'upalacios@richit.ai';                 // SMTP username
-    $mail->Password = '9juankis9';                           // SMTP password
-    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;                                    // TCP port to connect to
+    $headers  = 'MIME-Version: 1.0' . "\r\n"
+    //.'Content-type: text/html; charset=utf-8' . "\r\n"
+    .'From: ' . $contacto . "\r\n";
 
-    //Recipients
-    $mail->setFrom('upalacios@richit.ai', 'Formulario proveniente de Campania de Google Cloudera');
-    $mail->addAddress('upalacios@richit.ai');// Add a recipient
-    $mail->addAddress('gmanzanares@richit.ai');
+    // Datos para el correo
+    $destinatario = "upalacios@richit.ai;
+    $asunto = "Contacto Campaña Cloudera";
 
-    //$mail->addAddress('ellen@example.com');               // Name is optional
-    //$mail->addReplyTo('info@example.com', 'Information');
-    //$mail->addCC('cc@example.com');
-    //$mail->addBCC('bcc@example.com');
+    $contenido= "";
+    $contenido .= "Nombre: " . $nombre . "\r\n";
+    $contenido .= "Cargo: " . $cargo . "\r\n";
+    $contenido .= "Correo: " . $correo . "\r\n";
+    $contenido .= "Teléfono: " . $telefono . "\r\n" ;
 
-    //Attachments
-    //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-    //$mail->addAttachment('../images/slider.jpg', 'new.jpg');    // Optional name
 
-    //Content
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Formulario Web RICHIT';
-    $mail->Body    = $contenido; //'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    if(mail($destinatario, $asunto, $contenido, $headers)) {
+        header("Location: http://richit.ai/es/");
+    } else {
+        echo '<p>We are sorry but the email did not go through.</p>';
+    }
 
-    $mail->send();
-    //echo 'El mensaje se envió correctamente';
-    header("Location: http://richit.ai/es/");
-} catch (Exception $e) {
-    echo 'hubo un error al enviarse';
-    echo 'Mailer mando Error: ' . $mail->ErrorInfo;
+} else {
+    echo '<p>Something went wrong</p>';
 }
 
 ?>
