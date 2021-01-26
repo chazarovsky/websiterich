@@ -34,12 +34,11 @@ if($_POST) {
     .'From: ' . $contacto . "\r\n";
 
     // Datos para el correo
-    $destinatario = "upalacios@richit.ai";
+    $destinatario = "upalacios@richit.ai, gmanzanares@richit.ai";
     $asunto = "Contacto Campaña Cloudera";
 
     $contenido= "";
     $contenido .= "Nombre: " . $nombre . "\r\n";
-    $contenido .= "Cargo: " . $cargo . "\r\n";
     $contenido .= "Correo: " . $correo . "\r\n";
     $contenido .= "Teléfono: " . $telefono . "\r\n" ;
 
