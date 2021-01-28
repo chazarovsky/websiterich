@@ -5,5 +5,5 @@ var $this = $(this);
 var width = $this.attr("width");
 var height = $this.attr("height");
 
-$this.html('<iframe src="https://www.youtube.com/embed/' + $this.data("video") + '?autoplay=1"></iframe>');
+$this.html('<iframe src="https://www.youtube.com/embed/M6ad6Hs5r6k' + $this.data("video") + '?autoplay=1"></iframe>');
 });
