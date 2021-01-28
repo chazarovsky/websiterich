@@ -1,35 +1,39 @@
-.video-wrapper {
-    position: relative;
+.imgvideo {
+  cursor: pointer;
 }
 
-.video-wrapper > video {
-    width: 100%;
-    vertical-align: middle;
+.playbutton {
+  background: url(https://cdn0.iconfinder.com/data/icons/vector-basic-tab-bar-icons/48/play_button-128.png) center center no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 74px;
+  height: 74px;
+  margin: -37px 0 0 -37px;
+  z-index: 10;
+  opacity: .6;
 }
 
-.video-wrapper > video.has-media-controls-hidden::-webkit-media-controls {
-    display: none;
+.ytvideo {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */
+  background-size: cover;
+  /* version standardisée */
+  cursor: pointer;
 }
 
-.video-overlay-play-button {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    padding: 10px calc(50% - 50px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    opacity: 0.95;
-    cursor: pointer;
-    background-image: linear-gradient(transparent, #000);
-    transition: opacity 150ms;
+.ytvideo iframe {
+  border-style: none;
+  height: 100%;
+  width: 100%;
 }
 
-.video-overlay-play-button:hover {
-    opacity: 1;
-}
-
-.video-overlay-play-button.is-hidden {
-    display: none;
+.ytvideo .seo {
+  display: none;
 }
