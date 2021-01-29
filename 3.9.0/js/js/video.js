@@ -1,31 +1,51 @@
-var videoPlayButton,
-	videoWrapper = document.getElementsByClassName('video-wrapper')[0],
-    video = document.getElementsByTagName('video')[0],
-    videoMethods = {
-        renderVideoPlayButton: function() {
-            if (videoWrapper.contains(video)) {
-				this.formatVideoPlayButton()
-                video.classList.add('has-media-controls-hidden')
-                videoPlayButton = document.getElementsByClassName('video-overlay-play-button')[0]
-                videoPlayButton.addEventListener('click', this.hideVideoPlayButton)
-            }
-        },
+$(function(){
 
-        formatVideoPlayButton: function() {
-            videoWrapper.insertAdjacentHTML('beforeend', '\
-                <svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">\
-                    <circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#fff"/>\
-                    <polygon points="70, 55 70, 145 145, 100" fill="#fff"/>\
-                </svg>\
-            ')
-        },
+  window.sr = ScrollReveal();
 
-        hideVideoPlayButton: function() {
-            video.play()
-            videoPlayButton.classList.add('is-hidden')
-            video.classList.remove('has-media-controls-hidden')
-            video.setAttribute('controls', 'controls')
-        }
-	}
+  if ($(window).width() < 768) {
 
-videoMethods.renderVideoPlayButton()
+  	if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+  		$('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+  	}
+
+  	sr.reveal('.js--fadeInRight', {
+	    origin: 'right',
+	    distance: '300px',
+	    easing: 'ease-in-out',
+	    duration: 800,
+	  });
+
+  } else {
+
+  	sr.reveal('.js--fadeInLeft', {
+	    origin: 'left',
+	    distance: '300px',
+		  easing: 'ease-in-out',
+	    duration: 800,
+	  });
+
+	  sr.reveal('.js--fadeInRight', {
+	    origin: 'right',
+	    distance: '300px',
+	    easing: 'ease-in-out',
+	    duration: 800,
+	  });
+
+  }
+
+  sr.reveal('.js--fadeInLeft', {
+	    origin: 'left',
+	    distance: '300px',
+		  easing: 'ease-in-out',
+	    duration: 800,
+	  });
+
+	  sr.reveal('.js--fadeInRight', {
+	    origin: 'right',
+	    distance: '300px',
+	    easing: 'ease-in-out',
+	    duration: 800,
+	  });
+
+
+});
