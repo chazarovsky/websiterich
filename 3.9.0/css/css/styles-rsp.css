@@ -765,6 +765,11 @@ left: 0;
 
 /* Landing Productos */
 
+.imagen {
+  margin:0px auto;
+  text-align:center;
+}
+
 
 .video-u {
   width: 100%;
