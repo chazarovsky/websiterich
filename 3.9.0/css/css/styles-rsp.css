@@ -131,6 +131,26 @@ a.nav__link{
   cursor: pointer;
 }
 
+
+/* Tarjetas de  productos */
+.card a {
+  text-decoration: none;
+  color: #000;
+}
+.card {
+  border: 1px solid rgba(0,0,0,0) ! important;
+  border-radius: 0.50rem ! important;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 30px -5px rgba(10, 16, 34, 0.2);
+  /*box-shadow: 0 10px 30px -5px rgba(10, 16, 34, 0.4);*/
+}
+
+
+
 /*=== Show menu ===*/
 .show{
   right: 0;
