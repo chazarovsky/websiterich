@@ -40,10 +40,10 @@ function move_0(e){
 
 /*===== GSAP ANIMATION =====*/
 // NAV
-
+/*
 gsap.from('.nav__logo, .nav__toggle', {opacity: 0, duration: 0.5, delay:0.5, y: 5})
 gsap.from('.nav__item', {opacity: 0, duration: 1, delay: 0.5, y: 30, stagger: 0.2,})
-
+*/
 // HOME
 /*
 gsap.from('.home__title', {opacity: 0, duration: 1, delay:1.6, y: 30})
