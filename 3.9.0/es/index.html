@@ -286,76 +286,44 @@
           <p style="margin-bottom: 50px;">Con gusto atenderemos tu solicitud y agendaremos una demo para tu organización.</p>
           <div class="row row--margin">
 
-            <!-- Formulario -->
-<!--
-            <div class="col-md-6">
-              <form id="contact" class="form">
-
-                 <div class="form-group">
-                   <div class="form__field--half">
-                     <input type="text" placeholder="Nombre*" class="form__field form__text"></input>
-                   </div>
-                 </div>
-
-                <div class="form-group">
-                  <div class="form__field--half">
-                    <input type="text" placeholder="Email*" class="form__field form__text"></input>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <div class="form__field--half">
-                    <input type="text" placeholder="Teléfono" class="form__field form__text"></input>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <button class="btn btn--up btn--width" type="submit">Submit</button>
-                </div>
-
-              </form>
+              <!-- Formulario -->
+              <div class="col-md-6">
+              <div class="form-container">
+                <h4>¿Deseas más información? </h4>
+                <p>Llena el formulario y te contactáremos a la brevedad </p>
+                <!--<div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/13f8f700dceb696710a252dad4f84b1c2896004"><script src="https://cdn.pipedriveassets.com/web-form-assets/webforms.min.js"></script></div>-->
+                <form action="../php/enviar-contacto.php" method="post" id="formContacto" onsubmit="return validarContacto();">
+                  <label class="titulo-label">Nombre *</label>
+                  <input type="text" id="nombreContacto" name="nombre-Contacto" required>
+                  <label class="titulo-label">Correo *</label>
+                  <input type="email" id="correoContacto" name="correo-Contacto"  required>
+                  <label class="titulo-label">Teléfono</label>
+                  <input type="number" name="telefono-Contacto">
+                  <input type="submit" value="Enviar" id="boton-f">
+                </form>
+              </div>
             </div>
-        -->
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+              <div class="contacts">
+                <br><br><br>
 
-        <div class="col-md-6">
-        <div class="form-container">
-          <h4>¿Deseas más información? </h4>
-          <p>Llena el formulario y te contactáremos a la brevedad </p>
-          <!--<div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/13f8f700dceb696710a252dad4f84b1c2896004"><script src="https://cdn.pipedriveassets.com/web-form-assets/webforms.min.js"></script></div>-->
-          <form action="../php/enviar-contacto.php" method="post" id="formContacto" onsubmit="return validarContacto();">
-            <label class="titulo-label">Nombre *</label>
-            <input type="text" id="nombreContacto" name="nombre-Contacto" required>
-            <label class="titulo-label">Correo *</label>
-            <input type="email" id="correoContacto" name="correo-Contacto"  required>
-            <label class="titulo-label">Teléfono</label>
-            <input type="number" name="telefono-Contacto">
-            <input type="submit" value="Enviar" id="boton-f">
-          </form>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-      <div class="col-md-4">
-        <div class="contacts">
-          <br><br><br>
+                <a href="index.html" class="contacts__link"><img src="../img/richit-logo.png" alt="RICHIT-logo" height="30px"></a>
 
-          <a href="index.html" class="contacts__link"><img src="../img/richit-logo.png" alt="RICHIT-logo" height="30px"></a>
-
-          <p class="contacts__address">
-            Pétalo 47, Col. El Reloj, <br>
-            Alcaldía Coyoacán,<br>
-            C.P. 04640, CDMX, México
-          </p>
-          <p class="contacts__info">
-            tel. +52 55 6718 1818
-          </p>
-          <p class="contacts__info">
-            conta<!-- paro@porfa -->cto@<!-- @abci.dej -->richit<!-- @abcui.del -->.ai
-          </p>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-
-
+                <p class="contacts__address">
+                  Pétalo 47, Col. El Reloj, <br>
+                  Alcaldía Coyoacán,<br>
+                  C.P. 04640, CDMX, México
+                </p>
+                <p class="contacts__info">
+                  tel. +52 55 6718 1818
+                </p>
+                <p class="contacts__info">
+                  conta<!-- paro@porfa -->cto@<!-- @abci.dej -->richit<!-- @abcui.del -->.ai
+                </p>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
 
           </div>
         </div>

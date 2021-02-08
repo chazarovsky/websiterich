@@ -57,6 +57,9 @@ img{
   height: auto;
 }
 
+a img.cha{
+  height: 30px !important;
+}
 img.logo{
   height: 50px !important;
 }
@@ -1198,4 +1201,73 @@ border-radius: 8px;
   60% {
     transform: translateY(-15px);
   }
+}
+
+/* FORMULARIO */
+
+.form-container {
+	background: #fff;
+	padding: 25px 30px 20px 30px;
+	border-radius: 3px;
+}
+
+.form-container h4 {
+	font-size: 18px;
+	margin: 10px 0px 20px 0px;
+}
+
+.form-container p {
+	font-size: 16px;
+	margin: 0px 0px 15px 0px;
+}
+
+.form-container input{
+	position: relative;
+	width: 100%;
+	height: 60%;
+	margin: auto;
+	padding: 10px 20px;
+	margin-top: 5px;
+	align-items: center;
+	border-radius: 3px;
+	box-sizing: border-box;
+  border: 1px solid #c2c8cd;
+}
+
+.form-container label {
+/*	display: none*/
+	width: 50%;
+	margin-bottom: 2px;
+	display: inline-block;
+	text-align: left;
+	font-weight: 400;
+	margin: 15px 0px 5px 0px; ;
+}
+
+#boton-f {
+	background-color: #7fc782;
+	color: #fff;
+	border-radius: 3px;
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+::-webkit-input-placeholder {
+   color:transparent;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color:transparent;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color:transparent;
+}
+
+:-ms-input-placeholder {
+   color:transparent;
+}
+
+#boton-f:hover {
+	background-color: #4caf50;
+
 }

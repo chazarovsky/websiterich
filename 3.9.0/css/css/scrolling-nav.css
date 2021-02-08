@@ -690,7 +690,7 @@ width: 100%;
 }
 
 #boton-f {
-	background-color: #4caf50;
+	background-color: #7fc782;
 	color: #fff;
 	border-radius: 3px;
 	margin-top: 25px;
@@ -710,4 +710,9 @@ width: 100%;
 
 :-ms-input-placeholder {
    color:transparent;
+}
+
+#boton-f:hover {
+	background-color: #4caf50;
+
 }

@@ -314,7 +314,7 @@ header .logo {
 }
 
 #boton-f {
-	background-color: #4caf50;
+	background-color: #7fc782;
 	color: #fff;
 	border-radius: 3px;
 	margin-top: 25px;
@@ -334,6 +334,10 @@ header .logo {
 
 :-ms-input-placeholder {
    color:transparent;
+}
+
+#boton-f:hover {
+	background-color: #4caf50;
 }
 
 
