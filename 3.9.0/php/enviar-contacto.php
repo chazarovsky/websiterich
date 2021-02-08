@@ -6,25 +6,24 @@ set_error_handler("var_dump");
 
 if($_POST) {
     $nombre = "";
-    $cargo = "";
     $correo = "";
     $telefono = "";
 
-    if(isset($_POST['nombre-contacto-richit']) && $_POST['nombre-contacto-richit'] != '') {
-        if (strlen($_POST['nombre-contacto-richit']) > 35 || strlen($_POST['nombre-contacto-richit']) < 2) {
+    if(isset($_POST['nombre-Contacto']) && $_POST['nombre-Contacto'] != '') {
+        if (strlen($_POST['nombre-Contacto']) > 35 || strlen($_POST['nombre-Contacto']) < 2) {
             echo '<p>Something went wrong</p>';
         } else {
-            $nombre = filter_var($_POST['nombre-contacto-richit'], FILTER_SANITIZE_STRING);
+            $nombre = filter_var($_POST['nombre-Contacto'], FILTER_SANITIZE_STRING);
         }
     }
 
-    if(isset($_POST['correo-contacto-richit']) && $_POST['correo-contacto-richit'] != '') {
-        $correo = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['correo-contacto-richit']);
+    if(isset($_POST['correo-Contacto']) && $_POST['correo-Contacto'] != '') {
+        $correo = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['correo-Contacto']);
         $correo = filter_var($correo, FILTER_VALIDATE_EMAIL);
     }
 
-    if($_POST['telefono-contacto-richit'] == '' || (strlen($_POST['telefono-contacto-richit']) < 16) ) {
-        $telefono = $_POST['telefono-contacto-richit'];
+    if($_POST['telefono-Contacto'] == '' || (strlen($_POST['telefono-Contacto']) < 16) ) {
+        $telefono = $_POST['telefono-Contacto'];
     }
 
     $contacto = "contacto";
@@ -35,7 +34,7 @@ if($_POST) {
 
     // Datos para el correo
     $destinatario = "upalacios@richit.ai, gmanzanares@richit.ai";
-    $asunto = "Contacto Campaña Contacto";
+    $asunto = "Contacto pagina RICH IT";
 
     $contenido= "";
     $contenido .= "Nombre: " . $nombre . "\r\n";
