@@ -50,7 +50,7 @@ if($_POST) {
 
 
     if(mail($destinatario, $asunto, $contenido, $headers)) {
-      header("Location: http://richit.ai/es/contacto-conver.html");
+      header("Location: http://richit.ai/es/contacto-conver.html#contacto");
     } else {
         echo '<p>We are sorry but the email did not go through.</p>';
     }
