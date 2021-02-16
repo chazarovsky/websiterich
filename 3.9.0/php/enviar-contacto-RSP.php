@@ -8,6 +8,7 @@ if($_POST) {
     $nombre = "";
     $correo = "";
     $telefono = "";
+    $mensaje = "";
 
     if(isset($_POST['nombre-Contacto-RSP']) && $_POST['nombre-Contacto-RSP'] != '') {
         if (strlen($_POST['nombre-Contacto-RSP']) > 35 || strlen($_POST['nombre-Contacto-RSP']) < 2) {
@@ -26,6 +27,10 @@ if($_POST) {
         $telefono = $_POST['telefono-Contacto-RSP'];
     }
 
+    if(isset($_POST['texto-Contacto-RSP'])) {
+        $mensaje = htmlspecialchars($_POST['texto-Contacto-RSP']);
+    }
+
     $contacto = "contacto";
 
     $headers  = 'MIME-Version: 1.0' . "\r\n"
@@ -39,11 +44,12 @@ if($_POST) {
     $contenido= "";
     $contenido .= "Nombre: " . $nombre . "\r\n";
     $contenido .= "Correo: " . $correo . "\r\n";
-    $contenido .= "Teléfono: " . $telefono . "\r\n" ;
+    $contenido .= "Teléfono: " . $telefono . "\r\n";
+    $contenido .= "Notas: " . $mensaje . "\r\n";
 
 
     if(mail($destinatario, $asunto, $contenido, $headers)) {
-      header("Location: http://richit.ai/es/richit-smart-pipes.html");
+      header("Location: http://richit.ai/es/contacto-conver-rsp.html");
     } else {
         echo '<p>We are sorry but the email did not go through.</p>';
     }

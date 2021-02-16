@@ -64,6 +64,12 @@ img.logo{
   height: 50px !important;
 }
 
+img.exitoso{
+  display: block !important;
+  margin: 60px auto !important;
+  height: 100px !important;
+}
+
 /*===== LAYOUT =====*/
 .bd-grid{
   max-width: 1024px;
@@ -1221,7 +1227,7 @@ border-radius: 8px;
 	margin: 0px 0px 15px 0px;
 }
 
-.form-container input{
+.form-container input, textarea {
 	position: relative;
 	width: 100%;
 	height: 60%;
@@ -1234,6 +1240,14 @@ border-radius: 8px;
   border: 1px solid #c2c8cd;
 }
 
+.form-container textarea {
+  height: 150px  ! important;
+  min-width:  100px ! important;
+  max-height: 200px ! important;
+}
+
+
+
 .form-container label {
 /*	display: none*/
 	width: 50%;
@@ -1244,30 +1258,34 @@ border-radius: 8px;
 	margin: 15px 0px 5px 0px; ;
 }
 
+
+
 #boton-f {
 	background-color: #7fc782;
 	color: #fff;
 	border-radius: 3px;
 	margin-top: 25px;
 	margin-bottom: 50px;
+
 }
 ::-webkit-input-placeholder {
-   color:transparent;
+   /*color:transparent;*/
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color:transparent;
+  /* color:transparent;*/
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color:transparent;
+   /*color:transparent;*/
 }
 
 :-ms-input-placeholder {
-   color:transparent;
+  /* color:transparent;*/
 }
 
 #boton-f:hover {
 	background-color: #4caf50;
+  cursor: pointer;
 
 }

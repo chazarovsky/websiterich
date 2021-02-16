@@ -8,6 +8,7 @@ if($_POST) {
     $nombre = "";
     $correo = "";
     $telefono = "";
+    $mensaje = "";
 
     if(isset($_POST['nombre-Contacto']) && $_POST['nombre-Contacto'] != '') {
         if (strlen($_POST['nombre-Contacto']) > 35 || strlen($_POST['nombre-Contacto']) < 2) {
@@ -26,6 +27,11 @@ if($_POST) {
         $telefono = $_POST['telefono-Contacto'];
     }
 
+    if(isset($_POST['texto-Contacto'])) {
+        $mensaje = htmlspecialchars($_POST['texto-Contacto']);
+    }
+
+
     $contacto = "contacto";
 
     $headers  = 'MIME-Version: 1.0' . "\r\n"
@@ -40,10 +46,11 @@ if($_POST) {
     $contenido .= "Nombre: " . $nombre . "\r\n";
     $contenido .= "Correo: " . $correo . "\r\n";
     $contenido .= "Teléfono: " . $telefono . "\r\n" ;
+    $contenido .= "Notas: " . $mensaje . "\r\n";
 
 
     if(mail($destinatario, $asunto, $contenido, $headers)) {
-      header("Location: http://richit.ai/es/");
+      header("Location: http://richit.ai/es/contacto-conver.html");
     } else {
         echo '<p>We are sorry but the email did not go through.</p>';
     }
