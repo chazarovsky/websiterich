@@ -1289,3 +1289,9 @@ border-radius: 8px;
   cursor: pointer;
 
 }
+
+@media (max-width: 750px) {
+	.espacio_tarjetas {
+    margin: 15px;
+	}
+}
