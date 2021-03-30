@@ -94,5 +94,17 @@ $(document).ready(function(){
     window.open(valFileDownloadPath3 , '_blank');
   });
 
+  $("#form14").submit(function() {
+      $("body").append('<div id="modal-video"> <video id="mivideo"> <source src="http://previnsa.com/webnueva/supra.mp4" type="video/mp4"\><source src="http://previnsa.com/webnueva/supra.mp4" type="video/mp4">Tu navegador no implementa el elemento</video><div id="close"> Cerrar </div></div>')
+    document.getElementById('mivideo').play();
+    $( "#close" ).click(function() {
+      $("#modal").remove() ;
+    });
+  });
+
+
+
+
+
 
 });
