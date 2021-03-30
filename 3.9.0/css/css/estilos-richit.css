@@ -930,6 +930,7 @@ width: 100%;
   font-size: 16px;
   font-weight: lighter;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .border-0 {
@@ -960,6 +961,7 @@ width: 100%;
 .footer ul li {
   margin: 10px 0;
   height: 25px;
+  text-align: left;
 }
 
 .footer li i {
@@ -976,7 +978,7 @@ width: 100%;
 .social-media {
   width: 100%;
   color: #fff;
-  text-align: center;
+  text-align: left;
 }
 
 .social-media a {
