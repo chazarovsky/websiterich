@@ -30,18 +30,17 @@ if($_POST) {
     $contacto = "contacto";
 
     $headers  = 'MIME-Version: 1.0' . "\r\n"
-    //.'Content-type: text/html; charset=utf-8' . "\r\n" gmanzanares@richit.ai
+    //.'Content-type: text/html; charset=utf-8' . "\r\n"
     .'From: ' . $contacto . "\r\n";
 
     // Datos para el correo
-    $destinatario = "upalacios@richit.ai";
+    $destinatario = "upalacios@richit.ai, gmanzanares@richit.ai";
     $asunto = "Recursos pagina RICH IT";
 
     $contenido= "";
     $contenido .= "Nombre: " . $nombre . "\r\n";
     $contenido .= "Correo: " . $correo . "\r\n";
     $contenido .= "Teléfono: " . $telefono . "\r\n" ;
-    $contenido .= "Notas: " . $mensaje . "\r\n";
 
 
     if(mail($destinatario, $asunto, $contenido, $headers)) {
