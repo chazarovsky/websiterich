@@ -458,6 +458,32 @@ a.nav__link{
   color: #fff;
 }
 
+.herramientas {
+  display: block;
+  margin:58px 0px 0px 0px;
+}
+
+.herramientas a {
+  text-decoration: none;
+}
+
+.herramientas-espacio {
+  margin: 10px;
+  width:130px;
+  opacity:0.8;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+
+.herramientas-espacio:hover{
+    transform: scale(1.08, 1.08);
+    opacity:0.9;
+}
+
 /* Bebeficios y direferenciadores */
 
 .beneficios-datos-org {
