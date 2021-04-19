@@ -439,6 +439,10 @@ a.nav__link{
 }*/
 
 /*botones*/
+.margen-boton {
+  margin: 10px;
+}
+
 .btn {
     background-color: #3a9fff;
     border-radius: 20px;
@@ -873,9 +877,10 @@ left: 0;
 }
 
 .boton {
-  width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+  /*width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual.
   margin-left: 50%;
-  transform: translateX(-68%);
+  transform: translateX(-68%);*/
+  text-align: center;
   padding: 0px 0px 114px 0px;
 }
 
