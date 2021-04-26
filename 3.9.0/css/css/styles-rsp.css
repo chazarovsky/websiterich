@@ -848,7 +848,7 @@ left: 0;
 }
 
 .pd-land-cont {
-  padding-top:170px;
+  padding-top:90px;
 }
 
 .pd-land-vid{
@@ -1325,4 +1325,74 @@ border-radius: 8px;
 	.espacio_tarjetas {
     margin: 15px;
 	}
+}
+
+
+/* Video */
+
+.youtube-player{
+  position: sticky;
+    padding-bottom: 53.23%;
+    /* Use 75% for 4:3 videos */
+    height: 0;
+    overflow: hidden;
+    max-width: 95%;
+    background: #fff;
+    /*margin: 0px auto;*/
+    margin: 0px 0px 2px 34px;
+}
+
+.youtube-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+}
+
+.youtube-player img {
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: .4s all;
+    -moz-transition: .4s all;
+    transition: .4s all;
+}
+
+.youtube-player img:hover {
+    -webkit-filter: brightness(75%);
+}
+
+.youtube-player .play {
+    height: 72px;
+    width: 72px;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    color:red;
+    background: url("../../img/rsp-pag/boton-de-play.svg") no-repeat;
+    cursor: pointer;
+}
+
+
+@media (max-width: 750px){
+  .youtube-player{
+    margin: 0px auto;
+  }
+  .l-header {
+    padding-top: 12px;
+  }
 }
