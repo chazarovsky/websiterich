@@ -173,6 +173,11 @@ body{
     transform: scale(1);
 }
 
+#modal-open01:checked + .modal01 {
+    opacity: 1;
+    transform: scale(1);
+}
+
 #modal-open1:checked + .modal1 {
     opacity: 1;
     transform: scale(1);
