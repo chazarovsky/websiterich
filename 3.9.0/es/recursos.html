@@ -155,6 +155,46 @@
             </div>
             </div>
 
+            <!-- Modal 0.1 -->
+            <div class="card-resources card-R">
+              <div class="content">
+                <h1 class="texto_cardResources">Corporate <br>Bank</h1>
+                  <br><br>
+                <label class="modal-openResources modal-labelResources" for="modal-open01">
+                       <p class="p2">Descargar</p>
+                   </label>
+                <input type="radio" name="modal" value="open" id="modal-open01" class="modal-radio" />
+                <div class="modalResources modal01">
+                  <label class="modal-labelResources overlay">
+                            <input type="radio" name="modal" value="close" class="modal-radio"/>
+                        </label>
+                  <div class="content">
+                    <div class="top">
+                      <h2 class="p3">Corporate Bank </h2>
+                      <label class="modal-labelResources close-btn">
+                                <input type="radio" name="modal" value="close" class="modal-radio"/>
+                            </label>
+                    </div>
+
+                  <form action="../php/enviar-corporate-bank.php" method="post" id="form01" onsubmit="return validar01();">
+                    <label class="titulo-label">Nombre *</label>
+                    <input type="text" id="nombre01" name="nombre01" placeholder="Nombre" required>
+                    <label class="titulo-label">Correo *</label>
+                    <input type="email" id="correo01" name="correo01" placeholder="Correo" required>
+                    <label class="titulo-label">Teléfono</label>
+                    <input type="number" name="telefono01" placeholder="Teléfono">
+                    <input type="submit" value="Descargar" id="boton01">
+                  </form>
+
+                  <!--<label class="modal-labelResources action-btn">-->
+
+                              <input type="radio" name="modal" value="close" class="modal-radio"/>
+                          </label>
+                    </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Modal 1 -->
             <div class="card-resources card-R">
               <div class="content">

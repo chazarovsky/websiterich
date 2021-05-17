@@ -29,6 +29,11 @@ $(document).ready(function(){
     window.open(valFileDownloadPath , '_blank');
   });
 
+  $("#form01").submit(function() {
+    var valFileDownloadPath = '../brochures_gob/Corporate-Bank.pdf';
+    window.open(valFileDownloadPath , '_blank');
+  });
+
   $("#form1").submit(function() {
     var valFileDownloadPath = '../brochures_gob/Modelado_de_Datos.pdf';
     window.open(valFileDownloadPath , '_blank');
