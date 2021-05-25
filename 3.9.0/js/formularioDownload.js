@@ -34,6 +34,21 @@ $(document).ready(function(){
     window.open(valFileDownloadPath , '_blank');
   });
 
+  $("#form02").submit(function() {
+    var valFileDownloadPath = '../brochures_gob/CPG.pdf';
+    window.open(valFileDownloadPath , '_blank');
+  });
+
+  $("#form03").submit(function() {
+    var valFileDownloadPath = '../brochures_gob/Retail.pdf';
+    window.open(valFileDownloadPath , '_blank');
+  });
+
+  $("#form04").submit(function() {
+    var valFileDownloadPath = '../brochures_gob/Retail-Banking.pdf';
+    window.open(valFileDownloadPath , '_blank');
+  });
+
   $("#form1").submit(function() {
     var valFileDownloadPath = '../brochures_gob/Modelado_de_Datos.pdf';
     window.open(valFileDownloadPath , '_blank');
