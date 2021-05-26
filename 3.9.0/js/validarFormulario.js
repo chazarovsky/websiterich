@@ -378,8 +378,8 @@ function validar01(){
 
 function validar02(){
   var nombre, correo;
-  nombre = document.getElementById("nombre01").value;
-  correo = document.getElementById("correo01").value;
+  nombre = document.getElementById("nombre02").value;
+  correo = document.getElementById("correo02").value;
 
   expresion = /\w+@\w+\.+[a-z]/;
 
@@ -407,8 +407,8 @@ function validar02(){
 
 function validar03(){
   var nombre, correo;
-  nombre = document.getElementById("nombre01").value;
-  correo = document.getElementById("correo01").value;
+  nombre = document.getElementById("nombre03").value;
+  correo = document.getElementById("correo03").value;
 
   expresion = /\w+@\w+\.+[a-z]/;
 
@@ -436,8 +436,8 @@ function validar03(){
 
 function validar04(){
   var nombre, correo;
-  nombre = document.getElementById("nombre01").value;
-  correo = document.getElementById("correo01").value;
+  nombre = document.getElementById("nombre04").value;
+  correo = document.getElementById("correo04").value;
 
   expresion = /\w+@\w+\.+[a-z]/;
 
