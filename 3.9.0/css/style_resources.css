@@ -278,6 +278,11 @@ body{
   opacity:1;
 }
 
+#modal-open15:checked + .modal15 {
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
 /*
 #modal-open3:checked + .modal3{
   transform:scale(1) translate(0,0);
@@ -384,7 +389,7 @@ body{
 
 #boton0, #boton01, #boton02, #boton03, #boton04, #boton1, #boton2, #boton3, #boton4, #boton5,
 #boton6, #boton7, #boton8, #boton9, #boton10, #boton11,
-#boton12, #boton13, #boton14 {
+#boton12, #boton13, #boton14, #boton15  {
     background-color: #4caf50;
     color: #fff;
 
@@ -393,7 +398,7 @@ body{
 
 #boton0, #boton01, #boton02, #boton03, #boton04, #boton1, #boton2, #boton3, #boton4, #boton5,
 #boton6, #boton7, #boton8, #boton9, #boton10, #boton11,
-#boton12, #boton13, , #boton14:hover {
+#boton12, #boton13, #boton14, #boton15:hover {
   cursor: pointer;
 }
 
