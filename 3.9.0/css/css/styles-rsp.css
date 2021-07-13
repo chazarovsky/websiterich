@@ -70,25 +70,6 @@ img.exitoso{
   height: 100px !important;
 }
 
-/*===== LAYOUT =====*/
-.bd-grid{
-  max-width: 1024px;
-  display: grid;
-  grid-template-columns: 100%;
-  column-gap: 2rem;
-  width: calc(100% - 2rem);
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.l-header{
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  background-color: /*var(--first-color)*/ #fff;
-}
 
 /*===== NAV =====*/
 .nav{
@@ -279,9 +260,7 @@ a.nav__link{
   margin-bottom: 1rem;
 }
 
-.home__description{
-  margin-bottom: 2.5rem;
-}
+
 
 /*
 .home__button{
@@ -302,22 +281,6 @@ a.nav__link{
     margin: 0;
   }
 
-  .nav{
-    height: calc(var(--header-height) + 1.5rem);
-  }
-
-  .nav__toggle, .nav__close{
-    display: none;
-  }
-
-  .nav__list{
-    display: flex;
-  }
-
-  .nav__item{
-    margin-left: 3rem;
-    margin-bottom: 0;
-  }
 
   .rsp-margen {
     margin-top: 130px;
@@ -810,9 +773,6 @@ left: 0;
     .home__data {
       text-align: center;
       margin-bottom: 100px;
-    }
-    .l-header{
-      z-index: 190000;
     }
 }
 
@@ -1392,7 +1352,5 @@ border-radius: 8px;
   .youtube-player{
     margin: 0px auto;
   }
-  .l-header {
-    padding-top: 12px;
-  }
+
 }
